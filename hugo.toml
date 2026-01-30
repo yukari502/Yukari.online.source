@@ -20,7 +20,7 @@ enableEmoji = true
 [[menu.main]]
     identifier = "github"
     name = "GitHub"
-    url = "https://github.com/你的Github用户名"
+    url = "https://github.com/yukari502"
     weight = 30
 
 # 主题核心参数配置
@@ -41,10 +41,7 @@ enableEmoji = true
     # 首页显示的社交图标
     [[params.socialIcons]]
         name = "github"
-        url = "https://github.com/你的Github用户名"
-    [[params.socialIcons]]
-        name = "twitter"
-        url = "https://twitter.com/你的推特"
+        url = "https://github.com/yukari502"
 
     # 网站底部的版权信息
     [params.footer]
