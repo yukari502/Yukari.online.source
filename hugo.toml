@@ -1,4 +1,51 @@
 baseURL = 'yukari.online'
 languageCode = 'en-us'
-title = 'Yukari'
+title = 'Yukari's Blog'
 theme = "PaperMod"
+
+# 启用 emoji 支持
+enableEmoji = true
+
+# 顶部导航栏菜单
+[[menu.main]]
+    identifier = "home"
+    name = "Home"
+    url = "/"
+    weight = 10
+[[menu.main]]
+    identifier = "posts"
+    name = "Posts"
+    url = "/posts"
+    weight = 20
+[[menu.main]]
+    identifier = "github"
+    name = "GitHub"
+    url = "https://github.com/你的Github用户名"
+    weight = 30
+
+# 主题核心参数配置
+[params]
+    defaultTheme = "auto" # 自动跟随系统切换深色/浅色模式
+    # 页面显示选项
+    ShowReadingTime = true
+    ShowShareButtons = true
+    ShowPostNavLinks = true
+    ShowBreadCrumbs = true
+    ShowCodeCopyButtons = true
+    
+    # 首页显示的“个人简介”模块 (Demo 里的那一大块文字)
+    [params.homeInfoParams]
+        Title = "Hi there 👋"
+        Content = "Welcome to my blog! This is a demo description just like PaperMod."
+
+    # 首页显示的社交图标
+    [[params.socialIcons]]
+        name = "github"
+        url = "https://github.com/你的Github用户名"
+    [[params.socialIcons]]
+        name = "twitter"
+        url = "https://twitter.com/你的推特"
+
+    # 网站底部的版权信息
+    [params.footer]
+        copyright = "© 2026 Yukari"
