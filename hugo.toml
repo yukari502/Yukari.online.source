@@ -2,43 +2,31 @@
 baseURL = 'yukari.online'
 languageCode = 'en-us'
 title = "Yukari's Blog"
-theme = "PaperMod"
+theme = "Mainroad"
+[params]
+  description = "Yukari's blog" # 网站描述
+  author = "Yukari"        # 显示在侧边栏的作者名
+  
+  # 侧边栏设置 (默认在右边)
+  sidebar_position = "right" 
+  
+  # 侧边栏组件 (你可以根据需要增删)
+  widgets = ["search", "recent", "categories", "taglist", "social"]
+  
+  # 社交链接 (显示在侧边栏 Social 组件)
+  [params.social]
+    github = "https://github.com/yukari502"
+    email = "mailto:你的邮箱"
 
-# 启用 emoji 支持
-enableEmoji = true
-
-# 顶部导航栏菜单
-[[menu.main]]
+[menu]
+  # 顶部导航菜单
+  [[menu.main]]
     identifier = "home"
     name = "Home"
     url = "/"
     weight = 10
-[[menu.main]]
-    identifier = "posts"
-    name = "Posts"
-    url = "/posts"
+  [[menu.main]]
+    identifier = "archives"
+    name = "Archive"
+    url = "/post/"
     weight = 20
-[[menu.main]]
-    identifier = "github"
-    name = "GitHub"
-    url = "https://github.com/yukari502"
-    weight = 30
-
-# 主题核心参数配置
-[params]
-    defaultTheme = "auto" # 自动跟随系统切换深色/浅色模式
-    # 页面显示选项
-    ShowReadingTime = true
-    ShowShareButtons = true
-    ShowPostNavLinks = true
-    ShowBreadCrumbs = true
-    ShowCodeCopyButtons = true
-    
-    # 首页显示的“个人简介”模块 (Demo 里的那一大块文字)
-    [params.homeInfoParams]
-        Title = "Hi there 👋"
-        Content = "Welcome to my blog! This is a demo description just like PaperMod."
-
-    # 网站底部的版权信息
-    [params.footer]
-        copyright = "© 2026 Yukari"
