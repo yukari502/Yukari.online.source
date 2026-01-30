@@ -1,0 +1,4 @@
+baseURL = 'yukari.online'
+languageCode = 'en-us'
+title = 'Yukari'
+theme = "PaperMod"
