@@ -1,6 +1,6 @@
 baseURL = 'yukari.online'
 languageCode = 'en-us'
-title = 'Yukari's Blog'
+title = "Yukari's Blog"
 theme = "PaperMod"
 
 # 启用 emoji 支持
