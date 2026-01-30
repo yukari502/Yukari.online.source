@@ -1,3 +1,4 @@
+#Base 
 baseURL = 'yukari.online'
 languageCode = 'en-us'
 title = "Yukari's Blog"
@@ -37,11 +38,6 @@ enableEmoji = true
     [params.homeInfoParams]
         Title = "Hi there 👋"
         Content = "Welcome to my blog! This is a demo description just like PaperMod."
-
-    # 首页显示的社交图标
-    [[params.socialIcons]]
-        name = "github"
-        url = "https://github.com/yukari502"
 
     # 网站底部的版权信息
     [params.footer]
