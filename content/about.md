@@ -1,11 +1,9 @@
 +++
-title = "about-me"
+title = "About-me"
 date = 2026-01-15T15:06:38+08:00
 draft = false
 categories = ['Meta']
 +++
-
-# About Me
 
 <div align="center">
 
