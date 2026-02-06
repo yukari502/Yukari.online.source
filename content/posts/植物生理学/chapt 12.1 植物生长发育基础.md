@@ -2,7 +2,7 @@
 title = "chapt 12.1 植物生长发育基础"
 date = 2026-01-15T17:51:45+08:00
 draft = false
-categories = ['植物生理学', '后半']
+categories = ['植物生理学']
 +++
 
 ### 1. 植物生长与发育

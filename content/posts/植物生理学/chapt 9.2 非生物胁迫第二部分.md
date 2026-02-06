@@ -2,7 +2,7 @@
 title = "chapt 9.2 非生物胁迫第二部分"
 date = 2026-01-14T20:09:40+08:00
 draft = false
-categories = ['植物生理学', '后半']
+categories = ['植物生理学']
 +++
 
 ### 一、 重点名词解释

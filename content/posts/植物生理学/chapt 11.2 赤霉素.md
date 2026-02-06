@@ -2,7 +2,7 @@
 title = "chapt 11.2 赤霉素"
 date = 2026-01-15T16:29:52+08:00
 draft = false
-categories = ['植物生理学', '后半']
+categories = ['植物生理学']
 +++
 
 ### 一、 重点名词解释

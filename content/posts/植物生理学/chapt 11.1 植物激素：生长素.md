@@ -2,7 +2,7 @@
 title = "chapt 11.1 植物激素：生长素"
 date = 2026-01-15T20:06:55+08:00
 draft = false
-categories = ['植物生理学', '后半']
+categories = ['植物生理学']
 +++
 
 ### 一、 重点名词解释

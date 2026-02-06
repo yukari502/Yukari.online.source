@@ -2,7 +2,7 @@
 title = "chapt 11.10 小肽"
 date = 2026-01-15T17:36:51+08:00
 draft = false
-categories = ['植物生理学', '后半']
+categories = ['植物生理学']
 +++
 
 ### 一、 重点名词解释

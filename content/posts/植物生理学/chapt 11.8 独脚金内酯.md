@@ -2,7 +2,7 @@
 title = "chapt 11.8 独脚金内酯"
 date = 2026-01-15T17:09:53+08:00
 draft = false
-categories = ['植物生理学', '后半']
+categories = ['植物生理学']
 +++
 
 ### 一、 重点名词解释

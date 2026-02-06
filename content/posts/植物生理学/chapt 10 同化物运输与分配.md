@@ -2,7 +2,7 @@
 title = "chapt 10 同化物运输与分配"
 date = 2026-01-15T14:49:50+08:00
 draft = false
-categories = ['植物生理学', '后半']
+categories = ['植物生理学']
 +++
 
 ### 标题：植物同化物运输与分配生理

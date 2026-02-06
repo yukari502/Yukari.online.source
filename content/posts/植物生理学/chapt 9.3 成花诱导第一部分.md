@@ -2,7 +2,7 @@
 title = "chapt 9.3 成花诱导第一部分"
 date = 2026-01-14T20:52:00+08:00
 draft = false
-categories = ['植物生理学', '后半']
+categories = ['植物生理学']
 +++
 
 ### 一、 重点名词解释
