@@ -46,14 +46,12 @@ summaryLength = 30     # 设置自动截取的摘要长度（单位是字数）�
   url = "/posts/"
   weight = 20
 
-
 [[menu.main]]
   identifier = "categories"
   name = "Categories"       # Categories (Hugo 自动生成)
   url = "/categories/"
   weight = 40
 
-  
 [[menu.main]]
   identifier = "tags"
   name = "Tags"       # Tags (Hugo 自动生成)
