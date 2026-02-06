@@ -13,6 +13,7 @@ function initLunr() {
             // Set up lunrjs by declaring the fields we use
             // Also provide their boost level for the ranking
             lunrIndex = lunr(function () {
+                this.use(lunr.zh);
                 this.field("title", { boost: 10 });
                 this.field("tags", { boost: 5 });
                 this.field("categories", { boost: 5 });
