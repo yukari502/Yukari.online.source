@@ -2,164 +2,164 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>植物生理学 on Yukari&#39;s Blog</title>
-    <link>//localhost:1313/categories/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/</link>
+    <link>yukari.online/categories/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/</link>
     <description>Recent content in 植物生理学 on Yukari&#39;s Blog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 15 Jan 2026 20:08:35 +0800</lastBuildDate>
-    <atom:link href="//localhost:1313/categories/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="yukari.online/categories/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>chapt 9.1 非生物胁迫第一部分</title>
-      <link>//localhost:1313/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/chapt-9.1-%E9%9D%9E%E7%94%9F%E7%89%A9%E8%83%81%E8%BF%AB%E7%AC%AC%E4%B8%80%E9%83%A8%E5%88%86/</link>
+      <link>yukari.online/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/chapt-9.1-%E9%9D%9E%E7%94%9F%E7%89%A9%E8%83%81%E8%BF%AB%E7%AC%AC%E4%B8%80%E9%83%A8%E5%88%86/</link>
       <pubDate>Thu, 15 Jan 2026 20:08:35 +0800</pubDate>
-      <guid>//localhost:1313/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/chapt-9.1-%E9%9D%9E%E7%94%9F%E7%89%A9%E8%83%81%E8%BF%AB%E7%AC%AC%E4%B8%80%E9%83%A8%E5%88%86/</guid>
-      <description>&lt;h2 id=&#34;一-重点名词解释&#34;&gt;一、 重点名词解释&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;逆境 (Stress)&lt;/strong&gt;: 物理学上指施加于物体的力，在生物学中指任何可能降低或不利地改变植物生长或发育的环境条件变化。例如：冻害、冷害、高温、干旱、洪水、盐渍、病虫害及空气污染等。&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;抗性 (Resistance)&lt;/strong&gt;: 植物适应或耐受逆境的能力。包括 &lt;strong&gt;适应 (Adaptation)&lt;/strong&gt;、&lt;strong&gt;避免 (Avoidance)&lt;/strong&gt; 和 &lt;strong&gt;耐受 (Tolerance)&lt;/strong&gt;。&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;适应 (Adaptation)&lt;/strong&gt;: 由遗传决定的耐受性或抗性水平，是经过多代选择获得的永久性抗性，表现在形态结构、生理和生化上。例如：水生植物发达的通气组织，CAM 植物的气孔运动模式。&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;驯化/锻炼 (Acclimation/Hardening)&lt;/strong&gt;: 植物在处于逆境条件时（或预先暴露于轻微逆境中），逐渐获得的对逆境的适应能力，通过此过程增加逆境耐受性。&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;次级胁迫 (Secondary Stresses)&lt;/strong&gt;: 由主要施加的胁迫因子导致的其他形式的胁迫。例如：缺水可能导致叶片遭受热胁迫；冷冻胁迫会导致缺水和渗透胁迫；氧化胁迫通常由其他胁迫诱导产生。&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;交叉耐受 (Cross-tolerance)&lt;/strong&gt;: 对一种逆境的驯化诱导了对另一种逆境的耐受性，暗示多种逆境的耐受机制具有许多共同特征。&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;生理干旱 (Physiological Drought)&lt;/strong&gt;: 由于土壤条件（如低温、盐碱等）阻碍植物根系正常的生理活动，导致植物虽在有水环境中却不能正常吸水而受害的现象。&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;二-植物生理学重点内容归纳&#34;&gt;二、 植物生理学重点内容归纳&lt;/h2&gt;&#xA;&lt;h3 id=&#34;1-逆境响应的三个阶段与策略&#34;&gt;1. 逆境响应的三个阶段与策略&lt;/h3&gt;&#xA;&lt;p&gt;植物作为固着生物 (Sessile) 无法逃离环境，主要通过三种策略应对：&lt;strong&gt;逃避 (Escape)&lt;/strong&gt;、&lt;strong&gt;避免 (Avoidance)&lt;/strong&gt; 和 &lt;strong&gt;耐受 (Tolerance)&lt;/strong&gt;。响应发生在多个水平：解剖形态学（通常用于避免）、细胞水平、生化水平和分子水平。&lt;/p&gt;</description>
+      <guid>yukari.online/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/chapt-9.1-%E9%9D%9E%E7%94%9F%E7%89%A9%E8%83%81%E8%BF%AB%E7%AC%AC%E4%B8%80%E9%83%A8%E5%88%86/</guid>
+      <description>&lt;h2 id=&#34;非生物胁迫&#34;&gt;非生物胁迫&lt;/h2&gt;&#xA;&lt;p&gt;植物作为固着生物 (Sessile) 无法逃离环境，主要通过三种策略应对：&lt;strong&gt;逃避 (Escape)&lt;/strong&gt;、&lt;strong&gt;避免 (Avoidance)&lt;/strong&gt; 和 &lt;strong&gt;耐受 (Tolerance)&lt;/strong&gt;。响应发生在多个水平：解剖形态学（通常用于避免）、细胞水平、生化水平和分子水平。&lt;/p&gt;</description>
     </item>
     <item>
       <title>chapt 11.1 植物激素：生长素</title>
-      <link>//localhost:1313/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/chapt-11.1-%E6%A4%8D%E7%89%A9%E6%BF%80%E7%B4%A0%E7%94%9F%E9%95%BF%E7%B4%A0/</link>
+      <link>yukari.online/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/chapt-11.1-%E6%A4%8D%E7%89%A9%E6%BF%80%E7%B4%A0%E7%94%9F%E9%95%BF%E7%B4%A0/</link>
       <pubDate>Thu, 15 Jan 2026 20:06:55 +0800</pubDate>
-      <guid>//localhost:1313/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/chapt-11.1-%E6%A4%8D%E7%89%A9%E6%BF%80%E7%B4%A0%E7%94%9F%E9%95%BF%E7%B4%A0/</guid>
+      <guid>yukari.online/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/chapt-11.1-%E6%A4%8D%E7%89%A9%E6%BF%80%E7%B4%A0%E7%94%9F%E9%95%BF%E7%B4%A0/</guid>
       <description>&lt;h3 id=&#34;一-重点名词解释&#34;&gt;一、 重点名词解释&lt;/h3&gt;&#xA;&lt;p&gt;&lt;strong&gt;植物激素 (Plant hormones, N):&lt;/strong&gt; 由特定器官或组织产生，但不局限于单一类型细胞的化学物质。它们的作用不一定是长距离的（也可以是原位作用），其效应不仅取决于浓度，还取决于靶标的敏感性。&lt;/p&gt;</description>
     </item>
     <item>
       <title>chapt 11.7 茉莉酸</title>
-      <link>//localhost:1313/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/chapt-11.7-%E8%8C%89%E8%8E%89%E9%85%B8/</link>
+      <link>yukari.online/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/chapt-11.7-%E8%8C%89%E8%8E%89%E9%85%B8/</link>
       <pubDate>Thu, 15 Jan 2026 20:01:37 +0800</pubDate>
-      <guid>//localhost:1313/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/chapt-11.7-%E8%8C%89%E8%8E%89%E9%85%B8/</guid>
+      <guid>yukari.online/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/chapt-11.7-%E8%8C%89%E8%8E%89%E9%85%B8/</guid>
       <description>&lt;h2 id=&#34;一-重点名词解释&#34;&gt;一、 重点名词解释&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;茉莉酸类 (Jasmonates, JAs):&lt;/strong&gt; 一类源自游离脂肪酸（如亚麻酸）氧化的&lt;strong&gt;氧化脂类 (Oxylipins)&lt;/strong&gt; 植物激素。包括茉莉酸 (JA)、茉莉酸甲酯 (MeJA) 和活性形式茉莉酸-异亮氨酸 (JA-Ile)。它们在防御昆虫和死体营养型病原菌以及调控植物发育中起关键作用。&lt;/p&gt;</description>
     </item>
     <item>
       <title>chapt 12.4 运动与昼夜节律</title>
-      <link>//localhost:1313/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/chapt-12.4-%E8%BF%90%E5%8A%A8%E4%B8%8E%E6%98%BC%E5%A4%9C%E8%8A%82%E5%BE%8B/</link>
+      <link>yukari.online/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/chapt-12.4-%E8%BF%90%E5%8A%A8%E4%B8%8E%E6%98%BC%E5%A4%9C%E8%8A%82%E5%BE%8B/</link>
       <pubDate>Thu, 15 Jan 2026 19:49:44 +0800</pubDate>
-      <guid>//localhost:1313/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/chapt-12.4-%E8%BF%90%E5%8A%A8%E4%B8%8E%E6%98%BC%E5%A4%9C%E8%8A%82%E5%BE%8B/</guid>
+      <guid>yukari.online/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/chapt-12.4-%E8%BF%90%E5%8A%A8%E4%B8%8E%E6%98%BC%E5%A4%9C%E8%8A%82%E5%BE%8B/</guid>
       <description>&lt;p&gt;本章节主要探讨了植物如何通过运动响应环境刺激，以及如何通过内源生物钟适应地球的昼夜周期。&lt;/p&gt;</description>
     </item>
     <item>
       <title>chapt 12.3 光与植物生长</title>
-      <link>//localhost:1313/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/chapt-12.3-%E5%85%89%E4%B8%8E%E6%A4%8D%E7%89%A9%E7%94%9F%E9%95%BF/</link>
+      <link>yukari.online/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/chapt-12.3-%E5%85%89%E4%B8%8E%E6%A4%8D%E7%89%A9%E7%94%9F%E9%95%BF/</link>
       <pubDate>Thu, 15 Jan 2026 19:37:24 +0800</pubDate>
-      <guid>//localhost:1313/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/chapt-12.3-%E5%85%89%E4%B8%8E%E6%A4%8D%E7%89%A9%E7%94%9F%E9%95%BF/</guid>
+      <guid>yukari.online/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/chapt-12.3-%E5%85%89%E4%B8%8E%E6%A4%8D%E7%89%A9%E7%94%9F%E9%95%BF/</guid>
       <description>&lt;p&gt;本章节主要探讨了光作为一种环境信号，如何通过植物体内的不同光受体（Photoreceptors）被感知，并转化为下游信号传导，从而调控植物从种子萌发到形态建成的全过程。&lt;/p&gt;</description>
     </item>
     <item>
       <title>chapt 12.2 胚胎发生与器官发生</title>
-      <link>//localhost:1313/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/chapt-12.2-%E8%83%9A%E8%83%8E%E5%8F%91%E7%94%9F%E4%B8%8E%E5%99%A8%E5%AE%98%E5%8F%91%E7%94%9F/</link>
+      <link>yukari.online/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/chapt-12.2-%E8%83%9A%E8%83%8E%E5%8F%91%E7%94%9F%E4%B8%8E%E5%99%A8%E5%AE%98%E5%8F%91%E7%94%9F/</link>
       <pubDate>Thu, 15 Jan 2026 19:17:05 +0800</pubDate>
-      <guid>//localhost:1313/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/chapt-12.2-%E8%83%9A%E8%83%8E%E5%8F%91%E7%94%9F%E4%B8%8E%E5%99%A8%E5%AE%98%E5%8F%91%E7%94%9F/</guid>
+      <guid>yukari.online/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/chapt-12.2-%E8%83%9A%E8%83%8E%E5%8F%91%E7%94%9F%E4%B8%8E%E5%99%A8%E5%AE%98%E5%8F%91%E7%94%9F/</guid>
       <description>&lt;p&gt;本章节主要阐述了植物从受精卵发育为胚胎，再通过种子萌发进入营养生长，最终通过复杂的信号调控实现从幼年期向成年期及生殖期转变的过程。&lt;/p&gt;</description>
     </item>
     <item>
       <title>chapt 12.1 植物生长发育基础</title>
-      <link>//localhost:1313/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/chapt-12.1-%E6%A4%8D%E7%89%A9%E7%94%9F%E9%95%BF%E5%8F%91%E8%82%B2%E5%9F%BA%E7%A1%80/</link>
+      <link>yukari.online/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/chapt-12.1-%E6%A4%8D%E7%89%A9%E7%94%9F%E9%95%BF%E5%8F%91%E8%82%B2%E5%9F%BA%E7%A1%80/</link>
       <pubDate>Thu, 15 Jan 2026 17:51:45 +0800</pubDate>
-      <guid>//localhost:1313/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/chapt-12.1-%E6%A4%8D%E7%89%A9%E7%94%9F%E9%95%BF%E5%8F%91%E8%82%B2%E5%9F%BA%E7%A1%80/</guid>
+      <guid>yukari.online/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/chapt-12.1-%E6%A4%8D%E7%89%A9%E7%94%9F%E9%95%BF%E5%8F%91%E8%82%B2%E5%9F%BA%E7%A1%80/</guid>
       <description>&lt;h3 id=&#34;1-植物生长与发育&#34;&gt;1. 植物生长与发育&lt;/h3&gt;&#xA;&lt;p&gt;&lt;strong&gt;生命周期与形态建成&lt;/strong&gt;：植物的生命周期涵盖了从种子萌发、营养生长、生殖生长、受精、胚胎发生到种子果实发育及衰老的过程。这一过程中结构和器官的形成被称为形态建成，它依赖于不同层次组织（细胞、组织、器官、系统）的协调。&lt;/p&gt;</description>
     </item>
     <item>
       <title>chapt 11.10 小肽</title>
-      <link>//localhost:1313/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/chapt-11.10-%E5%B0%8F%E8%82%BD/</link>
+      <link>yukari.online/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/chapt-11.10-%E5%B0%8F%E8%82%BD/</link>
       <pubDate>Thu, 15 Jan 2026 17:36:51 +0800</pubDate>
-      <guid>//localhost:1313/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/chapt-11.10-%E5%B0%8F%E8%82%BD/</guid>
+      <guid>yukari.online/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/chapt-11.10-%E5%B0%8F%E8%82%BD/</guid>
       <description>&lt;h3 id=&#34;一-重点名词解释&#34;&gt;一、 重点名词解释&lt;/h3&gt;&#xA;&lt;p&gt;&lt;strong&gt;肽类激素 (Peptide hormones, N):&lt;/strong&gt; 一类由 5-60 个氨基酸残基组成的小分子信号多肽。它们作为受体配体（Ligand），在极低浓度下（如飞摩尔级别 femtomolar）即可调节植物的生长、发育及逆境响应。例如系统素（Systemin）和植物硫肽（PSK）。&lt;/p&gt;</description>
     </item>
     <item>
       <title>chapt 11.9 水杨酸</title>
-      <link>//localhost:1313/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/chapt-11.9-%E6%B0%B4%E6%9D%A8%E9%85%B8/</link>
+      <link>yukari.online/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/chapt-11.9-%E6%B0%B4%E6%9D%A8%E9%85%B8/</link>
       <pubDate>Thu, 15 Jan 2026 17:18:33 +0800</pubDate>
-      <guid>//localhost:1313/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/chapt-11.9-%E6%B0%B4%E6%9D%A8%E9%85%B8/</guid>
+      <guid>yukari.online/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/chapt-11.9-%E6%B0%B4%E6%9D%A8%E9%85%B8/</guid>
       <description>&lt;h3 id=&#34;一-重点名词解释&#34;&gt;一、 重点名词解释&lt;/h3&gt;&#xA;&lt;p&gt;&lt;strong&gt;水杨酸 (Salicylic Acid, SA):&lt;/strong&gt; 一种酚类植物激素，结构简单（邻羟基苯甲酸）。它在植物抵御&lt;strong&gt;活体营养型病原菌 (Biotrophs)&lt;/strong&gt;（如病毒、白粉菌）和刺吸式昆虫的免疫反应中起核心作用，诱导&lt;strong&gt;系统获得性抗性 (SAR)&lt;/strong&gt; 和 &lt;em&gt;PR&lt;/em&gt; 基因表达。此外，它还涉及植物产热（如天南星科植物）、开花及衰老调控,。&lt;/p&gt;</description>
     </item>
     <item>
       <title>chapt 11.8 独脚金内酯</title>
-      <link>//localhost:1313/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/chapt-11.8-%E7%8B%AC%E8%84%9A%E9%87%91%E5%86%85%E9%85%AF/</link>
+      <link>yukari.online/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/chapt-11.8-%E7%8B%AC%E8%84%9A%E9%87%91%E5%86%85%E9%85%AF/</link>
       <pubDate>Thu, 15 Jan 2026 17:09:53 +0800</pubDate>
-      <guid>//localhost:1313/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/chapt-11.8-%E7%8B%AC%E8%84%9A%E9%87%91%E5%86%85%E9%85%AF/</guid>
+      <guid>yukari.online/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/chapt-11.8-%E7%8B%AC%E8%84%9A%E9%87%91%E5%86%85%E9%85%AF/</guid>
       <description>&lt;h3 id=&#34;一-重点名词解释&#34;&gt;一、 重点名词解释&lt;/h3&gt;&#xA;&lt;p&gt;&lt;strong&gt;独脚金内酯 (Strigolactones, SLs):&lt;/strong&gt; 一类源自类胡萝卜素的植物激素。最初作为寄生植物（如独脚金 &lt;em&gt;Striga&lt;/em&gt;）种子的萌发刺激物质被发现，后来发现其能促进丛枝菌根真菌（AM fungi）的共生，并作为一种内源激素抑制植物的分枝（Shoot branching）和侧芽生长,。&lt;/p&gt;</description>
     </item>
     <item>
       <title>chapt 11.6 油菜素甾醇</title>
-      <link>//localhost:1313/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/chapt-11.6-%E6%B2%B9%E8%8F%9C%E7%B4%A0%E7%94%BE%E9%86%87/</link>
+      <link>yukari.online/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/chapt-11.6-%E6%B2%B9%E8%8F%9C%E7%B4%A0%E7%94%BE%E9%86%87/</link>
       <pubDate>Thu, 15 Jan 2026 16:46:13 +0800</pubDate>
-      <guid>//localhost:1313/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/chapt-11.6-%E6%B2%B9%E8%8F%9C%E7%B4%A0%E7%94%BE%E9%86%87/</guid>
+      <guid>yukari.online/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/chapt-11.6-%E6%B2%B9%E8%8F%9C%E7%B4%A0%E7%94%BE%E9%86%87/</guid>
       <description>&lt;h3 id=&#34;一-重点名词解释&#34;&gt;一、 重点名词解释&lt;/h3&gt;&#xA;&lt;p&gt;&lt;strong&gt;油菜素甾醇 (Brassinosteroids, BRs):&lt;/strong&gt; 一类多羟基甾醇类植物激素，结构上与动物类固醇激素（如雄性激素、蜕皮激素）相似。它是植物体内第六大类激素，主要功能包括促进细胞伸长和分裂、维管束分化、生殖发育以及抗逆等。&lt;/p&gt;</description>
     </item>
     <item>
       <title>chapt 11.2 赤霉素</title>
-      <link>//localhost:1313/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/chapt-11.2-%E8%B5%A4%E9%9C%89%E7%B4%A0/</link>
+      <link>yukari.online/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/chapt-11.2-%E8%B5%A4%E9%9C%89%E7%B4%A0/</link>
       <pubDate>Thu, 15 Jan 2026 16:29:52 +0800</pubDate>
-      <guid>//localhost:1313/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/chapt-11.2-%E8%B5%A4%E9%9C%89%E7%B4%A0/</guid>
+      <guid>yukari.online/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/chapt-11.2-%E8%B5%A4%E9%9C%89%E7%B4%A0/</guid>
       <description>&lt;h3 id=&#34;一-重点名词解释&#34;&gt;一、 重点名词解释&lt;/h3&gt;&#xA;&lt;p&gt;&lt;strong&gt;赤霉素 (Gibberellins, GAs):&lt;/strong&gt; 一类四环二萜类植物激素，最早在研究水稻“恶苗病”时由致病真菌（&lt;em&gt;Gibberella fujikuroi&lt;/em&gt;）分泌物中发现。具有促进茎伸长、诱导种子萌发、促进开花和果实发育等多种生理功能。目前已鉴定出136种GAs，但只有少数（如GA1, GA3, GA4）具有生物活性。&lt;/p&gt;</description>
     </item>
     <item>
       <title>chapt 10 同化物运输与分配</title>
-      <link>//localhost:1313/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/chapt-10-%E5%90%8C%E5%8C%96%E7%89%A9%E8%BF%90%E8%BE%93%E4%B8%8E%E5%88%86%E9%85%8D/</link>
+      <link>yukari.online/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/chapt-10-%E5%90%8C%E5%8C%96%E7%89%A9%E8%BF%90%E8%BE%93%E4%B8%8E%E5%88%86%E9%85%8D/</link>
       <pubDate>Thu, 15 Jan 2026 14:49:50 +0800</pubDate>
-      <guid>//localhost:1313/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/chapt-10-%E5%90%8C%E5%8C%96%E7%89%A9%E8%BF%90%E8%BE%93%E4%B8%8E%E5%88%86%E9%85%8D/</guid>
+      <guid>yukari.online/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/chapt-10-%E5%90%8C%E5%8C%96%E7%89%A9%E8%BF%90%E8%BE%93%E4%B8%8E%E5%88%86%E9%85%8D/</guid>
       <description>&lt;h3 id=&#34;标题植物同化物运输与分配生理&#34;&gt;标题：植物同化物运输与分配生理&lt;/h3&gt;&#xA;&lt;h3 id=&#34;一-重点名词解释&#34;&gt;一、 重点名词解释&lt;/h3&gt;&#xA;&lt;p&gt;&lt;strong&gt;光合同化物 (Photoassimilates/Photosynthates, N):&lt;/strong&gt; 植物通过光合作用固定的碳化合物，主要指糖类。它们是植物生长和生产力的基础，需要从合成部位运输到利用或贮藏部位,。&lt;/p&gt;</description>
     </item>
     <item>
       <title>chapt 9.4 植物生理果实的成熟与衰老</title>
-      <link>//localhost:1313/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/chapt-9.4-%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E6%9E%9C%E5%AE%9E%E7%9A%84%E6%88%90%E7%86%9F%E4%B8%8E%E8%A1%B0%E8%80%81/</link>
+      <link>yukari.online/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/chapt-9.4-%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E6%9E%9C%E5%AE%9E%E7%9A%84%E6%88%90%E7%86%9F%E4%B8%8E%E8%A1%B0%E8%80%81/</link>
       <pubDate>Thu, 15 Jan 2026 12:24:03 +0800</pubDate>
-      <guid>//localhost:1313/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/chapt-9.4-%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E6%9E%9C%E5%AE%9E%E7%9A%84%E6%88%90%E7%86%9F%E4%B8%8E%E8%A1%B0%E8%80%81/</guid>
+      <guid>yukari.online/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/chapt-9.4-%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E6%9E%9C%E5%AE%9E%E7%9A%84%E6%88%90%E7%86%9F%E4%B8%8E%E8%A1%B0%E8%80%81/</guid>
       <description>&lt;h3 id=&#34;一-重点名词解释&#34;&gt;一、 重点名词解释&lt;/h3&gt;&#xA;&lt;p&gt;&lt;strong&gt;呼吸跃变 (Respiratory climacteric, N):&lt;/strong&gt; 指某些肉质果实从发育停止到衰老过程中，呼吸速率突然由平稳转为急剧升高的生理现象。伴随着乙烯的自我催化合成出现。具有这种特征的果实称为&lt;strong&gt;跃变型果实&lt;/strong&gt;，例如苹果（Apple）、香蕉（Banana）、番茄（Tomato）等&lt;/p&gt;</description>
     </item>
     <item>
       <title>chapt 9.3 植物成花与生殖生理第二部分</title>
-      <link>//localhost:1313/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/chapt-9.3-%E6%A4%8D%E7%89%A9%E6%88%90%E8%8A%B1%E4%B8%8E%E7%94%9F%E6%AE%96%E7%94%9F%E7%90%86%E7%AC%AC%E4%BA%8C%E9%83%A8%E5%88%86/</link>
+      <link>yukari.online/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/chapt-9.3-%E6%A4%8D%E7%89%A9%E6%88%90%E8%8A%B1%E4%B8%8E%E7%94%9F%E6%AE%96%E7%94%9F%E7%90%86%E7%AC%AC%E4%BA%8C%E9%83%A8%E5%88%86/</link>
       <pubDate>Thu, 15 Jan 2026 12:13:43 +0800</pubDate>
-      <guid>//localhost:1313/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/chapt-9.3-%E6%A4%8D%E7%89%A9%E6%88%90%E8%8A%B1%E4%B8%8E%E7%94%9F%E6%AE%96%E7%94%9F%E7%90%86%E7%AC%AC%E4%BA%8C%E9%83%A8%E5%88%86/</guid>
+      <guid>yukari.online/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/chapt-9.3-%E6%A4%8D%E7%89%A9%E6%88%90%E8%8A%B1%E4%B8%8E%E7%94%9F%E6%AE%96%E7%94%9F%E7%90%86%E7%AC%AC%E4%BA%8C%E9%83%A8%E5%88%86/</guid>
       <description>&lt;p&gt;这份材料主要涵盖了光周期诱导的机理（成花素与光敏色素）、成花调控的分子网络、花器官发育的ABC模型、植物的性别分化以及受精生理。&lt;/p&gt;</description>
     </item>
     <item>
       <title>chapt 9.3 成花诱导第一部分</title>
-      <link>//localhost:1313/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/chapt-9.3-%E6%88%90%E8%8A%B1%E8%AF%B1%E5%AF%BC%E7%AC%AC%E4%B8%80%E9%83%A8%E5%88%86/</link>
+      <link>yukari.online/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/chapt-9.3-%E6%88%90%E8%8A%B1%E8%AF%B1%E5%AF%BC%E7%AC%AC%E4%B8%80%E9%83%A8%E5%88%86/</link>
       <pubDate>Wed, 14 Jan 2026 20:52:00 +0800</pubDate>
-      <guid>//localhost:1313/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/chapt-9.3-%E6%88%90%E8%8A%B1%E8%AF%B1%E5%AF%BC%E7%AC%AC%E4%B8%80%E9%83%A8%E5%88%86/</guid>
+      <guid>yukari.online/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/chapt-9.3-%E6%88%90%E8%8A%B1%E8%AF%B1%E5%AF%BC%E7%AC%AC%E4%B8%80%E9%83%A8%E5%88%86/</guid>
       <description>&lt;h3 id=&#34;一-重点名词解释&#34;&gt;一、 重点名词解释&lt;/h3&gt;&#xA;&lt;p&gt;&lt;strong&gt;成花诱导 (Floral induction, N):&lt;/strong&gt; 植物感受环境信号（如光周期、温度），从营养生长转向生殖生长的诱导过程。此时植物分生组织接收信号，准备进行成花转变。&lt;/p&gt;</description>
     </item>
     <item>
       <title>chapt 9.2 非生物胁迫第二部分</title>
-      <link>//localhost:1313/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/chapt-9.2-%E9%9D%9E%E7%94%9F%E7%89%A9%E8%83%81%E8%BF%AB%E7%AC%AC%E4%BA%8C%E9%83%A8%E5%88%86/</link>
+      <link>yukari.online/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/chapt-9.2-%E9%9D%9E%E7%94%9F%E7%89%A9%E8%83%81%E8%BF%AB%E7%AC%AC%E4%BA%8C%E9%83%A8%E5%88%86/</link>
       <pubDate>Wed, 14 Jan 2026 20:09:40 +0800</pubDate>
-      <guid>//localhost:1313/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/chapt-9.2-%E9%9D%9E%E7%94%9F%E7%89%A9%E8%83%81%E8%BF%AB%E7%AC%AC%E4%BA%8C%E9%83%A8%E5%88%86/</guid>
+      <guid>yukari.online/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/chapt-9.2-%E9%9D%9E%E7%94%9F%E7%89%A9%E8%83%81%E8%BF%AB%E7%AC%AC%E4%BA%8C%E9%83%A8%E5%88%86/</guid>
       <description>&lt;h3 id=&#34;一-重点名词解释&#34;&gt;一、 重点名词解释&lt;/h3&gt;&#xA;&lt;p&gt;&lt;strong&gt;湿害 (Moisture injury, N):&lt;/strong&gt; 指由于土壤充满水分而缺乏空气（缺氧）导致植物受到的伤害,。&lt;/p&gt;</description>
     </item>
     <item>
       <title>光合作用</title>
-      <link>//localhost:1313/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/%E5%85%89%E5%90%88%E4%BD%9C%E7%94%A8/</link>
+      <link>yukari.online/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/%E5%85%89%E5%90%88%E4%BD%9C%E7%94%A8/</link>
       <pubDate>Wed, 14 Jan 2026 13:33:05 +0800</pubDate>
-      <guid>//localhost:1313/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/%E5%85%89%E5%90%88%E4%BD%9C%E7%94%A8/</guid>
-      <description>&lt;h2 id=&#34;光合作用概述-overview-of-photosynthesis&#34;&gt;光合作用概述 (Overview of Photosynthesis)&lt;/h2&gt;&#xA;&lt;p&gt;光合作用的认知是科学家们逐步积累的结果：&lt;/p&gt;&#xA;&lt;h2 id=&#34;目录&#34;&gt;目录&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#%E5%85%89%E5%90%88%E4%BD%9C%E7%94%A8%E6%A6%82%E8%BF%B0-overview-of-photosynthesis&#34;&gt;光合作用概述 (Overview of Photosynthesis)&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#%E7%9B%AE%E5%BD%95&#34;&gt;目录&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#1-%E5%85%89%E5%90%88%E4%BD%9C%E7%94%A8%E6%A6%82%E8%BF%B0-overview-of-photosynthesis&#34;&gt;1. 光合作用概述 (Overview of Photosynthesis)&lt;/a&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#11-%E5%85%89%E5%90%88%E4%BD%9C%E7%94%A8%E7%9A%84%E5%8F%91%E7%8E%B0%E5%8E%86%E7%A8%8B&#34;&gt;1.1 光合作用的发现历程&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#12-%E5%85%89%E5%90%88%E4%BD%9C%E7%94%A8%E7%9A%84%E5%AE%9A%E4%B9%89%E4%B8%8E%E6%84%8F%E4%B9%89&#34;&gt;1.2 光合作用的定义与意义&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#2-%E5%85%89%E4%BE%9D%E8%B5%96%E5%8F%8D%E5%BA%94%E5%85%89%E5%8F%8D%E5%BA%94light-dependent-reactions&#34;&gt;2. 光依赖反应（光反应）(Light-dependent reactions)&lt;/a&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#21-%E5%85%89%E5%90%88%E8%89%B2%E7%B4%A0%E4%B8%8E%E5%85%89%E8%83%BD%E6%8D%95%E8%8E%B7&#34;&gt;2.1 光合色素与光能捕获&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#22-%E5%8F%B6%E7%BB%BF%E4%BD%93%E7%BB%93%E6%9E%84%E4%B8%8E%E5%85%89%E5%8F%8D%E5%BA%94%E4%BD%8D%E7%82%B9&#34;&gt;2.2 叶绿体结构与光反应位点&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#23-%E7%94%B5%E5%AD%90%E4%BC%A0%E9%80%92%E9%93%BE-etc-%E7%9A%84%E7%BB%84%E5%88%86%E4%B8%8E%E6%9C%BA%E5%88%B6&#34;&gt;2.3 电子传递链 (ETC) 的组分与机制&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#3-%E7%A2%B3%E5%9B%BA%E5%AE%9A%E5%8F%8D%E5%BA%94%E6%9A%97%E5%8F%8D%E5%BA%94carbon-fixing-reactions&#34;&gt;3. 碳固定反应（暗反应）(Carbon-fixing reactions)&lt;/a&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#31-%E6%A0%B8%E5%BF%83%E5%8F%91%E7%8E%B0&#34;&gt;3.1 核心发现&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#32-%E5%85%89%E5%8F%8D%E5%BA%94%E4%B8%8E%E7%A2%B3%E5%9B%BA%E5%AE%9A%E7%9A%84%E8%81%94%E7%B3%BB%E6%B5%81%E7%A8%8B&#34;&gt;3.2 光反应与碳固定的联系流程&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#4-%E5%85%89%E5%8F%8D%E5%BA%94%E4%B8%8E%E7%A2%B3%E5%9B%BA%E5%AE%9A%E7%9A%84%E8%81%94%E7%B3%BB%E6%B5%81%E7%A8%8B&#34;&gt;4. 光反应与碳固定的联系流程&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#5-c3-%E9%80%94%E5%BE%84%E5%8D%A1%E5%B0%94%E6%96%87%E5%BE%AA%E7%8E%AF%E6%9C%BA%E5%88%B6%E5%8D%A1%E5%B0%94%E6%96%87%E5%BE%AA%E7%8E%AF-the-calvin-cycle&#34;&gt;5. C3 途径（卡尔文循环）机制卡尔文循环 (The Calvin Cycle)&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#6-rubisco-%E9%85%B6%E5%8A%9F%E8%83%BD%E4%B8%8E%E5%85%89%E5%91%BC%E5%90%B8%E9%80%94%E5%BE%84&#34;&gt;6. Rubisco 酶功能与光呼吸途径&lt;/a&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#61-rubisco-%E7%9A%84%E5%8F%8C%E9%87%8D%E5%8A%9F%E8%83%BD&#34;&gt;6.1 Rubisco 的双重功能&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#62-%E5%85%89%E5%91%BC%E5%90%B8-photorespiration-%E7%94%9F%E5%8C%96%E9%80%94%E5%BE%84%E6%B5%81%E7%A8%8B&#34;&gt;6.2 光呼吸 (Photorespiration) 生化途径流程&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#7-%E6%97%A0%E6%9C%BA%E7%A2%B3%E6%B5%93%E7%BC%A9%E6%9C%BA%E5%88%B6-ccm&#34;&gt;7. 无机碳浓缩机制 (CCM)&lt;/a&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#71-textc_4-%E9%80%94%E5%BE%84-c4-pathway&#34;&gt;7.1 $\text{C}_4$ 途径 (C4 pathway)&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#72-textcam-%E9%80%94%E5%BE%84-cam-pathway&#34;&gt;7.2 $\text{CAM}$ 途径 (CAM pathway)&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#8-%E8%94%97%E7%B3%96%E5%92%8C%E6%B7%80%E7%B2%89%E7%9A%84%E7%94%9F%E7%89%A9%E5%90%88%E6%88%90&#34;&gt;8. 蔗糖和淀粉的生物合成&lt;/a&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#81-%E8%94%97%E7%B3%96-sucrose-%E7%9A%84%E7%94%9F%E7%89%A9%E5%90%88%E6%88%90%E6%B5%81%E7%A8%8B&#34;&gt;8.1 蔗糖 (Sucrose) 的生物合成流程&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#82-%E6%B7%80%E7%B2%89-starch-%E7%9A%84%E7%94%9F%E7%89%A9%E5%90%88%E6%88%90&#34;&gt;8.2 淀粉 (Starch) 的生物合成&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#9-cam-%E9%80%94%E5%BE%84-cam-pathway-%E6%99%AF%E5%A4%A9%E7%A7%91%E9%85%B8%E4%BB%A3%E8%B0%A2-%E6%9C%BA%E5%88%B6&#34;&gt;9. CAM 途径 (CAM pathway, 景天科酸代谢) 机制&lt;/a&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#cam-%E9%80%94%E5%BE%84%E7%94%9F%E5%8C%96%E6%B5%81%E7%A8%8B&#34;&gt;CAM 途径生化流程&lt;/a&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#a-%E5%A4%9C%E6%99%9A-dark---textco_2-%E5%90%B8%E6%94%B6%E4%B8%8E%E5%9B%BA%E5%AE%9A&#34;&gt;A. 夜晚 (Dark) - $\text{CO}_2$ 吸收与固定&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#b-%E7%99%BD%E5%A4%A9-light---%E8%84%B1%E7%BE%A7%E4%B8%8E-textc_3-%E5%BE%AA%E7%8E%AF&#34;&gt;B. 白天 (Light) - 脱羧与 $\text{C}_3$ 循环&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#10-%E8%94%97%E7%B3%96-sucrose-%E7%9A%84%E7%94%9F%E7%89%A9%E5%90%88%E6%88%90%E6%B5%81%E7%A8%8B-%E5%8F%91%E7%94%9F%E5%9C%A8%E7%BB%86%E8%83%9E%E8%B4%A8&#34;&gt;10. 蔗糖 (Sucrose) 的生物合成流程 (发生在细胞质)&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#11-%E6%B7%80%E7%B2%89-starch-%E7%9A%84%E7%94%9F%E7%89%A9%E5%90%88%E6%88%90%E6%B5%81%E7%A8%8B-%E5%8F%91%E7%94%9F%E5%9C%A8%E5%8F%B6%E7%BB%BF%E4%BD%93&#34;&gt;11. 淀粉 (Starch) 的生物合成流程 (发生在叶绿体)&lt;/a&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#111-%E6%B7%80%E7%B2%89%E7%9A%84%E5%88%86%E5%AD%90%E7%BB%93%E6%9E%84&#34;&gt;11.1 淀粉的分子结构&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#112-%E6%B7%80%E7%B2%89%E5%90%88%E6%88%90%E6%9C%BA%E5%88%B6%E6%B5%81%E7%A8%8B&#34;&gt;11.2 淀粉合成机制流程&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#12-c3-%E9%80%94%E5%BE%84%E5%8D%A1%E5%B0%94%E6%96%87%E5%BE%AA%E7%8E%AF-calvin-cycle&#34;&gt;12. C3 途径（卡尔文循环 Calvin Cycle）&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#13-%E5%85%89%E5%91%BC%E5%90%B8-photorespiration&#34;&gt;13. 光呼吸 (Photorespiration)&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#14-%E6%97%A0%E6%9C%BA%E7%A2%B3%E6%B5%93%E7%BC%A9%E6%9C%BA%E5%88%B6-inorganic-carbon-concentrating-mechanisms&#34;&gt;14. 无机碳浓缩机制 (Inorganic Carbon-Concentrating Mechanisms)&lt;/a&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#141-c4-%E9%80%94%E5%BE%84-c4-pathway&#34;&gt;14.1 C4 途径 (C4 Pathway)&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#142-cam-%E9%80%94%E5%BE%84%E8%AF%A6%E7%BB%86%E6%B5%81%E7%A8%8B-crassulacean-acid-metabolism&#34;&gt;14.2 CAM 途径详细流程 (Crassulacean Acid Metabolism)&lt;/a&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#%E7%AC%AC%E4%B8%80%E9%98%B6%E6%AE%B5%E5%A4%9C%E9%97%B4-dark--%E6%B0%94%E5%AD%94%E5%BC%80%E6%94%BE%E5%88%9D%E7%BA%A7%E5%9B%BA%E7%A2%B3&#34;&gt;第一阶段：夜间 (Dark) —— 气孔开放，初级固碳&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#%E7%AC%AC%E4%BA%8C%E9%98%B6%E6%AE%B5%E7%99%BD%E5%A4%A9-light--%E6%B0%94%E5%AD%94%E5%85%B3%E9%97%AD%E8%84%B1%E7%BE%A7%E4%B8%8E%E5%86%8D%E5%9B%BA%E5%AE%9A&#34;&gt;第二阶段：白天 (Light) —— 气孔关闭，脱羧与再固定&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#15-c3c4-%E4%B8%8E-cam-%E9%80%94%E5%BE%84%E6%AF%94%E8%BE%83%E8%A1%A8&#34;&gt;15. C3、C4 与 CAM 途径比较表&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#16-%E5%85%89%E5%90%88%E4%BD%9C%E7%94%A8%E7%A4%BA%E6%84%8F%E5%9B%BE&#34;&gt;16. 光合作用示意图&lt;/a&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#161-%E5%85%89%E5%91%BC%E5%90%B8%E6%B5%81%E7%A8%8B%E5%9B%BE&#34;&gt;16.1 光呼吸流程图&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#162-%E5%85%89%E5%90%88%E4%BD%9C%E7%94%A8c3c4cam%E6%B5%81%E7%A8%8B%E5%9B%BE&#34;&gt;16.2 光合作用C3、C4、CAM流程图&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;1-光合作用概述-overview-of-photosynthesis&#34;&gt;1. 光合作用概述 (Overview of Photosynthesis)&lt;/h2&gt;&#xA;&lt;h3 id=&#34;11-光合作用的发现历程&#34;&gt;1.1 光合作用的发现历程&lt;/h3&gt;&#xA;&lt;p&gt;光合作用的认知是科学家们逐步积累的结果：&lt;/p&gt;</description>
+      <guid>yukari.online/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/%E5%85%89%E5%90%88%E4%BD%9C%E7%94%A8/</guid>
+      <description>&lt;h2 id=&#34;光合作用概述-overview-of-photosynthesis&#34;&gt;光合作用概述 (Overview of Photosynthesis)&lt;/h2&gt;&#xA;&lt;p&gt;光合作用的认知是科学家们逐步积累的结果&amp;hellip;&lt;/p&gt;</description>
     </item>
     <item>
       <title>植物呼吸作用</title>
-      <link>//localhost:1313/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/%E6%A4%8D%E7%89%A9%E5%91%BC%E5%90%B8%E4%BD%9C%E7%94%A8/</link>
+      <link>yukari.online/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/%E6%A4%8D%E7%89%A9%E5%91%BC%E5%90%B8%E4%BD%9C%E7%94%A8/</link>
       <pubDate>Wed, 14 Jan 2026 13:33:05 +0800</pubDate>
-      <guid>//localhost:1313/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/%E6%A4%8D%E7%89%A9%E5%91%BC%E5%90%B8%E4%BD%9C%E7%94%A8/</guid>
+      <guid>yukari.online/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/%E6%A4%8D%E7%89%A9%E5%91%BC%E5%90%B8%E4%BD%9C%E7%94%A8/</guid>
       <description>&lt;h2 id=&#34;1-呼吸作用的概念与生理意义&#34;&gt;1. 呼吸作用的概念与生理意义&lt;/h2&gt;&#xA;&lt;h3 id=&#34;11-呼吸作用的概念&#34;&gt;1.1 呼吸作用的概念&lt;/h3&gt;&#xA;&lt;p&gt;&lt;strong&gt;植物呼吸作用&lt;/strong&gt; (Plant respiration)：呼吸作用及其相关的碳代谢，以受控的方式释放储存在碳化合物中的能量供细胞使用。同时，它也为其他生物合成提供许多碳前体。&lt;/p&gt;</description>
     </item>
     <item>
       <title>水与植物细胞</title>
-      <link>//localhost:1313/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/%E6%B0%B4%E4%B8%8E%E6%A4%8D%E7%89%A9%E7%BB%86%E8%83%9E/</link>
+      <link>yukari.online/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/%E6%B0%B4%E4%B8%8E%E6%A4%8D%E7%89%A9%E7%BB%86%E8%83%9E/</link>
       <pubDate>Wed, 14 Jan 2026 13:33:05 +0800</pubDate>
-      <guid>//localhost:1313/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/%E6%B0%B4%E4%B8%8E%E6%A4%8D%E7%89%A9%E7%BB%86%E8%83%9E/</guid>
+      <guid>yukari.online/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/%E6%B0%B4%E4%B8%8E%E6%A4%8D%E7%89%A9%E7%BB%86%E8%83%9E/</guid>
       <description>&lt;h1 id=&#34;水与植物细胞&#34;&gt;水与植物细胞&lt;/h1&gt;&#xA;&lt;p&gt;本章的重点和难点在于细胞吸水的方式和机制，以及水势的概念。内容涵盖了水的生理生态功能、存在形式、理化性质、细胞水分关系及测定方法。&lt;/p&gt;</description>
     </item>
     <item>
       <title>水分代谢</title>
-      <link>//localhost:1313/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/%E6%B0%B4%E5%88%86%E4%BB%A3%E8%B0%A2/</link>
+      <link>yukari.online/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/%E6%B0%B4%E5%88%86%E4%BB%A3%E8%B0%A2/</link>
       <pubDate>Wed, 14 Jan 2026 13:33:05 +0800</pubDate>
-      <guid>//localhost:1313/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/%E6%B0%B4%E5%88%86%E4%BB%A3%E8%B0%A2/</guid>
+      <guid>yukari.online/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/%E6%B0%B4%E5%88%86%E4%BB%A3%E8%B0%A2/</guid>
       <description>&lt;h1 id=&#34;水分代谢&#34;&gt;水分代谢&lt;/h1&gt;&#xA;&lt;p&gt;本章主要涵盖水在植物体内的&lt;strong&gt;吸收 (Absorption)&lt;/strong&gt;、&lt;strong&gt;运输 (Transportation)&lt;/strong&gt; 和&lt;strong&gt;散失 (Lost)&lt;/strong&gt; 三个方面，重点探讨根系吸水、木质部运输和气孔运动的机理。&lt;/p&gt;</description>
     </item>
     <item>
       <title>矿质营养的同化</title>
-      <link>//localhost:1313/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/%E6%A4%8D%E7%89%A9%E7%9F%BF%E8%B4%A8%E5%85%83%E7%B4%A0/</link>
+      <link>yukari.online/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/%E6%A4%8D%E7%89%A9%E7%9F%BF%E8%B4%A8%E5%85%83%E7%B4%A0/</link>
       <pubDate>Wed, 14 Jan 2026 13:33:05 +0800</pubDate>
-      <guid>//localhost:1313/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/%E6%A4%8D%E7%89%A9%E7%9F%BF%E8%B4%A8%E5%85%83%E7%B4%A0/</guid>
+      <guid>yukari.online/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/%E6%A4%8D%E7%89%A9%E7%9F%BF%E8%B4%A8%E5%85%83%E7%B4%A0/</guid>
       <description>&lt;h2 id=&#34;1-氮的同化-nitrogen-assimilation&#34;&gt;1. 氮的同化 (Nitrogen Assimilation)&lt;/h2&gt;&#xA;&lt;h3 id=&#34;11-全球氮循环与固氮&#34;&gt;1.1 全球氮循环与固氮&lt;/h3&gt;&#xA;&lt;p&gt;&lt;strong&gt;全球氮循环 (global nitrogen cycle)&lt;/strong&gt;：大气中 $\text{N}_2$ 约占 77%。&lt;/p&gt;</description>
     </item>
   </channel>
