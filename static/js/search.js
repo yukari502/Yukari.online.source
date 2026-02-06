@@ -45,28 +45,43 @@ function search(query) {
         return;
     }
 
-    // Perform a fuzzy search using Lunr query builder
-    // We search for:
-    // 1. Exact match (High boost)
-    // 2. Prefix match (Medium boost) - acts like wildcard *
-    // 3. Fuzzy match (Low boost, edit distance 1) - handles typos
-    var results = lunrIndex.query(function (q) {
-        var terms = query.split(/\s+/);
-        terms.forEach(function (term) {
-            if (term) {
-                // Exact match
-                q.term(term, { boost: 100 });
-                // Prefix match (wildcard)
-                q.term(term, { wildcard: lunr.Query.wildcard.TRAILING, boost: 10 });
-                // Fuzzy match
-                q.term(term, { editDistance: 1, boost: 1 });
-            }
+    var results;
+
+    // Check if the query contains Chinese characters
+    var isChinese = /[\u4e00-\u9fa5]/.test(query);
+
+    if (isChinese) {
+        // For Chinese, we rely on lunr.zh to handle tokenization/segmentation.
+        // We use the standard .search() method which processes the query string through the pipeline.
+        // Fuzzy (edit distance) is usually not useful/accurate for Chinese characters.
+        results = lunrIndex.search(query).map(function (result) {
+            return pagesIndex.filter(function (page) {
+                return page.permalink === result.ref;
+            })[0];
         });
-    }).map(function (result) {
-        return pagesIndex.filter(function (page) {
-            return page.permalink === result.ref;
-        })[0];
-    });
+    } else {
+        // For English/Alphabetic, we use our custom fuzzy/wildcard builder
+        // 1. Exact match (High boost)
+        // 2. Prefix match (Medium boost) - acts like wildcard *
+        // 3. Fuzzy match (Low boost, edit distance 1) - handles typos
+        results = lunrIndex.query(function (q) {
+            var terms = query.split(/\s+/);
+            terms.forEach(function (term) {
+                if (term) {
+                    // Exact match
+                    q.term(term, { boost: 100 });
+                    // Prefix match (wildcard)
+                    q.term(term, { wildcard: lunr.Query.wildcard.TRAILING, boost: 10 });
+                    // Fuzzy match
+                    q.term(term, { editDistance: 1, boost: 1 });
+                }
+            });
+        }).map(function (result) {
+            return pagesIndex.filter(function (page) {
+                return page.permalink === result.ref;
+            })[0];
+        });
+    }
 
     renderResults(results);
 }
