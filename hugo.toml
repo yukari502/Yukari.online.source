@@ -18,7 +18,7 @@ summaryLength = 30     # 设置自动截取的摘要长度（单位是字数）�
     list = "right"    # 列表页侧边栏在右边
     single = "right"  # 文章页侧边栏在右边
     # 对应图中右侧的组件顺序：搜索 -> 最近文章 -> 分类 -> 标签云
-    widgets = ["search", "recent", "categories", "taglist"]
+    widgets = ["search", "categories", "recent", "taglist"]
 
   # 文章元数据设置 (对应图中文章标题下的日期)
   post_meta = ["date", "categories"] 
