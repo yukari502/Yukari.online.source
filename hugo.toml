@@ -21,35 +21,35 @@ theme = "Mainroad"
   post_meta = ["date", "categories"] 
 
 # -----------------------------------------------------------
-# 顶部导航菜单 (对应图中黑色导航条)
+# 顶部导航菜单 (Personal Blog Standard)
 # -----------------------------------------------------------
 
 [[menu.main]]
-  identifier = "getting-started"
-  name = "Getting started"
-  url = "/post/getting-started/" # 需创建对应文章
+  identifier = "home"
+  name = "Home"       # Home
+  url = "/"
   weight = 10
 
 [[menu.main]]
-  identifier = "customization"
-  name = "Customization"
-  url = "/post/customization/"
+  identifier = "archives"
+  name = "Archives"       # Archives (对应你的 /post/ 目录)
+  url = "/post/"
   weight = 20
 
 [[menu.main]]
-  identifier = "faq"
-  name = "FAQ"
-  url = "/post/faq/"
+  identifier = "tags"
+  name = "Tags"       # Tags (Hugo 自动生成)
+  url = "/tags/"
   weight = 30
 
 [[menu.main]]
-  identifier = "basic-elements"
-  name = "Basic Elements"
-  url = "/post/basic-elements/"
+  identifier = "categories"
+  name = "Categories"       # Categories (Hugo 自动生成)
+  url = "/categories/"
   weight = 40
 
 [[menu.main]]
   identifier = "about"
-  name = "About"
-  url = "/about/" # 需创建 content/about.md
+  name = "About"       # About (你需要手动创建 content/about.md)
+  url = "/about/"
   weight = 50
