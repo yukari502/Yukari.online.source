@@ -22,7 +22,7 @@ jobs:
           extended: true
 
       - name: Build
-        run: hugo --minify --baseURL "https://yukari.online/" # 替换为你的域名
+        run: hugo --minify --baseURL "https://yukari.online/" #
 
       - name: Deploy to Server via SCP
         uses: appleboy/scp-action@master

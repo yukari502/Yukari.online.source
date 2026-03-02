@@ -15,6 +15,9 @@ summaryLength = 30     # 设置自动截取的摘要长度（单位是字数）�
   [params.logo]
     subtitle = "Just  YUKARI" 
 
+  # Front
+  customCSS = ["css/custom.css"]
+
   # Search widget configuration
   [params.widgets.search]
     url = "/search/"

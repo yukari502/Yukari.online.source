@@ -1,0 +1,12 @@
+/* 1. 从 Google Fonts 引入 M PLUS 1 Code */
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1+Code:wght@100..700&display=swap');
+
+/* 2. 应用到全站 */
+body {
+    font-family: "M PLUS 1 Code", sans-serif;
+}
+
+/* 3. 如果你希望标题也使用这个字体，可以加上这行 */
+h1, h2, h3, h4, h5, h6, .logo__title {
+    font-family: "M PLUS 1 Code", sans-serif;
+}
