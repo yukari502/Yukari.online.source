@@ -2,7 +2,7 @@
 title = "Model Context Protocol (MCP) 简介"
 date = 2026-01-14T13:33:05+08:00
 draft = false
-categories = ['什么都想学一点']
+categories = ['奇怪的东西']
 +++
 
 ## 定义
