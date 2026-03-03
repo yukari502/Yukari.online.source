@@ -2,283 +2,283 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Yukari&#39;s Blog</title>
-    <link>yukari.online/posts/</link>
+    <link>//localhost:1313/posts/</link>
     <description>Recent content in Posts on Yukari&#39;s Blog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 19 Jan 2026 19:06:10 +0800</lastBuildDate>
-    <atom:link href="yukari.online/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>群体与进化遗传分析</title>
-      <link>yukari.online/posts/%E9%81%97%E4%BC%A0%E5%AD%A6/%E7%BE%A4%E4%BD%93%E4%B8%8E%E8%BF%9B%E5%8C%96%E9%81%97%E4%BC%A0%E5%88%86%E6%9E%90/</link>
+      <link>//localhost:1313/posts/%E9%81%97%E4%BC%A0%E5%AD%A6/%E7%BE%A4%E4%BD%93%E4%B8%8E%E8%BF%9B%E5%8C%96%E9%81%97%E4%BC%A0%E5%88%86%E6%9E%90/</link>
       <pubDate>Mon, 19 Jan 2026 19:06:10 +0800</pubDate>
-      <guid>yukari.online/posts/%E9%81%97%E4%BC%A0%E5%AD%A6/%E7%BE%A4%E4%BD%93%E4%B8%8E%E8%BF%9B%E5%8C%96%E9%81%97%E4%BC%A0%E5%88%86%E6%9E%90/</guid>
+      <guid>//localhost:1313/posts/%E9%81%97%E4%BC%A0%E5%AD%A6/%E7%BE%A4%E4%BD%93%E4%B8%8E%E8%BF%9B%E5%8C%96%E9%81%97%E4%BC%A0%E5%88%86%E6%9E%90/</guid>
       <description>&lt;h3 id=&#34;1-章节核心内容归纳&#34;&gt;1. 章节核心内容归纳&lt;/h3&gt;&#xA;&lt;p&gt;本章主要探讨了基因在群体中的分布、传递规律以及影响基因频率变化的因素，核心围绕&lt;strong&gt;Hardy-Weinberg定律&lt;/strong&gt;展开。&lt;/p&gt;</description>
     </item>
     <item>
       <title>转座因子的遗传分析</title>
-      <link>yukari.online/posts/%E9%81%97%E4%BC%A0%E5%AD%A6/%E8%BD%AC%E5%BA%A7%E5%9B%A0%E5%AD%90%E7%9A%84%E9%81%97%E4%BC%A0%E5%88%86%E6%9E%90-/</link>
+      <link>//localhost:1313/posts/%E9%81%97%E4%BC%A0%E5%AD%A6/%E8%BD%AC%E5%BA%A7%E5%9B%A0%E5%AD%90%E7%9A%84%E9%81%97%E4%BC%A0%E5%88%86%E6%9E%90-/</link>
       <pubDate>Mon, 19 Jan 2026 19:05:54 +0800</pubDate>
-      <guid>yukari.online/posts/%E9%81%97%E4%BC%A0%E5%AD%A6/%E8%BD%AC%E5%BA%A7%E5%9B%A0%E5%AD%90%E7%9A%84%E9%81%97%E4%BC%A0%E5%88%86%E6%9E%90-/</guid>
+      <guid>//localhost:1313/posts/%E9%81%97%E4%BC%A0%E5%AD%A6/%E8%BD%AC%E5%BA%A7%E5%9B%A0%E5%AD%90%E7%9A%84%E9%81%97%E4%BC%A0%E5%88%86%E6%9E%90-/</guid>
       <description>&lt;h3 id=&#34;1-章节核心内容归纳&#34;&gt;1. 章节核心内容归纳&lt;/h3&gt;&#xA;&lt;p&gt;本章内容主要分为五个板块：&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;1. 转座因子的发现与分类&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>染色体畸变的遗传分析</title>
-      <link>yukari.online/posts/%E9%81%97%E4%BC%A0%E5%AD%A6/%E6%9F%93%E8%89%B2%E4%BD%93%E7%95%B8%E5%8F%98%E7%9A%84%E9%81%97%E4%BC%A0%E5%88%86%E6%9E%90/</link>
+      <link>//localhost:1313/posts/%E9%81%97%E4%BC%A0%E5%AD%A6/%E6%9F%93%E8%89%B2%E4%BD%93%E7%95%B8%E5%8F%98%E7%9A%84%E9%81%97%E4%BC%A0%E5%88%86%E6%9E%90/</link>
       <pubDate>Mon, 19 Jan 2026 19:05:39 +0800</pubDate>
-      <guid>yukari.online/posts/%E9%81%97%E4%BC%A0%E5%AD%A6/%E6%9F%93%E8%89%B2%E4%BD%93%E7%95%B8%E5%8F%98%E7%9A%84%E9%81%97%E4%BC%A0%E5%88%86%E6%9E%90/</guid>
+      <guid>//localhost:1313/posts/%E9%81%97%E4%BC%A0%E5%AD%A6/%E6%9F%93%E8%89%B2%E4%BD%93%E7%95%B8%E5%8F%98%E7%9A%84%E9%81%97%E4%BC%A0%E5%88%86%E6%9E%90/</guid>
       <description>&lt;h3 id=&#34;1-章节核心内容归纳&#34;&gt;1. 章节核心内容归纳&lt;/h3&gt;&#xA;&lt;p&gt;本章主要探讨了染色体在结构和数目上的变异（统称为染色体畸变），以及这些变异产生的遗传学效应、在基因定位和进化中的作用，并涉及了相关的人类疾病。&lt;/p&gt;</description>
     </item>
     <item>
       <title>基因突变与DNA损伤修复</title>
-      <link>yukari.online/posts/%E9%81%97%E4%BC%A0%E5%AD%A6/%E5%9F%BA%E5%9B%A0%E7%AA%81%E5%8F%98%E4%B8%8Edna%E6%8D%9F%E4%BC%A4%E4%BF%AE%E5%A4%8D/</link>
+      <link>//localhost:1313/posts/%E9%81%97%E4%BC%A0%E5%AD%A6/%E5%9F%BA%E5%9B%A0%E7%AA%81%E5%8F%98%E4%B8%8Edna%E6%8D%9F%E4%BC%A4%E4%BF%AE%E5%A4%8D/</link>
       <pubDate>Mon, 19 Jan 2026 19:05:24 +0800</pubDate>
-      <guid>yukari.online/posts/%E9%81%97%E4%BC%A0%E5%AD%A6/%E5%9F%BA%E5%9B%A0%E7%AA%81%E5%8F%98%E4%B8%8Edna%E6%8D%9F%E4%BC%A4%E4%BF%AE%E5%A4%8D/</guid>
+      <guid>//localhost:1313/posts/%E9%81%97%E4%BC%A0%E5%AD%A6/%E5%9F%BA%E5%9B%A0%E7%AA%81%E5%8F%98%E4%B8%8Edna%E6%8D%9F%E4%BC%A4%E4%BF%AE%E5%A4%8D/</guid>
       <description>&lt;h3 id=&#34;1-章节核心内容归纳&#34;&gt;1. 章节核心内容归纳&lt;/h3&gt;&#xA;&lt;p&gt;本章主要涵盖了以下五个重点板块：&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;1. 基因突变的类型与分子效应&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>病毒的遗传分析</title>
-      <link>yukari.online/posts/%E9%81%97%E4%BC%A0%E5%AD%A6/%E7%97%85%E6%AF%92%E7%9A%84%E9%81%97%E4%BC%A0%E5%88%86%E6%9E%90/</link>
+      <link>//localhost:1313/posts/%E9%81%97%E4%BC%A0%E5%AD%A6/%E7%97%85%E6%AF%92%E7%9A%84%E9%81%97%E4%BC%A0%E5%88%86%E6%9E%90/</link>
       <pubDate>Mon, 19 Jan 2026 19:05:02 +0800</pubDate>
-      <guid>yukari.online/posts/%E9%81%97%E4%BC%A0%E5%AD%A6/%E7%97%85%E6%AF%92%E7%9A%84%E9%81%97%E4%BC%A0%E5%88%86%E6%9E%90/</guid>
+      <guid>//localhost:1313/posts/%E9%81%97%E4%BC%A0%E5%AD%A6/%E7%97%85%E6%AF%92%E7%9A%84%E9%81%97%E4%BC%A0%E5%88%86%E6%9E%90/</guid>
       <description>&lt;h3 id=&#34;1-章节核心内容归纳&#34;&gt;1. 章节核心内容归纳&lt;/h3&gt;&#xA;&lt;p&gt;本章主要围绕以噬菌体（细菌病毒）为模式生物的遗传学分析展开，详细阐述了病毒的生命周期、基因组结构、突变类型、基因重组作图、互补测验以及位点专一性重组等核心机制。&lt;/p&gt;</description>
     </item>
     <item>
       <title>核外遗传</title>
-      <link>yukari.online/posts/%E9%81%97%E4%BC%A0%E5%AD%A6/%E6%A0%B8%E5%A4%96%E9%81%97%E4%BC%A0/</link>
+      <link>//localhost:1313/posts/%E9%81%97%E4%BC%A0%E5%AD%A6/%E6%A0%B8%E5%A4%96%E9%81%97%E4%BC%A0/</link>
       <pubDate>Sun, 18 Jan 2026 20:15:14 +0800</pubDate>
-      <guid>yukari.online/posts/%E9%81%97%E4%BC%A0%E5%AD%A6/%E6%A0%B8%E5%A4%96%E9%81%97%E4%BC%A0/</guid>
+      <guid>//localhost:1313/posts/%E9%81%97%E4%BC%A0%E5%AD%A6/%E6%A0%B8%E5%A4%96%E9%81%97%E4%BC%A0/</guid>
       <description>&lt;h3 id=&#34;1-重点内容归纳&#34;&gt;1. 重点内容归纳&lt;/h3&gt;&#xA;&lt;p&gt;简述核外遗传机制、实例、母体影响及应用&amp;hellip;&lt;/p&gt;</description>
     </item>
     <item>
       <title>chapt 9.1 非生物胁迫第一部分</title>
-      <link>yukari.online/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/chapt-9.1-%E9%9D%9E%E7%94%9F%E7%89%A9%E8%83%81%E8%BF%AB%E7%AC%AC%E4%B8%80%E9%83%A8%E5%88%86/</link>
+      <link>//localhost:1313/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/chapt-9.1-%E9%9D%9E%E7%94%9F%E7%89%A9%E8%83%81%E8%BF%AB%E7%AC%AC%E4%B8%80%E9%83%A8%E5%88%86/</link>
       <pubDate>Thu, 15 Jan 2026 20:08:35 +0800</pubDate>
-      <guid>yukari.online/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/chapt-9.1-%E9%9D%9E%E7%94%9F%E7%89%A9%E8%83%81%E8%BF%AB%E7%AC%AC%E4%B8%80%E9%83%A8%E5%88%86/</guid>
+      <guid>//localhost:1313/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/chapt-9.1-%E9%9D%9E%E7%94%9F%E7%89%A9%E8%83%81%E8%BF%AB%E7%AC%AC%E4%B8%80%E9%83%A8%E5%88%86/</guid>
       <description>&lt;h2 id=&#34;非生物胁迫&#34;&gt;非生物胁迫&lt;/h2&gt;&#xA;&lt;p&gt;植物作为固着生物 (Sessile) 无法逃离环境，主要通过三种策略应对：&lt;strong&gt;逃避 (Escape)&lt;/strong&gt;、&lt;strong&gt;避免 (Avoidance)&lt;/strong&gt; 和 &lt;strong&gt;耐受 (Tolerance)&lt;/strong&gt;。响应发生在多个水平：解剖形态学（通常用于避免）、细胞水平、生化水平和分子水平。&lt;/p&gt;</description>
     </item>
     <item>
       <title>chapt 11.1 植物激素：生长素</title>
-      <link>yukari.online/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/chapt-11.1-%E6%A4%8D%E7%89%A9%E6%BF%80%E7%B4%A0%E7%94%9F%E9%95%BF%E7%B4%A0/</link>
+      <link>//localhost:1313/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/chapt-11.1-%E6%A4%8D%E7%89%A9%E6%BF%80%E7%B4%A0%E7%94%9F%E9%95%BF%E7%B4%A0/</link>
       <pubDate>Thu, 15 Jan 2026 20:06:55 +0800</pubDate>
-      <guid>yukari.online/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/chapt-11.1-%E6%A4%8D%E7%89%A9%E6%BF%80%E7%B4%A0%E7%94%9F%E9%95%BF%E7%B4%A0/</guid>
+      <guid>//localhost:1313/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/chapt-11.1-%E6%A4%8D%E7%89%A9%E6%BF%80%E7%B4%A0%E7%94%9F%E9%95%BF%E7%B4%A0/</guid>
       <description>&lt;h3 id=&#34;一-重点名词解释&#34;&gt;一、 重点名词解释&lt;/h3&gt;&#xA;&lt;p&gt;&lt;strong&gt;植物激素 (Plant hormones, N):&lt;/strong&gt; 由特定器官或组织产生，但不局限于单一类型细胞的化学物质。它们的作用不一定是长距离的（也可以是原位作用），其效应不仅取决于浓度，还取决于靶标的敏感性。&lt;/p&gt;</description>
     </item>
     <item>
       <title>chapt 11.7 茉莉酸</title>
-      <link>yukari.online/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/chapt-11.7-%E8%8C%89%E8%8E%89%E9%85%B8/</link>
+      <link>//localhost:1313/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/chapt-11.7-%E8%8C%89%E8%8E%89%E9%85%B8/</link>
       <pubDate>Thu, 15 Jan 2026 20:01:37 +0800</pubDate>
-      <guid>yukari.online/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/chapt-11.7-%E8%8C%89%E8%8E%89%E9%85%B8/</guid>
+      <guid>//localhost:1313/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/chapt-11.7-%E8%8C%89%E8%8E%89%E9%85%B8/</guid>
       <description>&lt;h2 id=&#34;一-重点名词解释&#34;&gt;一、 重点名词解释&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;茉莉酸类 (Jasmonates, JAs):&lt;/strong&gt; 一类源自游离脂肪酸（如亚麻酸）氧化的&lt;strong&gt;氧化脂类 (Oxylipins)&lt;/strong&gt; 植物激素。包括茉莉酸 (JA)、茉莉酸甲酯 (MeJA) 和活性形式茉莉酸-异亮氨酸 (JA-Ile)。它们在防御昆虫和死体营养型病原菌以及调控植物发育中起关键作用。&lt;/p&gt;</description>
     </item>
     <item>
       <title>chapt 12.4 运动与昼夜节律</title>
-      <link>yukari.online/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/chapt-12.4-%E8%BF%90%E5%8A%A8%E4%B8%8E%E6%98%BC%E5%A4%9C%E8%8A%82%E5%BE%8B/</link>
+      <link>//localhost:1313/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/chapt-12.4-%E8%BF%90%E5%8A%A8%E4%B8%8E%E6%98%BC%E5%A4%9C%E8%8A%82%E5%BE%8B/</link>
       <pubDate>Thu, 15 Jan 2026 19:49:44 +0800</pubDate>
-      <guid>yukari.online/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/chapt-12.4-%E8%BF%90%E5%8A%A8%E4%B8%8E%E6%98%BC%E5%A4%9C%E8%8A%82%E5%BE%8B/</guid>
+      <guid>//localhost:1313/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/chapt-12.4-%E8%BF%90%E5%8A%A8%E4%B8%8E%E6%98%BC%E5%A4%9C%E8%8A%82%E5%BE%8B/</guid>
       <description>&lt;p&gt;本章节主要探讨了植物如何通过运动响应环境刺激，以及如何通过内源生物钟适应地球的昼夜周期。&lt;/p&gt;</description>
     </item>
     <item>
       <title>chapt 12.3 光与植物生长</title>
-      <link>yukari.online/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/chapt-12.3-%E5%85%89%E4%B8%8E%E6%A4%8D%E7%89%A9%E7%94%9F%E9%95%BF/</link>
+      <link>//localhost:1313/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/chapt-12.3-%E5%85%89%E4%B8%8E%E6%A4%8D%E7%89%A9%E7%94%9F%E9%95%BF/</link>
       <pubDate>Thu, 15 Jan 2026 19:37:24 +0800</pubDate>
-      <guid>yukari.online/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/chapt-12.3-%E5%85%89%E4%B8%8E%E6%A4%8D%E7%89%A9%E7%94%9F%E9%95%BF/</guid>
+      <guid>//localhost:1313/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/chapt-12.3-%E5%85%89%E4%B8%8E%E6%A4%8D%E7%89%A9%E7%94%9F%E9%95%BF/</guid>
       <description>&lt;p&gt;本章节主要探讨了光作为一种环境信号，如何通过植物体内的不同光受体（Photoreceptors）被感知，并转化为下游信号传导，从而调控植物从种子萌发到形态建成的全过程。&lt;/p&gt;</description>
     </item>
     <item>
       <title>chapt 12.2 胚胎发生与器官发生</title>
-      <link>yukari.online/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/chapt-12.2-%E8%83%9A%E8%83%8E%E5%8F%91%E7%94%9F%E4%B8%8E%E5%99%A8%E5%AE%98%E5%8F%91%E7%94%9F/</link>
+      <link>//localhost:1313/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/chapt-12.2-%E8%83%9A%E8%83%8E%E5%8F%91%E7%94%9F%E4%B8%8E%E5%99%A8%E5%AE%98%E5%8F%91%E7%94%9F/</link>
       <pubDate>Thu, 15 Jan 2026 19:17:05 +0800</pubDate>
-      <guid>yukari.online/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/chapt-12.2-%E8%83%9A%E8%83%8E%E5%8F%91%E7%94%9F%E4%B8%8E%E5%99%A8%E5%AE%98%E5%8F%91%E7%94%9F/</guid>
+      <guid>//localhost:1313/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/chapt-12.2-%E8%83%9A%E8%83%8E%E5%8F%91%E7%94%9F%E4%B8%8E%E5%99%A8%E5%AE%98%E5%8F%91%E7%94%9F/</guid>
       <description>&lt;p&gt;本章节主要阐述了植物从受精卵发育为胚胎，再通过种子萌发进入营养生长，最终通过复杂的信号调控实现从幼年期向成年期及生殖期转变的过程。&lt;/p&gt;</description>
     </item>
     <item>
       <title>chapt 12.1 植物生长发育基础</title>
-      <link>yukari.online/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/chapt-12.1-%E6%A4%8D%E7%89%A9%E7%94%9F%E9%95%BF%E5%8F%91%E8%82%B2%E5%9F%BA%E7%A1%80/</link>
+      <link>//localhost:1313/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/chapt-12.1-%E6%A4%8D%E7%89%A9%E7%94%9F%E9%95%BF%E5%8F%91%E8%82%B2%E5%9F%BA%E7%A1%80/</link>
       <pubDate>Thu, 15 Jan 2026 17:51:45 +0800</pubDate>
-      <guid>yukari.online/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/chapt-12.1-%E6%A4%8D%E7%89%A9%E7%94%9F%E9%95%BF%E5%8F%91%E8%82%B2%E5%9F%BA%E7%A1%80/</guid>
+      <guid>//localhost:1313/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/chapt-12.1-%E6%A4%8D%E7%89%A9%E7%94%9F%E9%95%BF%E5%8F%91%E8%82%B2%E5%9F%BA%E7%A1%80/</guid>
       <description>&lt;h3 id=&#34;1-植物生长与发育&#34;&gt;1. 植物生长与发育&lt;/h3&gt;&#xA;&lt;p&gt;&lt;strong&gt;生命周期与形态建成&lt;/strong&gt;：植物的生命周期涵盖了从种子萌发、营养生长、生殖生长、受精、胚胎发生到种子果实发育及衰老的过程。这一过程中结构和器官的形成被称为形态建成，它依赖于不同层次组织（细胞、组织、器官、系统）的协调。&lt;/p&gt;</description>
     </item>
     <item>
       <title>chapt 11.10 小肽</title>
-      <link>yukari.online/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/chapt-11.10-%E5%B0%8F%E8%82%BD/</link>
+      <link>//localhost:1313/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/chapt-11.10-%E5%B0%8F%E8%82%BD/</link>
       <pubDate>Thu, 15 Jan 2026 17:36:51 +0800</pubDate>
-      <guid>yukari.online/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/chapt-11.10-%E5%B0%8F%E8%82%BD/</guid>
+      <guid>//localhost:1313/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/chapt-11.10-%E5%B0%8F%E8%82%BD/</guid>
       <description>&lt;h3 id=&#34;一-重点名词解释&#34;&gt;一、 重点名词解释&lt;/h3&gt;&#xA;&lt;p&gt;&lt;strong&gt;肽类激素 (Peptide hormones, N):&lt;/strong&gt; 一类由 5-60 个氨基酸残基组成的小分子信号多肽。它们作为受体配体（Ligand），在极低浓度下（如飞摩尔级别 femtomolar）即可调节植物的生长、发育及逆境响应。例如系统素（Systemin）和植物硫肽（PSK）。&lt;/p&gt;</description>
     </item>
     <item>
       <title>chapt 11.9 水杨酸</title>
-      <link>yukari.online/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/chapt-11.9-%E6%B0%B4%E6%9D%A8%E9%85%B8/</link>
+      <link>//localhost:1313/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/chapt-11.9-%E6%B0%B4%E6%9D%A8%E9%85%B8/</link>
       <pubDate>Thu, 15 Jan 2026 17:18:33 +0800</pubDate>
-      <guid>yukari.online/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/chapt-11.9-%E6%B0%B4%E6%9D%A8%E9%85%B8/</guid>
+      <guid>//localhost:1313/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/chapt-11.9-%E6%B0%B4%E6%9D%A8%E9%85%B8/</guid>
       <description>&lt;h3 id=&#34;一-重点名词解释&#34;&gt;一、 重点名词解释&lt;/h3&gt;&#xA;&lt;p&gt;&lt;strong&gt;水杨酸 (Salicylic Acid, SA):&lt;/strong&gt; 一种酚类植物激素，结构简单（邻羟基苯甲酸）。它在植物抵御&lt;strong&gt;活体营养型病原菌 (Biotrophs)&lt;/strong&gt;（如病毒、白粉菌）和刺吸式昆虫的免疫反应中起核心作用，诱导&lt;strong&gt;系统获得性抗性 (SAR)&lt;/strong&gt; 和 &lt;em&gt;PR&lt;/em&gt; 基因表达。此外，它还涉及植物产热（如天南星科植物）、开花及衰老调控,。&lt;/p&gt;</description>
     </item>
     <item>
       <title>chapt 11.8 独脚金内酯</title>
-      <link>yukari.online/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/chapt-11.8-%E7%8B%AC%E8%84%9A%E9%87%91%E5%86%85%E9%85%AF/</link>
+      <link>//localhost:1313/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/chapt-11.8-%E7%8B%AC%E8%84%9A%E9%87%91%E5%86%85%E9%85%AF/</link>
       <pubDate>Thu, 15 Jan 2026 17:09:53 +0800</pubDate>
-      <guid>yukari.online/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/chapt-11.8-%E7%8B%AC%E8%84%9A%E9%87%91%E5%86%85%E9%85%AF/</guid>
+      <guid>//localhost:1313/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/chapt-11.8-%E7%8B%AC%E8%84%9A%E9%87%91%E5%86%85%E9%85%AF/</guid>
       <description>&lt;h3 id=&#34;一-重点名词解释&#34;&gt;一、 重点名词解释&lt;/h3&gt;&#xA;&lt;p&gt;&lt;strong&gt;独脚金内酯 (Strigolactones, SLs):&lt;/strong&gt; 一类源自类胡萝卜素的植物激素。最初作为寄生植物（如独脚金 &lt;em&gt;Striga&lt;/em&gt;）种子的萌发刺激物质被发现，后来发现其能促进丛枝菌根真菌（AM fungi）的共生，并作为一种内源激素抑制植物的分枝（Shoot branching）和侧芽生长,。&lt;/p&gt;</description>
     </item>
     <item>
       <title>chapt 11.6 油菜素甾醇</title>
-      <link>yukari.online/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/chapt-11.6-%E6%B2%B9%E8%8F%9C%E7%B4%A0%E7%94%BE%E9%86%87/</link>
+      <link>//localhost:1313/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/chapt-11.6-%E6%B2%B9%E8%8F%9C%E7%B4%A0%E7%94%BE%E9%86%87/</link>
       <pubDate>Thu, 15 Jan 2026 16:46:13 +0800</pubDate>
-      <guid>yukari.online/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/chapt-11.6-%E6%B2%B9%E8%8F%9C%E7%B4%A0%E7%94%BE%E9%86%87/</guid>
+      <guid>//localhost:1313/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/chapt-11.6-%E6%B2%B9%E8%8F%9C%E7%B4%A0%E7%94%BE%E9%86%87/</guid>
       <description>&lt;h3 id=&#34;一-重点名词解释&#34;&gt;一、 重点名词解释&lt;/h3&gt;&#xA;&lt;p&gt;&lt;strong&gt;油菜素甾醇 (Brassinosteroids, BRs):&lt;/strong&gt; 一类多羟基甾醇类植物激素，结构上与动物类固醇激素（如雄性激素、蜕皮激素）相似。它是植物体内第六大类激素，主要功能包括促进细胞伸长和分裂、维管束分化、生殖发育以及抗逆等。&lt;/p&gt;</description>
     </item>
     <item>
       <title>chapt 11.2 赤霉素</title>
-      <link>yukari.online/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/chapt-11.2-%E8%B5%A4%E9%9C%89%E7%B4%A0/</link>
+      <link>//localhost:1313/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/chapt-11.2-%E8%B5%A4%E9%9C%89%E7%B4%A0/</link>
       <pubDate>Thu, 15 Jan 2026 16:29:52 +0800</pubDate>
-      <guid>yukari.online/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/chapt-11.2-%E8%B5%A4%E9%9C%89%E7%B4%A0/</guid>
+      <guid>//localhost:1313/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/chapt-11.2-%E8%B5%A4%E9%9C%89%E7%B4%A0/</guid>
       <description>&lt;h3 id=&#34;一-重点名词解释&#34;&gt;一、 重点名词解释&lt;/h3&gt;&#xA;&lt;p&gt;&lt;strong&gt;赤霉素 (Gibberellins, GAs):&lt;/strong&gt; 一类四环二萜类植物激素，最早在研究水稻“恶苗病”时由致病真菌（&lt;em&gt;Gibberella fujikuroi&lt;/em&gt;）分泌物中发现。具有促进茎伸长、诱导种子萌发、促进开花和果实发育等多种生理功能。目前已鉴定出136种GAs，但只有少数（如GA1, GA3, GA4）具有生物活性。&lt;/p&gt;</description>
     </item>
     <item>
       <title>chapt 10 同化物运输与分配</title>
-      <link>yukari.online/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/chapt-10-%E5%90%8C%E5%8C%96%E7%89%A9%E8%BF%90%E8%BE%93%E4%B8%8E%E5%88%86%E9%85%8D/</link>
+      <link>//localhost:1313/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/chapt-10-%E5%90%8C%E5%8C%96%E7%89%A9%E8%BF%90%E8%BE%93%E4%B8%8E%E5%88%86%E9%85%8D/</link>
       <pubDate>Thu, 15 Jan 2026 14:49:50 +0800</pubDate>
-      <guid>yukari.online/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/chapt-10-%E5%90%8C%E5%8C%96%E7%89%A9%E8%BF%90%E8%BE%93%E4%B8%8E%E5%88%86%E9%85%8D/</guid>
+      <guid>//localhost:1313/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/chapt-10-%E5%90%8C%E5%8C%96%E7%89%A9%E8%BF%90%E8%BE%93%E4%B8%8E%E5%88%86%E9%85%8D/</guid>
       <description>&lt;h3 id=&#34;标题植物同化物运输与分配生理&#34;&gt;标题：植物同化物运输与分配生理&lt;/h3&gt;&#xA;&lt;h3 id=&#34;一-重点名词解释&#34;&gt;一、 重点名词解释&lt;/h3&gt;&#xA;&lt;p&gt;&lt;strong&gt;光合同化物 (Photoassimilates/Photosynthates, N):&lt;/strong&gt; 植物通过光合作用固定的碳化合物，主要指糖类。它们是植物生长和生产力的基础，需要从合成部位运输到利用或贮藏部位,。&lt;/p&gt;</description>
     </item>
     <item>
       <title>chapt 9.4 植物生理果实的成熟与衰老</title>
-      <link>yukari.online/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/chapt-9.4-%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E6%9E%9C%E5%AE%9E%E7%9A%84%E6%88%90%E7%86%9F%E4%B8%8E%E8%A1%B0%E8%80%81/</link>
+      <link>//localhost:1313/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/chapt-9.4-%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E6%9E%9C%E5%AE%9E%E7%9A%84%E6%88%90%E7%86%9F%E4%B8%8E%E8%A1%B0%E8%80%81/</link>
       <pubDate>Thu, 15 Jan 2026 12:24:03 +0800</pubDate>
-      <guid>yukari.online/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/chapt-9.4-%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E6%9E%9C%E5%AE%9E%E7%9A%84%E6%88%90%E7%86%9F%E4%B8%8E%E8%A1%B0%E8%80%81/</guid>
+      <guid>//localhost:1313/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/chapt-9.4-%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E6%9E%9C%E5%AE%9E%E7%9A%84%E6%88%90%E7%86%9F%E4%B8%8E%E8%A1%B0%E8%80%81/</guid>
       <description>&lt;h3 id=&#34;一-重点名词解释&#34;&gt;一、 重点名词解释&lt;/h3&gt;&#xA;&lt;p&gt;&lt;strong&gt;呼吸跃变 (Respiratory climacteric, N):&lt;/strong&gt; 指某些肉质果实从发育停止到衰老过程中，呼吸速率突然由平稳转为急剧升高的生理现象。伴随着乙烯的自我催化合成出现。具有这种特征的果实称为&lt;strong&gt;跃变型果实&lt;/strong&gt;，例如苹果（Apple）、香蕉（Banana）、番茄（Tomato）等&lt;/p&gt;</description>
     </item>
     <item>
       <title>chapt 9.3 植物成花与生殖生理第二部分</title>
-      <link>yukari.online/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/chapt-9.3-%E6%A4%8D%E7%89%A9%E6%88%90%E8%8A%B1%E4%B8%8E%E7%94%9F%E6%AE%96%E7%94%9F%E7%90%86%E7%AC%AC%E4%BA%8C%E9%83%A8%E5%88%86/</link>
+      <link>//localhost:1313/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/chapt-9.3-%E6%A4%8D%E7%89%A9%E6%88%90%E8%8A%B1%E4%B8%8E%E7%94%9F%E6%AE%96%E7%94%9F%E7%90%86%E7%AC%AC%E4%BA%8C%E9%83%A8%E5%88%86/</link>
       <pubDate>Thu, 15 Jan 2026 12:13:43 +0800</pubDate>
-      <guid>yukari.online/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/chapt-9.3-%E6%A4%8D%E7%89%A9%E6%88%90%E8%8A%B1%E4%B8%8E%E7%94%9F%E6%AE%96%E7%94%9F%E7%90%86%E7%AC%AC%E4%BA%8C%E9%83%A8%E5%88%86/</guid>
+      <guid>//localhost:1313/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/chapt-9.3-%E6%A4%8D%E7%89%A9%E6%88%90%E8%8A%B1%E4%B8%8E%E7%94%9F%E6%AE%96%E7%94%9F%E7%90%86%E7%AC%AC%E4%BA%8C%E9%83%A8%E5%88%86/</guid>
       <description>&lt;p&gt;这份材料主要涵盖了光周期诱导的机理（成花素与光敏色素）、成花调控的分子网络、花器官发育的ABC模型、植物的性别分化以及受精生理。&lt;/p&gt;</description>
     </item>
     <item>
       <title>chapt 9.3 成花诱导第一部分</title>
-      <link>yukari.online/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/chapt-9.3-%E6%88%90%E8%8A%B1%E8%AF%B1%E5%AF%BC%E7%AC%AC%E4%B8%80%E9%83%A8%E5%88%86/</link>
+      <link>//localhost:1313/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/chapt-9.3-%E6%88%90%E8%8A%B1%E8%AF%B1%E5%AF%BC%E7%AC%AC%E4%B8%80%E9%83%A8%E5%88%86/</link>
       <pubDate>Wed, 14 Jan 2026 20:52:00 +0800</pubDate>
-      <guid>yukari.online/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/chapt-9.3-%E6%88%90%E8%8A%B1%E8%AF%B1%E5%AF%BC%E7%AC%AC%E4%B8%80%E9%83%A8%E5%88%86/</guid>
+      <guid>//localhost:1313/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/chapt-9.3-%E6%88%90%E8%8A%B1%E8%AF%B1%E5%AF%BC%E7%AC%AC%E4%B8%80%E9%83%A8%E5%88%86/</guid>
       <description>&lt;h3 id=&#34;一-重点名词解释&#34;&gt;一、 重点名词解释&lt;/h3&gt;&#xA;&lt;p&gt;&lt;strong&gt;成花诱导 (Floral induction, N):&lt;/strong&gt; 植物感受环境信号（如光周期、温度），从营养生长转向生殖生长的诱导过程。此时植物分生组织接收信号，准备进行成花转变。&lt;/p&gt;</description>
     </item>
     <item>
       <title>chapt 9.2 非生物胁迫第二部分</title>
-      <link>yukari.online/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/chapt-9.2-%E9%9D%9E%E7%94%9F%E7%89%A9%E8%83%81%E8%BF%AB%E7%AC%AC%E4%BA%8C%E9%83%A8%E5%88%86/</link>
+      <link>//localhost:1313/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/chapt-9.2-%E9%9D%9E%E7%94%9F%E7%89%A9%E8%83%81%E8%BF%AB%E7%AC%AC%E4%BA%8C%E9%83%A8%E5%88%86/</link>
       <pubDate>Wed, 14 Jan 2026 20:09:40 +0800</pubDate>
-      <guid>yukari.online/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/chapt-9.2-%E9%9D%9E%E7%94%9F%E7%89%A9%E8%83%81%E8%BF%AB%E7%AC%AC%E4%BA%8C%E9%83%A8%E5%88%86/</guid>
+      <guid>//localhost:1313/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/chapt-9.2-%E9%9D%9E%E7%94%9F%E7%89%A9%E8%83%81%E8%BF%AB%E7%AC%AC%E4%BA%8C%E9%83%A8%E5%88%86/</guid>
       <description>&lt;h3 id=&#34;一-重点名词解释&#34;&gt;一、 重点名词解释&lt;/h3&gt;&#xA;&lt;p&gt;&lt;strong&gt;湿害 (Moisture injury, N):&lt;/strong&gt; 指由于土壤充满水分而缺乏空气（缺氧）导致植物受到的伤害,。&lt;/p&gt;</description>
     </item>
     <item>
       <title>Daily-Bio-Arxiv</title>
-      <link>yukari.online/posts/%E5%A5%87%E6%80%AA%E7%9A%84%E4%B8%9C%E8%A5%BF/daily-bio-arxiv/</link>
+      <link>//localhost:1313/posts/%E5%A5%87%E6%80%AA%E7%9A%84%E4%B8%9C%E8%A5%BF/daily-bio-arxiv/</link>
       <pubDate>Wed, 14 Jan 2026 13:33:05 +0800</pubDate>
-      <guid>yukari.online/posts/%E5%A5%87%E6%80%AA%E7%9A%84%E4%B8%9C%E8%A5%BF/daily-bio-arxiv/</guid>
+      <guid>//localhost:1313/posts/%E5%A5%87%E6%80%AA%E7%9A%84%E4%B8%9C%E8%A5%BF/daily-bio-arxiv/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Daily-Bio-Arxiv&lt;/strong&gt; 项目是一个简单的的工具，旨在简化跟踪最新科学研究的过程。它每天自动抓取 arXiv 存储库，重点关注生物学和计算机科学等特定类别。该项目利用大型语言模型（LLM），以您选择的语言生成新论文的简洁摘要。这些摘要随后会自动发布到一个简洁、易于访问的 GitHub Pages 网站，使获得的资料便于访问。&#xA;网站链接为&lt;a href=&#34;https://yukari502.github.io/Daily-Bio-Arxiv/&#34;&gt;Daily-Bio-Arxiv&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>macOS 原生词典制作与导入教程 (AppleDict)</title>
-      <link>yukari.online/posts/%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/how-to-make-a-appledict/</link>
+      <link>//localhost:1313/posts/%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/how-to-make-a-appledict/</link>
       <pubDate>Wed, 14 Jan 2026 13:33:05 +0800</pubDate>
-      <guid>yukari.online/posts/%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/how-to-make-a-appledict/</guid>
+      <guid>//localhost:1313/posts/%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/how-to-make-a-appledict/</guid>
       <description>&lt;hr&gt;&#xA;&lt;h2 id=&#34;1-为什么选择原生词典&#34;&gt;1. 为什么选择原生词典？&lt;/h2&gt;&#xA;&lt;p&gt;macOS 的原生词典系统因其深度集成而备受推崇，特别是配合触控板的&lt;strong&gt;三指轻点&lt;/strong&gt;取词功能，能够提供无与伦比的便捷查词体验。&lt;/p&gt;</description>
     </item>
     <item>
       <title>Markdown 语法学习</title>
-      <link>yukari.online/posts/%E4%BB%80%E4%B9%88%E9%83%BD%E6%83%B3%E5%AD%A6%E4%B8%80%E7%82%B9/markdown%E8%AF%AD%E6%B3%95%E5%AD%A6%E4%B9%A0/</link>
+      <link>//localhost:1313/posts/%E4%BB%80%E4%B9%88%E9%83%BD%E6%83%B3%E5%AD%A6%E4%B8%80%E7%82%B9/markdown%E8%AF%AD%E6%B3%95%E5%AD%A6%E4%B9%A0/</link>
       <pubDate>Wed, 14 Jan 2026 13:33:05 +0800</pubDate>
-      <guid>yukari.online/posts/%E4%BB%80%E4%B9%88%E9%83%BD%E6%83%B3%E5%AD%A6%E4%B8%80%E7%82%B9/markdown%E8%AF%AD%E6%B3%95%E5%AD%A6%E4%B9%A0/</guid>
+      <guid>//localhost:1313/posts/%E4%BB%80%E4%B9%88%E9%83%BD%E6%83%B3%E5%AD%A6%E4%B8%80%E7%82%B9/markdown%E8%AF%AD%E6%B3%95%E5%AD%A6%E4%B9%A0/</guid>
       <description>&lt;p&gt;这是一个 Markdown 语法学习文档&lt;/p&gt;&#xA;&lt;h2 id=&#34;1-多级标题&#34;&gt;1. 多级标题&lt;/h2&gt;&#xA;&lt;p&gt;Markdown 支持六级标题，通过在行首添加不同数量的 &lt;code&gt;#&lt;/code&gt; 符号来表示。&lt;/p&gt;</description>
     </item>
     <item>
       <title>Model Context Protocol (MCP) 简介</title>
-      <link>yukari.online/posts/%E4%BB%80%E4%B9%88%E9%83%BD%E6%83%B3%E5%AD%A6%E4%B8%80%E7%82%B9/mcp%E7%AE%80%E4%BB%8B/</link>
+      <link>//localhost:1313/posts/%E4%BB%80%E4%B9%88%E9%83%BD%E6%83%B3%E5%AD%A6%E4%B8%80%E7%82%B9/mcp%E7%AE%80%E4%BB%8B/</link>
       <pubDate>Wed, 14 Jan 2026 13:33:05 +0800</pubDate>
-      <guid>yukari.online/posts/%E4%BB%80%E4%B9%88%E9%83%BD%E6%83%B3%E5%AD%A6%E4%B8%80%E7%82%B9/mcp%E7%AE%80%E4%BB%8B/</guid>
+      <guid>//localhost:1313/posts/%E4%BB%80%E4%B9%88%E9%83%BD%E6%83%B3%E5%AD%A6%E4%B8%80%E7%82%B9/mcp%E7%AE%80%E4%BB%8B/</guid>
       <description>&lt;h2 id=&#34;定义&#34;&gt;定义&lt;/h2&gt;&#xA;&lt;p&gt;Model Context Protocol (MCP) 是一种协议，允许软件系统通过统一的接口与外部服务器进行通信，从而扩展自身的功能。这些外部服务器被称为 MCP 服务器，它们可以提供工具（Tools）和资源（Resources）。&lt;/p&gt;</description>
     </item>
     <item>
       <title>Research &amp; Reports - AI Insights？</title>
-      <link>yukari.online/posts/%E5%A5%87%E6%80%AA%E7%9A%84%E4%B8%9C%E8%A5%BF/research_reports_ai_insights_platform_introduction/</link>
+      <link>//localhost:1313/posts/%E5%A5%87%E6%80%AA%E7%9A%84%E4%B8%9C%E8%A5%BF/research_reports_ai_insights_platform_introduction/</link>
       <pubDate>Wed, 14 Jan 2026 13:33:05 +0800</pubDate>
-      <guid>yukari.online/posts/%E5%A5%87%E6%80%AA%E7%9A%84%E4%B8%9C%E8%A5%BF/research_reports_ai_insights_platform_introduction/</guid>
+      <guid>//localhost:1313/posts/%E5%A5%87%E6%80%AA%E7%9A%84%E4%B8%9C%E8%A5%BF/research_reports_ai_insights_platform_introduction/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://yukari502.github.io/report-AI-insights/&#34;&gt;Research &amp;amp; Reports - AI Insights&lt;/a&gt; 是一个全自动化的金融研报聚合网站。&lt;/p&gt;&#xA;&lt;p&gt;该平台的核心使命是通过自动化技术抓取全球各大金融机构（如 Citi, UBS, Bank of America 等）的市场动态，并利用先进的 LLM（大语言模型）技术，实时捕捉、总结并发布核心市场观点。&lt;/p&gt;</description>
     </item>
     <item>
       <title>光合作用</title>
-      <link>yukari.online/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/%E5%85%89%E5%90%88%E4%BD%9C%E7%94%A8/</link>
+      <link>//localhost:1313/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/%E5%85%89%E5%90%88%E4%BD%9C%E7%94%A8/</link>
       <pubDate>Wed, 14 Jan 2026 13:33:05 +0800</pubDate>
-      <guid>yukari.online/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/%E5%85%89%E5%90%88%E4%BD%9C%E7%94%A8/</guid>
+      <guid>//localhost:1313/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/%E5%85%89%E5%90%88%E4%BD%9C%E7%94%A8/</guid>
       <description>&lt;h2 id=&#34;光合作用概述-overview-of-photosynthesis&#34;&gt;光合作用概述 (Overview of Photosynthesis)&lt;/h2&gt;&#xA;&lt;p&gt;光合作用的认知是科学家们逐步积累的结果&amp;hellip;&lt;/p&gt;</description>
     </item>
     <item>
       <title>性染色体与性别决定</title>
-      <link>yukari.online/posts/%E9%81%97%E4%BC%A0%E5%AD%A6/%E6%80%A7%E6%9F%93%E8%89%B2%E4%BD%93%E4%B8%8E%E6%80%A7%E5%88%AB%E5%86%B3%E5%AE%9A/</link>
+      <link>//localhost:1313/posts/%E9%81%97%E4%BC%A0%E5%AD%A6/%E6%80%A7%E6%9F%93%E8%89%B2%E4%BD%93%E4%B8%8E%E6%80%A7%E5%88%AB%E5%86%B3%E5%AE%9A/</link>
       <pubDate>Wed, 14 Jan 2026 13:33:05 +0800</pubDate>
-      <guid>yukari.online/posts/%E9%81%97%E4%BC%A0%E5%AD%A6/%E6%80%A7%E6%9F%93%E8%89%B2%E4%BD%93%E4%B8%8E%E6%80%A7%E5%88%AB%E5%86%B3%E5%AE%9A/</guid>
+      <guid>//localhost:1313/posts/%E9%81%97%E4%BC%A0%E5%AD%A6/%E6%80%A7%E6%9F%93%E8%89%B2%E4%BD%93%E4%B8%8E%E6%80%A7%E5%88%AB%E5%86%B3%E5%AE%9A/</guid>
       <description>&lt;h3 id=&#34;311-性别与性染色体&#34;&gt;3.1.1 性别与性染色体&lt;/h3&gt;&#xA;&lt;p&gt;历史发现&#xA;- Hening (1891) 首次在半翅目昆虫的精母细胞中发现了 X, Y 染色体，但并未发现它们与性别相关。&#xA;- Meclcrus (1902) 首次认为 X 染色体与性别有关。&#xA;- Wilson 等 (1905) 在直翅目与半翅目昆虫中证明，雌体有两套常染色体 + 两条 X 染色体，雄体有两套常染色体 + 1X（XX-XO）。&#xA;基础概念&#xA;- 性染色体 (sex chromosome)：在生物许多成对的染色体中，直接与性别决定有关的一个或一对染色体。&#xA;- 常染色体 (autosome)：性染色体以外的染色体，常用“A”表示。&#xA;- 性比 (sex ratio, SR)：两性生物中雄性:雌性=1:1，此为一个恒定的比率。&lt;/p&gt;</description>
     </item>
     <item>
       <title>数量性状的遗传分析</title>
-      <link>yukari.online/posts/%E9%81%97%E4%BC%A0%E5%AD%A6/%E6%95%B0%E9%87%8F%E6%80%A7%E7%8A%B6%E7%9A%84%E9%81%97%E4%BC%A0%E5%88%86%E6%9E%90/</link>
+      <link>//localhost:1313/posts/%E9%81%97%E4%BC%A0%E5%AD%A6/%E6%95%B0%E9%87%8F%E6%80%A7%E7%8A%B6%E7%9A%84%E9%81%97%E4%BC%A0%E5%88%86%E6%9E%90/</link>
       <pubDate>Wed, 14 Jan 2026 13:33:05 +0800</pubDate>
-      <guid>yukari.online/posts/%E9%81%97%E4%BC%A0%E5%AD%A6/%E6%95%B0%E9%87%8F%E6%80%A7%E7%8A%B6%E7%9A%84%E9%81%97%E4%BC%A0%E5%88%86%E6%9E%90/</guid>
+      <guid>//localhost:1313/posts/%E9%81%97%E4%BC%A0%E5%AD%A6/%E6%95%B0%E9%87%8F%E6%80%A7%E7%8A%B6%E7%9A%84%E9%81%97%E4%BC%A0%E5%88%86%E6%9E%90/</guid>
       <description>&lt;h2 id=&#34;51-数量性状及其特性&#34;&gt;5.1 数量性状及其特性&lt;/h2&gt;&#xA;&lt;p&gt;数量性状 (quantitative trait)：指个体间表现的差异只能用数量来区别，变异呈连续性的性状。&lt;/p&gt;</description>
     </item>
     <item>
       <title>植物呼吸作用</title>
-      <link>yukari.online/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/%E6%A4%8D%E7%89%A9%E5%91%BC%E5%90%B8%E4%BD%9C%E7%94%A8/</link>
+      <link>//localhost:1313/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/%E6%A4%8D%E7%89%A9%E5%91%BC%E5%90%B8%E4%BD%9C%E7%94%A8/</link>
       <pubDate>Wed, 14 Jan 2026 13:33:05 +0800</pubDate>
-      <guid>yukari.online/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/%E6%A4%8D%E7%89%A9%E5%91%BC%E5%90%B8%E4%BD%9C%E7%94%A8/</guid>
+      <guid>//localhost:1313/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/%E6%A4%8D%E7%89%A9%E5%91%BC%E5%90%B8%E4%BD%9C%E7%94%A8/</guid>
       <description>&lt;h2 id=&#34;1-呼吸作用的概念与生理意义&#34;&gt;1. 呼吸作用的概念与生理意义&lt;/h2&gt;&#xA;&lt;h3 id=&#34;11-呼吸作用的概念&#34;&gt;1.1 呼吸作用的概念&lt;/h3&gt;&#xA;&lt;p&gt;&lt;strong&gt;植物呼吸作用&lt;/strong&gt; (Plant respiration)：呼吸作用及其相关的碳代谢，以受控的方式释放储存在碳化合物中的能量供细胞使用。同时，它也为其他生物合成提供许多碳前体。&lt;/p&gt;</description>
     </item>
     <item>
       <title>水与植物细胞</title>
-      <link>yukari.online/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/%E6%B0%B4%E4%B8%8E%E6%A4%8D%E7%89%A9%E7%BB%86%E8%83%9E/</link>
+      <link>//localhost:1313/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/%E6%B0%B4%E4%B8%8E%E6%A4%8D%E7%89%A9%E7%BB%86%E8%83%9E/</link>
       <pubDate>Wed, 14 Jan 2026 13:33:05 +0800</pubDate>
-      <guid>yukari.online/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/%E6%B0%B4%E4%B8%8E%E6%A4%8D%E7%89%A9%E7%BB%86%E8%83%9E/</guid>
+      <guid>//localhost:1313/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/%E6%B0%B4%E4%B8%8E%E6%A4%8D%E7%89%A9%E7%BB%86%E8%83%9E/</guid>
       <description>&lt;h1 id=&#34;水与植物细胞&#34;&gt;水与植物细胞&lt;/h1&gt;&#xA;&lt;p&gt;本章的重点和难点在于细胞吸水的方式和机制，以及水势的概念。内容涵盖了水的生理生态功能、存在形式、理化性质、细胞水分关系及测定方法。&lt;/p&gt;</description>
     </item>
     <item>
       <title>水分代谢</title>
-      <link>yukari.online/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/%E6%B0%B4%E5%88%86%E4%BB%A3%E8%B0%A2/</link>
+      <link>//localhost:1313/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/%E6%B0%B4%E5%88%86%E4%BB%A3%E8%B0%A2/</link>
       <pubDate>Wed, 14 Jan 2026 13:33:05 +0800</pubDate>
-      <guid>yukari.online/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/%E6%B0%B4%E5%88%86%E4%BB%A3%E8%B0%A2/</guid>
+      <guid>//localhost:1313/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/%E6%B0%B4%E5%88%86%E4%BB%A3%E8%B0%A2/</guid>
       <description>&lt;h1 id=&#34;水分代谢&#34;&gt;水分代谢&lt;/h1&gt;&#xA;&lt;p&gt;本章主要涵盖水在植物体内的&lt;strong&gt;吸收 (Absorption)&lt;/strong&gt;、&lt;strong&gt;运输 (Transportation)&lt;/strong&gt; 和&lt;strong&gt;散失 (Lost)&lt;/strong&gt; 三个方面，重点探讨根系吸水、木质部运输和气孔运动的机理。&lt;/p&gt;</description>
     </item>
     <item>
       <title>真核生物的遗传重组</title>
-      <link>yukari.online/posts/%E9%81%97%E4%BC%A0%E5%AD%A6/%E7%9C%9F%E6%A0%B8%E7%94%9F%E7%89%A9%E7%9A%84%E9%81%97%E4%BC%A0%E5%88%86%E6%9E%90/</link>
+      <link>//localhost:1313/posts/%E9%81%97%E4%BC%A0%E5%AD%A6/%E7%9C%9F%E6%A0%B8%E7%94%9F%E7%89%A9%E7%9A%84%E9%81%97%E4%BC%A0%E5%88%86%E6%9E%90/</link>
       <pubDate>Wed, 14 Jan 2026 13:33:05 +0800</pubDate>
-      <guid>yukari.online/posts/%E9%81%97%E4%BC%A0%E5%AD%A6/%E7%9C%9F%E6%A0%B8%E7%94%9F%E7%89%A9%E7%9A%84%E9%81%97%E4%BC%A0%E5%88%86%E6%9E%90/</guid>
+      <guid>//localhost:1313/posts/%E9%81%97%E4%BC%A0%E5%AD%A6/%E7%9C%9F%E6%A0%B8%E7%94%9F%E7%89%A9%E7%9A%84%E9%81%97%E4%BC%A0%E5%88%86%E6%9E%90/</guid>
       <description>&lt;h3 id=&#34;411-遗传重组概述&#34;&gt;4.1.1 遗传重组概述&lt;/h3&gt;&#xA;&lt;pre&gt;&lt;code&gt;- 遗传重组 (genetic recombination)：DNA 双螺旋间的遗传物质断裂并发生重组，从而改变基因组成和排列顺序，导致生物体的变异，产生新的性状的过程。&#xD;&#xA;- 同源重组 (homologous recombination)：又称普遍性重组 (generalized recombination)。发生在非姐妹染色单体 (sister chromatid) 之间 (真核生物) 或含有同源序列的 DNA 分子之间或分子之内的重新组合 (原核生物、病毒)。其发生依赖于较大范围的 DNA 同源序列的联会 (synapsis)。&#xD;&#xA;- 位点专一性重组 (Site-specific recombination)：又称整合式重组 (integrative recombination) 或保守型重组 (conservation recombination)。只依赖于小范围内同源序列的联会，且重组只限于在这一小范围内。例如：$\lambda$ 噬菌体 DNA 整合到大肠杆菌基因组的过程。&#xD;&#xA;- 异常重组 (illegitimate recombination)：又称复制重组 (replicative recombination)。不依赖于同源序列，依赖于特定的酶。例如：真核生物的转座现象。&#xD;&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;h3 id=&#34;412-同源重组发生在减数分裂前期&#34;&gt;4.1.2 同源重组发生在减数分裂前期&lt;/h3&gt;&#xA;&lt;pre&gt;&lt;code&gt;- 同源重组中负责 DNA 配对和重组的蛋白质因子无碱基序列的特异性，只要两条 DNA 序列相同或接近，重组就可以在此序列中任何一点发生。&#xD;&#xA;- 同源重组发生时，DNA 分子之间相互交换对等的部分。&#xD;&#xA;- 同源区越长越有利于同源重组。例如，哺乳动物基因间的重组要求同源序列在 150bp 以上。&#xD;&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;h3 id=&#34;413-同源重组的分子模型&#34;&gt;4.1.3 同源重组的分子模型&lt;/h3&gt;&#xA;&lt;pre&gt;&lt;code&gt;- Holliday 模型（杂合DNA 模型，hybrid DNA model）： &#xD;&#xA;      - 原理/机理：要发生重组的 2 个 DNA 分子的 2 条单链在同一部位断裂，断裂的游离末端彼此交换形成异源双链。随后 2 条杂合单链彼此连接形成 Holliday 连接体。&#xD;&#xA;      - 阶段：前联会体阶段 $\rightarrow$ 联会体形成 $\rightarrow$ Holliday 结构的拆分。&#xD;&#xA;- 双链断裂起始重组模型 (double-strandbreak model)： &#xD;&#xA;      - 原理/机理：一条染色体的两条链都发生了断裂（由内切酶水解磷酸二脂键引起），随后核酸外切酶扩大缺口。断裂链的游离 3’ 端插入到具有完整双链的同源染色体中，形成 D 环结构 (Displacement loop)。DNA 聚合酶以完整链为模板开始合成。&#xD;&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;h2 id=&#34;42-基因转变及其分子机制&#34;&gt;4.2 基因转变及其分子机制&lt;/h2&gt;&#xA;&lt;h3 id=&#34;421-基因转变现象的发现四分子分析中的异常分离&#34;&gt;4.2.1 基因转变现象的发现（四分子分析中的异常分离）&lt;/h3&gt;&#xA;&lt;pre&gt;&lt;code&gt;- 顺序四分子中，基因与着丝点间没有交换时，为第一次分裂分离 (M1)，产生 2 种子囊孢子排列方式。&#xD;&#xA;- 顺序四分子中，基因与着丝点间发生交换时，为第二次分裂分离 (M2)，产生 4 种子囊孢子排列方式。&#xD;&#xA;- 基因转变表现为在子囊中会低概率出现异常排列的形式（如非 M1 或 M2）。&#xD;&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;h3 id=&#34;422-基因转变的分子机制&#34;&gt;4.2.2 基因转变的分子机制&lt;/h3&gt;&#xA;&lt;pre&gt;&lt;code&gt;- 异源双链DNA (heteroduplex DNA)：又称杂合DNA (hybrid DNA)，在重组连接点的 DNA 双链分子中，两条链分别来源于两个发生重组的 DNA 分子。&#xD;&#xA;- 补丁重组体 (patch recombinant)：Holliday 结构拆分时，若重组连接点两侧基因序列没有发生重组，仅留下一段异源双链DNA区域，这样的重组体称为补丁重组体。&#xD;&#xA;- 异源双链DNA中，常出现碱基不完全配对的情况，这需要通过 DNA 修复来校正。&#xD;&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;h3 id=&#34;423-基因转变的类型&#34;&gt;4.2.3 基因转变的类型&lt;/h3&gt;&#xA;&lt;pre&gt;&lt;code&gt;- 染色单体转变 (Chromatid conversion)：减数分裂 4 个产物有 1 个发生了基因转变，表现为 6:2 的分离比。&#xD;&#xA;- 半染色单体转变 (Half-chromatid conversion)：减数分裂 4 个产物有 1 个产物的一半，或 2 个产物各一半发生了基因转变，表现为异常 4:4 或 5:3 分离比。&#xD;&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;h2 id=&#34;43-体细胞的基因分离与重组&#34;&gt;4.3 体细胞的基因分离与重组&lt;/h2&gt;&#xA;&lt;h3 id=&#34;431-体细胞交换与单倍体化&#34;&gt;4.3.1 体细胞交换与单倍体化&lt;/h3&gt;&#xA;&lt;pre&gt;&lt;code&gt;- 异核体 (heterokaryon)：带有不同遗传性状的两个单倍体细胞或菌丝相互融合时，在一个细胞或菌丝中并存有两种以上不同遗传型的核。&#xD;&#xA;- 合核体 (synkaryon)：异核体的两个核融合形成的核体。&#xD;&#xA;- 分离子 (segregant)：合核体形成的分生孢子中，是重组体、非整倍体或单倍体的总称（指等位基因的分离，纯合化的过程）。&#xD;&#xA;- 单倍体化 (haploidization)：产生非整倍体或单倍体的过程。&#xD;&#xA;- 体细胞交换 (somatic crossing over)：产生重组体的过程。&#xD;&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;h3 id=&#34;432-有丝分裂交换与基因定位&#34;&gt;4.3.2 有丝分裂交换与基因定位&lt;/h3&gt;&#xA;&lt;pre&gt;&lt;code&gt;- 有丝分裂交换 (mitotic crossing over)：导致产生分离子（1/2 的概率产生分离子）。&#xD;&#xA;- 体细胞交换作图的原理是依据体细胞同源染色体的交换使得染色体远侧的杂合基因纯合化的规律。&#xD;&#xA;- 核心规律：离着丝粒愈近的基因纯合化的机会愈小，愈远的则愈大。&#xD;&#xA;- 准性生殖 (parasexuality)：丝状真菌特有的遗传现象。其基因重组不是通过减数分裂，而是在体细胞的有丝分裂过程中通过染色体无规则且不协调的交换和减少形成。&#xD;&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;h2 id=&#34;44-真核生物基因的删除扩增及重排&#34;&gt;4.4 真核生物基因的删除、扩增及重排&lt;/h2&gt;&#xA;&lt;h3 id=&#34;441-基因删除-gene-elimination&#34;&gt;4.4.1 基因删除 (gene elimination)&lt;/h3&gt;&#xA;&lt;pre&gt;&lt;code&gt;- 基因删除：通过丢失染色体，丢失某些基因而删除这些基因的活性的现象。&#xD;&#xA;- 例如：马蛔虫、线虫和小麦瘿蚊在个体发育中，体细胞常常丢失整条或部分染色体。&#xD;&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;h3 id=&#34;442-基因扩增-gene-amplification&#34;&gt;4.4.2 基因扩增 (gene amplification)&lt;/h3&gt;&#xA;&lt;pre&gt;&lt;code&gt;- 基因扩增：基因组内某些基因的拷贝数专一性地大量增加的现象。&#xD;&#xA;- 实质：通过差别的基因复制 (differential gene replication) 完成。&#xD;&#xA;- 最常见的基因扩增是 rRNA 基因。例如：非洲爪蟾卵母细胞 rDNA 扩增 4000 倍。&#xD;&#xA;- 核仁组织区 (nucleolar organizing region, NOR)：是 rRNA 基因所在部位，参与形成核仁的染色质区。&#xD;&#xA;- rRNA 基因扩增形成的 rDNA 是独立于染色体外存在的环状的 DNA 小分子，可通过滚环复制进行自我复制。&#xD;&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;h3 id=&#34;443-基因重排-gene-rearrangement&#34;&gt;4.4.3 基因重排 (gene rearrangement)&lt;/h3&gt;&#xA;&lt;pre&gt;&lt;code&gt;- 基因重排：DNA 分子核苷酸序列的重新排列。&#xD;&#xA;- 接合型互变 (mating type interconversion)：酿酒酵母单倍体的 $\alpha$ 型可转变为 $a$ 型，反之亦然。互变依赖于显性基因 HO。&#xD;&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;h2 id=&#34;45-真核生物基因的物理图谱位置确定&#34;&gt;4.5 真核生物基因的物理图谱位置确定&lt;/h2&gt;&#xA;&lt;pre&gt;&lt;code&gt;- 遗传图谱 (genetic map)：根据测交实验计算出的特定基因之间重组率，确定连锁基因在染色体上相对位置而绘制的简单线性示意图。&#xD;&#xA;- 物理图谱 (physical map)：各遗传标记之间或 DNA 序列两点之间，以物理距离（以碱基对 (base pair, bp) 长度度量）来表示其在 DNA 分子上的位置图。&#xD;&#xA;- 正向遗传学 (forward genetics)：通过基因组的自发突变或人工诱变，寻找相关的表型或性状改变，然后找到对应的突变基因并揭示其功能。&#xD;&#xA;- 反向遗传学 (reverse genetics)：通过改变某个特定的基因或蛋白质，再去寻找有关的表型变化。&#xD;&#xA;- 分子标记 (Marker)：一般为非编码重复序列等或单核苷酸 (SNP)，通常无生物学功能不影响表型。&#xD;&#xA;- 基因与分子标记的区别：基因是有功能的序列，会决定表型。分子标记和基因都符合遗传学三大定律。&#xD;&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;图位克隆（计算方式和原理）&#xA;- 原理：在正向遗传学研究中，通过表型判断基因型，利用分子手段检测分子标记，计算基因与分子标记的重组率。&#xA;- 计算方式：重组率越小，基因距分子标记的距离越近。&lt;/p&gt;</description>
     </item>
     <item>
       <title>矿质营养的同化</title>
-      <link>yukari.online/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/%E6%A4%8D%E7%89%A9%E7%9F%BF%E8%B4%A8%E5%85%83%E7%B4%A0/</link>
+      <link>//localhost:1313/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/%E6%A4%8D%E7%89%A9%E7%9F%BF%E8%B4%A8%E5%85%83%E7%B4%A0/</link>
       <pubDate>Wed, 14 Jan 2026 13:33:05 +0800</pubDate>
-      <guid>yukari.online/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/%E6%A4%8D%E7%89%A9%E7%9F%BF%E8%B4%A8%E5%85%83%E7%B4%A0/</guid>
+      <guid>//localhost:1313/posts/%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6/%E6%A4%8D%E7%89%A9%E7%9F%BF%E8%B4%A8%E5%85%83%E7%B4%A0/</guid>
       <description>&lt;h2 id=&#34;1-氮的同化-nitrogen-assimilation&#34;&gt;1. 氮的同化 (Nitrogen Assimilation)&lt;/h2&gt;&#xA;&lt;h3 id=&#34;11-全球氮循环与固氮&#34;&gt;1.1 全球氮循环与固氮&lt;/h3&gt;&#xA;&lt;p&gt;&lt;strong&gt;全球氮循环 (global nitrogen cycle)&lt;/strong&gt;：大气中 $\text{N}_2$ 约占 77%。&lt;/p&gt;</description>
     </item>
     <item>
       <title>细菌的遗传分析</title>
-      <link>yukari.online/posts/%E9%81%97%E4%BC%A0%E5%AD%A6/%E7%BB%86%E8%8F%8C%E7%9A%84%E9%81%97%E4%BC%A0%E5%88%86%E6%9E%90/</link>
+      <link>//localhost:1313/posts/%E9%81%97%E4%BC%A0%E5%AD%A6/%E7%BB%86%E8%8F%8C%E7%9A%84%E9%81%97%E4%BC%A0%E5%88%86%E6%9E%90/</link>
       <pubDate>Wed, 14 Jan 2026 13:33:05 +0800</pubDate>
-      <guid>yukari.online/posts/%E9%81%97%E4%BC%A0%E5%AD%A6/%E7%BB%86%E8%8F%8C%E7%9A%84%E9%81%97%E4%BC%A0%E5%88%86%E6%9E%90/</guid>
+      <guid>//localhost:1313/posts/%E9%81%97%E4%BC%A0%E5%AD%A6/%E7%BB%86%E8%8F%8C%E7%9A%84%E9%81%97%E4%BC%A0%E5%88%86%E6%9E%90/</guid>
       <description>&lt;h2 id=&#34;61-细菌的染色体及其复制&#34;&gt;6.1 细菌的染色体及其复制&lt;/h2&gt;&#xA;&lt;h3 id=&#34;611-细菌染色体的包装大肠杆菌&#34;&gt;6.1.1 细菌染色体的包装（大肠杆菌）&lt;/h3&gt;&#xA;&lt;pre&gt;&lt;code&gt;- 大肠杆菌染色体的包装依赖于 RNA 分子的连接作用。&#xD;&#xA;- 在 RNA 的作用下形成 40-50 个环。&#xD;&#xA;- 每个环又形成超螺旋。&#xD;&#xA;- 细菌的染色体以高度的组装形式存在。&#xD;&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;h3 id=&#34;612-细菌染色体的复制大肠杆菌&#34;&gt;6.1.2 细菌染色体的复制（大肠杆菌）&lt;/h3&gt;&#xA;&lt;pre&gt;&lt;code&gt;- 大肠杆菌染色体的复制起始于 oriC 位点。&#xD;&#xA;- 形成两个复制叉，向两侧同时复制。&#xD;&#xA;- 复制终止于两个复制叉在亲本染色体的另一端彼此相遇时，因为大肠杆菌具有环状染色体。&#xD;&#xA;- 大肠杆菌染色体一轮复制尚未完成，起点已开始第二轮的复制，因此一个染色体可以不只 2 个生长点。&#xD;&#xA;- 复制模型被称为 $\theta$ 模型。&#xD;&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;h2 id=&#34;62-细菌的突变型及其筛选&#34;&gt;6.2 细菌的突变型及其筛选&lt;/h2&gt;&#xA;&lt;h3 id=&#34;621-细菌的突变类型&#34;&gt;6.2.1 细菌的突变类型&lt;/h3&gt;&#xA;&lt;pre&gt;&lt;code&gt;- 合成代谢功能的突变型 (anabolic functional mutants) 又称为营养缺陷型 (auxotrophic)，它与原养型 (prototrophic) 即野生型 (wild-type) 相对。 &#xD;&#xA;- 分解代谢功能的突变型 (catabolic functional mutants)。&#xD;&#xA;- 抗性突变型 (resistant mutants)。&#xD;&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;h3 id=&#34;622-细菌的培养与突变型筛选&#34;&gt;6.2.2 细菌的培养与突变型筛选&lt;/h3&gt;&#xA;&lt;pre&gt;&lt;code&gt;- 选择培养基 (selected media) 是根据特定微生物的特殊营养要求或其对某理化因素抗性的原理而设计的培养基，具有只允许特定的微生物生长，而同时抑制或阻止其他微生物生长的功能。&#xD;&#xA;- 基本培养基 (minimal medium, MM) 仅能满足微生物野生型菌株生长需要的培养基。&#xD;&#xA;- 完全培养基 (Complete medium) 是在基本培养基内加入生长因子（如富含氨基酸、维生素和碱基之类的天然物质）制成的各种营养基，可用来满足微生物的各种营养缺陷型菌株的生长需要。&#xD;&#xA;- 突变菌株的筛选方法包括影印接种法和青霉素法。&#xD;&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;青霉素法筛选营养缺陷型菌株的原理：&#xA;将细菌先在完全培养基中培养，然后转移到加有青霉素的基本培养基中培养。这时不是营养缺陷型的野生型细胞会因不断分裂而被青霉素所杀死。然后将菌悬液放在完全琼脂培养基进行平面培养，在平面上长出来的菌落大多为营养缺陷型。&lt;/p&gt;</description>
     </item>
     <item>
       <title>自组织临界性：从物理直觉得到数学形式</title>
-      <link>yukari.online/posts/%E4%BB%80%E4%B9%88%E9%83%BD%E6%83%B3%E5%AD%A6%E4%B8%80%E7%82%B9/%E5%B9%82%E5%BE%8B/</link>
+      <link>//localhost:1313/posts/%E4%BB%80%E4%B9%88%E9%83%BD%E6%83%B3%E5%AD%A6%E4%B8%80%E7%82%B9/%E5%B9%82%E5%BE%8B/</link>
       <pubDate>Wed, 14 Jan 2026 13:33:05 +0800</pubDate>
-      <guid>yukari.online/posts/%E4%BB%80%E4%B9%88%E9%83%BD%E6%83%B3%E5%AD%A6%E4%B8%80%E7%82%B9/%E5%B9%82%E5%BE%8B/</guid>
+      <guid>//localhost:1313/posts/%E4%BB%80%E4%B9%88%E9%83%BD%E6%83%B3%E5%AD%A6%E4%B8%80%E7%82%B9/%E5%B9%82%E5%BE%8B/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Self-Organized Criticality: From Physical Intuition to Mathematical Formalism&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;1987年，Per Bak, Chao Tang 和 Kurt Wiesenfeld（BTW）在《物理评论快报》（PRL）上发表了题为 &lt;em&gt;Self-organized criticality: An explanation of 1/f noise&lt;/em&gt; 的里程碑式论文。这篇文章不仅提出了沙堆模型，更引入了**自组织临界性（SOC）**这一概念，试图建立一种能够描述自然界广泛存在的复杂性的普适理论。&lt;/p&gt;</description>
     </item>
     <item>
       <title>连锁遗传分析</title>
-      <link>yukari.online/posts/%E9%81%97%E4%BC%A0%E5%AD%A6/%E8%BF%9E%E9%94%81%E9%81%97%E4%BC%A0%E5%88%86%E6%9E%90/</link>
+      <link>//localhost:1313/posts/%E9%81%97%E4%BC%A0%E5%AD%A6/%E8%BF%9E%E9%94%81%E9%81%97%E4%BC%A0%E5%88%86%E6%9E%90/</link>
       <pubDate>Wed, 14 Jan 2026 13:33:05 +0800</pubDate>
-      <guid>yukari.online/posts/%E9%81%97%E4%BC%A0%E5%AD%A6/%E8%BF%9E%E9%94%81%E9%81%97%E4%BC%A0%E5%88%86%E6%9E%90/</guid>
+      <guid>//localhost:1313/posts/%E9%81%97%E4%BC%A0%E5%AD%A6/%E8%BF%9E%E9%94%81%E9%81%97%E4%BC%A0%E5%88%86%E6%9E%90/</guid>
       <description>&lt;h2 id=&#34;35-遗传学第三定律&#34;&gt;3.5 遗传学第三定律&lt;/h2&gt;&#xA;&lt;p&gt;连锁定律：指位于同一对同源染色体上的基因联合在一起伴同遗传的频率大于重新组合的频率。&lt;/p&gt;</description>
     </item>
   </channel>
