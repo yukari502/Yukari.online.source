@@ -11,9 +11,15 @@ summaryLength = 30     # 设置自动截取的摘要长度（单位是字数）�
 [params]
   description = "Yukari's blog" # 网站描述
   # 对应图中红色小副标题 "JUST ANOTHER SITE"
+  
   readmore = true # 确保这一项是 true，或者是默认值（不写就是默认）
+  
   # Google Fonts: M PLUS 1 Code (Mainroad 官方推荐方式)
   googleFontsLink = "https://fonts.googleapis.com/css2?family=M+PLUS+1+Code:wght@100..700&display=swap"
+
+  #MathJax supported
+  mathjax = true
+
 
   [params.style.vars]
     fontFamilyPrimary = "\"M PLUS 1 Code\", sans-serif"
