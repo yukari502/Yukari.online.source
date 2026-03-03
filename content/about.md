@@ -3,7 +3,6 @@ title = "About Me"
 date = 2026-01-15T15:06:38+08:00
 draft = false
 categories = ['About']
-description = "这是一个我的个人博客，不定期写一些奇怪的东西...."
 +++
 
 <div align="center">
