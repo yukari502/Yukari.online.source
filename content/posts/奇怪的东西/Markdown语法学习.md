@@ -5,7 +5,7 @@ draft = false
 categories = ['奇怪的东西']
 +++
 
-这是一个 Markdown 语法学习文档
+这是一个 Markdown 语法学习文档...
 
 ## 1. 多级标题
 

@@ -3,6 +3,7 @@ title = "基因突变与DNA损伤修复"
 date = 2026-01-19T19:05:24+08:00
 draft = false
 categories = ['遗传学']
+description = "基因突变的类型与分子机制、DNA损伤修复途径及突变检测方法"
 +++
 
 ### 1. 章节核心内容归纳

@@ -3,6 +3,7 @@ title = "chapt 11.6 油菜素甾醇"
 date = 2026-01-15T16:46:13+08:00
 draft = false
 categories = ['植物生理学']
+description = "油菜素甾醇的BRI1-BAK1受体复合物信号转导及株型调控应用"
 +++
 
 ### 一、 重点名词解释

@@ -3,6 +3,7 @@ title = "chapt 11.2 赤霉素"
 date = 2026-01-15T16:29:52+08:00
 draft = false
 categories = ['植物生理学']
+description = "赤霉素的合成途径、DELLA蛋白降解的去抑制信号模型与绿色革命基因"
 +++
 
 ### 一、 重点名词解释

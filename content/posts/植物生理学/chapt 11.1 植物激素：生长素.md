@@ -3,6 +3,7 @@ title = "chapt 11.1 植物激素：生长素"
 date = 2026-01-15T20:06:55+08:00
 draft = false
 categories = ['植物生理学']
+description = "生长素的极性运输、化学渗透模型、PIN蛋白定位及TIR1-Aux/IAA信号通路"
 +++
 
 ### 一、 重点名词解释
