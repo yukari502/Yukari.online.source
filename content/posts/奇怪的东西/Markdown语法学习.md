@@ -3,9 +3,10 @@ title = "Markdown 语法学习"
 date = 2026-01-14T13:33:05+08:00
 draft = false
 categories = ['奇怪的东西']
+description  = "这是一个 Markdown 语法学习文档"
 +++
 
-这是一个 Markdown 语法学习文档...
+
 
 ## 1. 多级标题
 

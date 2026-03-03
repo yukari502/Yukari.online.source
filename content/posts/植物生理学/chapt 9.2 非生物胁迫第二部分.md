@@ -3,7 +3,7 @@ title = "chapt 9.2 非生物胁迫第二部分"
 date = 2026-01-14T20:09:40+08:00
 draft = false
 categories = ['植物生理学']
-description = "涝害、冷害、冻害、高温与盐胁迫的伤害机理及植物耐受机制"
+
 +++
 
 
