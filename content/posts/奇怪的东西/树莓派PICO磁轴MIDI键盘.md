@@ -6,8 +6,6 @@ categories = ['奇怪的东西']
 description = "基于 Raspberry Pi Pico (RP2040) 与霍尔传感器的 13 键磁轴机械 MIDI 键盘，支持模拟力度感应、施密特触发防抖、八度切换与防卡音，即插即用 USB MIDI。"
 +++
 
-# Pico 磁轴 MIDI 键盘 - 技术白皮书
-
 本项目是一把基于 **Raspberry Pi Pico (RP2040)** 的 13 键磁轴机械 MIDI 键盘。它使用霍尔传感器 (AH49E) 替代传统机械触点，通过连续感应磁场变化实现模拟力度响应，带来接近真实钢琴的触键体验。固件采用 C/C++ 编写，基于 Pico SDK 与 TinyUSB 协议栈，支持即插即用 USB MIDI 输出。项目已开源，完整源码、PCB 设计文件及预编译固件均可在 [GitHub 仓库](https://github.com/yukari502/Pico-Magnetic-MidiKeyboard) 中获取。
 
 
