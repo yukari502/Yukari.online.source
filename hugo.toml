@@ -9,7 +9,7 @@ summaryLength = 30     # 设置自动截取的摘要长度（单位是字数）�
   home = ["HTML", "JSON"]
 
 [params]
-  # description = "Yukari's LEAF" # 网站描述
+  description = "LEAF" # 网站描述
   # 对应图中红色小副标题 "JUST ANOTHER SITE"
   
   readmore = true # 确保这一项是 true，或者是默认值（不写就是默认）
