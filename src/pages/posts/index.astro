@@ -1,0 +1,48 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+
+const allPosts = await getCollection('posts');
+const sortedPosts = allPosts.sort((a, b) => 
+  new Date(b.data.date || new Date()).getTime() - new Date(a.data.date || new Date()).getTime()
+);
+---
+
+<Layout title="Archives - Yukari's LEAF">
+  <div class="container animate-in">
+    <header style="margin-bottom: 3rem;">
+      <h1 style="font-size: 3rem; margin-bottom: 0.5rem;">Archives</h1>
+      <p style="color: var(--color-text-muted);">Explore all my notes and thoughts.</p>
+    </header>
+
+    <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+      {sortedPosts.map((post, index) => (
+        <a href={`/posts/${post.slug}`} class={`glass-panel delay-${Math.min(index, 3)}`} style="display: block; text-decoration: none;">
+          <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+            <div>
+              <h3 style="font-size: 1.4rem; margin-bottom: 0.5rem; color: var(--color-text);">{post.data.title || post.slug}</h3>
+              <p style="color: var(--color-text-muted); font-size: 0.95rem; line-height: 1.5;">
+                {post.data.summary || post.data.description || 'No summary provided.'}
+              </p>
+            </div>
+            {post.data.date && (
+              <div style="background: rgba(16, 185, 129, 0.1); color: var(--color-primary); padding: 0.4rem 0.8rem; border-radius: 8px; font-size: 0.85rem; font-weight: 600; white-space: nowrap; margin-left: 1rem;">
+                {new Date(post.data.date).toLocaleDateString('zh-CN', { year: 'numeric', month: 'short', day: 'numeric' })}
+              </div>
+            )}
+          </div>
+          
+          {post.data.categories && post.data.categories.length > 0 && (
+            <div style="display: flex; gap: 0.5rem; margin-top: 1.5rem;">
+              {post.data.categories.map(cat => (
+                <span style="font-size: 0.8rem; color: var(--color-text-muted); background: var(--color-surface-hover); padding: 0.2rem 0.6rem; border-radius: 4px;">
+                  #{cat}
+                </span>
+              ))}
+            </div>
+          )}
+        </a>
+      ))}
+    </div>
+  </div>
+</Layout>
