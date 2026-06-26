@@ -29,10 +29,10 @@ const recentPosts = allPosts
 
       <div style="display: flex; flex-direction: column; gap: 1.5rem;">
         {recentPosts.map(post => (
-          <a href={`/posts/${post.slug}`} class="glass-panel" style="display: block; text-decoration: none;">
+          <a href={`/posts/${post.id}`} class="glass-panel" style="display: block; text-decoration: none;">
             <div style="display: flex; justify-content: space-between; align-items: flex-start;">
               <div>
-                <h3 style="font-size: 1.4rem; margin-bottom: 0.5rem; color: var(--color-text);">{post.data.title || post.slug}</h3>
+                <h3 style="font-size: 1.4rem; margin-bottom: 0.5rem; color: var(--color-text);">{post.data.title || post.id}</h3>
                 <p style="color: var(--color-text-muted); font-size: 0.95rem; line-height: 1.5;">
                   {post.data.summary || post.data.description || 'No summary provided.'}
                 </p>
