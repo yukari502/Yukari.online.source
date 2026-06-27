@@ -7,3 +7,4 @@ description  = "Hoshi Reader阅读器推荐"
 +++
 
 ## 很特色的查词阅读器-Hoshi reader
+Hoshi reader 是我相见恨晚的阅读器，因为他能方便的通过导入词典进行查词。由于是本地运行，非常快捷高效。
