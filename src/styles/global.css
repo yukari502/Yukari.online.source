@@ -124,7 +124,17 @@ a:hover {
 }
 
 .glass-panel.no-hover:hover {
+  background: var(--color-surface);
   transform: none;
+  border: 1px solid var(--color-border);
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  border-left: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
+}
+
+[data-theme='light'] .glass-panel.no-hover:hover {
+  border-top: 1px solid rgba(255, 255, 255, 0.8);
+  border-left: 1px solid rgba(255, 255, 255, 0.8);
 }
 
 .container {
