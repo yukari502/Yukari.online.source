@@ -58,8 +58,9 @@ body::before {
   left: -10%;
   width: 50vw;
   height: 50vw;
-  background: radial-gradient(circle, var(--color-primary-glow) 0%, transparent 60%);
-  filter: blur(120px);
+  background: radial-gradient(circle, var(--color-primary-glow) 0%, transparent 40%);
+  filter: blur(100px);
+  border-radius: 50%;
   z-index: -1;
   pointer-events: none;
   opacity: 0.6;
@@ -72,8 +73,9 @@ body::after {
   right: -10%;
   width: 60vw;
   height: 60vw;
-  background: radial-gradient(circle, rgba(59, 130, 246, 0.15) 0%, transparent 60%);
-  filter: blur(120px);
+  background: radial-gradient(circle, rgba(59, 130, 246, 0.15) 0%, transparent 40%);
+  filter: blur(100px);
+  border-radius: 50%;
   z-index: -1;
   pointer-events: none;
 }
