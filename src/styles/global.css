@@ -1,29 +1,33 @@
 :root {
+  /* Default to Dark Mode */
   --color-bg: #0f1115;
-  --color-surface: rgba(255, 255, 255, 0.03);
-  --color-surface-hover: rgba(255, 255, 255, 0.08);
-  --color-border: rgba(255, 255, 255, 0.1);
+  --color-surface: rgba(255, 255, 255, 0.05);
+  --color-surface-hover: rgba(255, 255, 255, 0.1);
+  --color-border: rgba(255, 255, 255, 0.08);
   --color-text: #e2e8f0;
   --color-text-muted: #94a3b8;
-  --color-primary: #10b981; /* Leaf Green */
+  --color-primary: #10b981;
+  /* Leaf Green */
   --color-primary-glow: rgba(16, 185, 129, 0.4);
-  --color-accent: #3b82f6; /* Blue */
+  --color-accent: #3b82f6;
+  /* Blue */
 
   --font-sans: 'M PLUS 1 Code', 'Noto Sans SC', -apple-system, BlinkMacSystemFont, sans-serif;
   --font-mono: 'M PLUS 1 Code', 'Noto Sans SC', monospace;
+
+  --layout-max-width: 95vw;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    --color-bg: #f8fafc;
-    --color-surface: rgba(0, 0, 0, 0.03);
-    --color-surface-hover: rgba(0, 0, 0, 0.08);
-    --color-border: rgba(0, 0, 0, 0.1);
-    --color-text: #0f172a;
-    --color-text-muted: #64748b;
-    --color-primary: #059669;
-    --color-primary-glow: rgba(5, 150, 105, 0.3);
-  }
+/* Light Mode Overrides */
+[data-theme='light'] {
+  --color-bg: #f5f5f7;
+  --color-surface: rgba(255, 255, 255, 0.4);
+  --color-surface-hover: rgba(255, 255, 255, 0.7);
+  --color-border: rgba(0, 0, 0, 0.08);
+  --color-text: #1d1d1f;
+  --color-text-muted: #86868b;
+  --color-primary: #059669;
+  --color-primary-glow: rgba(5, 150, 105, 0.3);
 }
 
 * {
@@ -32,20 +36,25 @@
   padding: 0;
 }
 
-html, body {
+html {
   background-color: var(--color-bg);
   color: var(--color-text);
   font-family: var(--font-sans);
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   scroll-behavior: smooth;
-  overflow-x: hidden;
+  overflow-x: clip;
+}
+
+body {
+  background-color: transparent;
+  transition: background-color 0.4s ease, color 0.4s ease;
 }
 
 body::before {
   content: '';
   position: fixed;
-  top: -20%;
+  top: -10%;
   left: -10%;
   width: 50vw;
   height: 50vw;
@@ -59,17 +68,22 @@ body::before {
 body::after {
   content: '';
   position: fixed;
-  bottom: -20%;
+  bottom: -10%;
   right: -10%;
   width: 60vw;
   height: 60vw;
-  background: radial-gradient(circle, rgba(59, 130, 246, 0.2) 0%, transparent 60%);
+  background: radial-gradient(circle, rgba(59, 130, 246, 0.15) 0%, transparent 60%);
   filter: blur(120px);
   z-index: -1;
   pointer-events: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: 700;
   line-height: 1.2;
   margin-bottom: 1rem;
@@ -86,35 +100,55 @@ a:hover {
   color: var(--color-primary);
 }
 
+/* Apple Liquid Glass Effect (Aave Style) */
 .glass-panel {
   background: var(--color-surface);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(24px) saturate(180%);
+  -webkit-backdrop-filter: blur(24px) saturate(180%);
   border: 1px solid var(--color-border);
-  border-radius: 16px;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  border-left: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
   padding: 2rem;
-  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), background 0.3s ease, border-color 0.3s;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), background 0.4s ease, border-color 0.4s ease, box-shadow 0.4s ease;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
 }
 
 .glass-panel:hover {
   background: var(--color-surface-hover);
-  transform: translateY(-4px);
-  border-color: rgba(255,255,255,0.2);
+  transform: translateY(-2px);
+  border-color: rgba(255, 255, 255, 0.2);
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
+}
+
+.glass-panel.no-hover:hover {
+  transform: none;
 }
 
 .container {
-  max-width: 800px;
+  max-width: var(--layout-max-width);
   margin: 0 auto;
   padding: 0 1.5rem;
 }
 
 .prose {
   font-size: 1.1rem;
-  line-height: 1.75;
+  line-height: 1.8;
 }
 
-.prose h1, .prose h2, .prose h3 { margin-top: 2.5rem; }
-.prose p { margin-bottom: 1.5rem; color: var(--color-text-muted); }
+.prose h1,
+.prose h2,
+.prose h3 {
+  margin-top: 2.5rem;
+}
+
+.prose p {
+  margin-bottom: 1.5rem;
+  color: var(--color-text-muted);
+}
+
 .prose code {
   font-family: var(--font-mono);
   background: var(--color-surface);
@@ -123,48 +157,137 @@ a:hover {
   font-size: 0.9em;
   color: var(--color-primary);
 }
+
 .prose pre {
-  background: rgba(0,0,0,0.5) !important;
+  background: rgba(0, 0, 0, 0.6) !important;
   padding: 1.5rem;
   border-radius: 12px;
   overflow-x: auto;
   margin: 2rem 0;
   border: 1px solid var(--color-border);
 }
+
 .prose pre code {
   background: transparent;
   padding: 0;
   color: inherit;
   font-size: 0.95em;
 }
+
 .prose a {
   color: var(--color-primary);
   text-decoration: underline;
   text-decoration-color: transparent;
   transition: text-decoration-color 0.2s;
 }
-.prose a:hover { text-decoration-color: var(--color-primary); }
+
+.prose a:hover {
+  text-decoration-color: var(--color-primary);
+}
+
 .prose blockquote {
   border-left: 4px solid var(--color-primary);
-  padding-left: 1rem;
+  padding-left: 1.5rem;
   margin-left: 0;
   color: var(--color-text-muted);
   font-style: italic;
   background: var(--color-surface);
-  padding: 1rem;
-  border-radius: 0 8px 8px 0;
+  padding: 1.5rem;
+  border-radius: 0 12px 12px 0;
+}
+
+/* Responsive Images globally inside prose */
+.prose img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  max-height: 80vh;
+  margin: 2rem auto;
+  border-radius: 12px;
+  object-fit: contain;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
 }
 
 @keyframes fade-in-up {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
 }
 
 .animate-in {
-  animation: fade-in-up 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  animation: fade-in-up 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
   opacity: 0;
 }
 
-.delay-1 { animation-delay: 100ms; }
-.delay-2 { animation-delay: 200ms; }
-.delay-3 { animation-delay: 300ms; }
+.delay-1 {
+  animation-delay: 100ms;
+}
+
+.delay-2 {
+  animation-delay: 200ms;
+}
+
+.delay-3 {
+  animation-delay: 300ms;
+}
+
+/* Category Tree (Accordion) Shared Styles */
+.category-details {
+  background: rgba(0,0,0,0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: background 0.3s;
+}
+.category-details[open] {
+  background: var(--color-surface-hover);
+}
+.category-summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 1rem;
+  cursor: pointer;
+  user-select: none;
+  font-weight: 600;
+}
+.category-summary:hover {
+  color: var(--color-primary);
+}
+/* Remove default triangle in WebKit */
+.category-summary::-webkit-details-marker {
+  display: none;
+}
+.cat-name { font-size: 0.95rem; }
+.cat-count {
+  background: rgba(0,0,0,0.2);
+  padding: 0.1rem 0.6rem;
+  border-radius: 10px;
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+}
+
+.category-posts {
+  list-style: none;
+  padding: 0.5rem 1rem 1rem 1rem;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  border-top: 1px solid rgba(255,255,255,0.05);
+}
+.category-posts a {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  text-decoration: none;
+  transition: color 0.2s;
+  display: block;
+}
+.category-posts a:hover {
+  color: var(--color-primary);
+}

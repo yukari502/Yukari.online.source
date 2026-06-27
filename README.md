@@ -9,8 +9,9 @@
 ## 🚀 技术栈 (Tech Stack)
 
 * **核心框架**: [Astro (v7+)](https://astro.build/) - 零 JS 负担的静态站点生成器。
-* **样式系统**: 原生 CSS (CSS Variables) + Glassmorphism 设计。
+* **样式系统**: 原生 CSS (CSS Variables) + Aave-style Liquid Glass (液态毛玻璃) 拟物化设计。
 * **页面路由**: Astro 自带的 `<ClientRouter />`，提供类似原生 App (SPA) 的无缝丝滑跨页跳转。
+* **动态交互**: 纯原生 (Vanilla JS) 实现的主页无极加载 (Infinite Scroll) 与 Hero 区视差滚动。
 * **内容管理**: Astro Content Layer API (`astro/loaders`)，原生支持 Markdown 解析。
 * **评论系统**: [Giscus](https://giscus.app/zh-CN) - 基于 GitHub Discussions 构建。
 * **部署平台**: [Cloudflare Pages](https://pages.cloudflare.com/) - 自动化构建与边缘网络 CDN。
@@ -26,9 +27,9 @@
 ├── public/               # 🖼️ 静态资源目录 (图片、favicon 等)
 │   └── Pic/              # 存放文章中引用的本地图片 (在 MD 中通过 /Pic/... 引用)
 ├── src/                  # 💻 博客前端源代码
-│   ├── layouts/          # 页面布局骨架 (包含导航栏、页脚、ViewTransitions配置)
-│   ├── pages/            # 核心页面路由 (首页 index.astro、归档页 posts/index.astro 等)
-│   ├── styles/           # 全局 CSS 样式表 (颜色变量、动画效果都在这)
+│   ├── layouts/          # 页面布局骨架 (包含极致毛玻璃导航栏、全局明暗模式切换)
+│   ├── pages/            # 核心页面路由 (首页三栏布局 index.astro、归档页等)
+│   ├── styles/           # 全局 CSS 样式表 (Aave 质感毛玻璃、颜色变量都在这)
 │   └── content.config.ts # Astro 的 Content Layer 配置文件，定义了 Markdown 的数据结构
 ├── astro.config.mjs      # Astro 全局配置 (配置了 sitemap 和部署网址)
 └── package.json          # Node.js 依赖清单

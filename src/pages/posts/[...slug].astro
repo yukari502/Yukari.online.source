@@ -1,6 +1,7 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import { getCollection, render } from 'astro:content';
+import categoryOrder from '../../../content/category_order.json';
 
 export async function getStaticPaths() {
   const posts = await getCollection('posts');
@@ -11,58 +12,227 @@ export async function getStaticPaths() {
 }
 
 const { post } = Astro.props;
-const { Content } = await render(post);
+const { Content, headings } = await render(post);
+
+// Build Category Tree
+const allPosts = await getCollection('posts');
+const categoryTree = {};
+
+allPosts.forEach(p => {
+  if (!p.data.draft && p.data.categories) {
+    p.data.categories.forEach(cat => {
+      if (!categoryTree[cat]) {
+        categoryTree[cat] = [];
+      }
+      categoryTree[cat].push({
+        id: p.id,
+        title: p.data.title || p.id
+      });
+    });
+  }
+});
+
+const currentCategories = post.data.categories || [];
 ---
 
 <Layout title={`${post.data.title || post.id} - Yukari's LEAF`}>
-  <article class="container animate-in">
-    <header style="margin-bottom: 3rem; text-align: center;">
-      {post.data.categories && post.data.categories.length > 0 && (
-        <div style="display: flex; gap: 0.5rem; justify-content: center; margin-bottom: 1rem;">
-          {post.data.categories.map((cat: string) => (
-            <span style="font-size: 0.85rem; color: var(--color-primary); background: rgba(16, 185, 129, 0.1); padding: 0.3rem 0.8rem; border-radius: 100px; font-weight: 600;">
-              {cat}
-            </span>
-          ))}
+  <div class="post-layout animate-in">
+    <!-- Left Column: Category Tree & TOC -->
+    <aside class="sidebar-left delay-3">
+      <div class="glass-panel sticky-sidebar" style="padding: 1.5rem; display: flex; flex-direction: column; gap: 2rem;">
+        {headings && headings.length > 0 && (
+          <div>
+            <details open class="sidebar-details">
+            <summary class="sidebar-summary">
+              TOC
+              <svg class="fold-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </summary>
+            <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.5rem;" class="toc-list">
+              {headings.map(h => (
+                <li style={`padding-left: ${(h.depth - 1) * 1}rem;`}>
+                  <a href={`#${h.slug}`} style="font-size: 0.85rem; color: var(--color-text-muted); text-decoration: none; transition: color 0.2s; display: block;" onmouseover="this.style.color='var(--color-primary)'" onmouseout="this.style.color='var(--color-text-muted)'">
+                    {h.text}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </details>
         </div>
       )}
-      
-      <h1 style="font-size: 3rem; margin-bottom: 1rem; color: var(--color-text); line-height: 1.3;">
-        {post.data.title || post.id}
-      </h1>
-      
-      {post.data.date && (
-        <time style="color: var(--color-text-muted); font-size: 1rem;">
-          {new Date(post.data.date).toLocaleDateString('zh-CN', { year: 'numeric', month: 'long', day: 'numeric' })}
-        </time>
-      )}
-    </header>
 
-    <div class="prose glass-panel delay-1" style="padding: 3rem;">
-      <Content />
-    </div>
-
-    <!-- Comments Section -->
-    <section class="glass-panel delay-2" style="margin-top: 3rem; padding: 2rem;">
-      <h3 style="margin-bottom: 1.5rem;">Comments</h3>
-      <div id="giscus-container">
-        <!-- Giscus script will be injected here. Remember to replace repo/repoId below when deploying -->
+      <div>
+        <details open class="sidebar-details">
+          <summary class="sidebar-summary">
+            INDEX
+            <svg class="fold-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </summary>
+          <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.8rem;">
+            {Object.entries(categoryTree).sort((a, b) => {
+              const indexA = categoryOrder.indexOf(a[0]);
+              const indexB = categoryOrder.indexOf(b[0]);
+              if (indexA !== -1 && indexB !== -1) return indexA - indexB;
+              if (indexA !== -1) return -1;
+              if (indexB !== -1) return 1;
+              return a[0].localeCompare(b[0], 'zh-CN');
+            }).map(([cat, catPosts]) => {
+              const isCurrentCategory = currentCategories.includes(cat);
+              return (
+                <li>
+                  <details class="category-details" open={isCurrentCategory ? true : undefined}>
+                    <summary class="category-summary">
+                      <span class="cat-name">{cat}</span>
+                      <span class="cat-count">{catPosts.length}</span>
+                    </summary>
+                    <ul class="category-posts">
+                      {catPosts.map(p => (
+                        <li>
+                          <a href={`/posts/${p.id}`} style={p.id === post.id ? 'color: var(--color-primary); font-weight: bold;' : ''}>{p.title}</a>
+                        </li>
+                      ))}
+                    </ul>
+                  </details>
+                </li>
+              );
+            })}
+          </ul>
+        </details>
       </div>
-      <script src="https://giscus.app/client.js"
-        data-repo="yukari502/Yukari.online.source"
-        data-repo-id="R_kgDORFD2tA"
-        data-category="Show and tell"
-        data-category-id="DIC_kwDORFD2tM4C_8Bn"
-        data-mapping="pathname"
-        data-strict="0"
-        data-reactions-enabled="1"
-        data-emit-metadata="0"
-        data-input-position="bottom"
-        data-theme="preferred_color_scheme"
-        data-lang="zh-CN"
-        crossorigin="anonymous"
-        async>
-      </script>
-    </section>
-  </article>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <article class="post-main">
+      <header style="margin-bottom: 3rem; text-align: center;">
+        {post.data.categories && post.data.categories.length > 0 && (
+          <div style="display: flex; gap: 0.5rem; justify-content: center; margin-bottom: 1rem;">
+            {post.data.categories.map((cat: string) => (
+              <span style="font-size: 0.85rem; color: var(--color-primary); background: rgba(16, 185, 129, 0.1); padding: 0.3rem 0.8rem; border-radius: 100px; font-weight: 600; border: 1px solid var(--color-primary-glow);">
+                {cat}
+              </span>
+            ))}
+          </div>
+        )}
+        
+        <h1 style="font-size: clamp(2rem, 5vw, 3rem); margin-bottom: 1rem; color: var(--color-text); line-height: 1.3; font-weight: 800;">
+          {post.data.title || post.id}
+        </h1>
+        
+        {post.data.date && (
+          <time style="color: var(--color-text-muted); font-size: 1rem; letter-spacing: 0.05em;">
+            {new Date(post.data.date).toLocaleDateString('zh-CN', { year: 'numeric', month: 'long', day: 'numeric' })}
+          </time>
+        )}
+      </header>
+
+      <div class="prose glass-panel delay-1" style="padding: 3rem;">
+        <Content />
+      </div>
+
+      <!-- Comments Section -->
+      <section class="glass-panel delay-2" style="margin-top: 3rem; padding: 2rem;">
+        <h3 style="margin-bottom: 1.5rem; font-size: 1.5rem;">Comments</h3>
+        <div id="giscus-container"></div>
+        <script src="https://giscus.app/client.js"
+          data-repo="yukari502/Yukari.online.source"
+          data-repo-id="R_kgDORFD2tA"
+          data-category="Show and tell"
+          data-category-id="DIC_kwDORFD2tM4C_8Bn"
+          data-mapping="pathname"
+          data-strict="0"
+          data-reactions-enabled="1"
+          data-emit-metadata="0"
+          data-input-position="bottom"
+          data-theme="preferred_color_scheme"
+          data-lang="zh-CN"
+          crossorigin="anonymous"
+          async>
+        </script>
+      </section>
+    </article>
+  </div>
 </Layout>
+
+<style>
+  .post-layout {
+    display: grid;
+    /* Two columns: Left Index (280px), Right Main Content (1fr) */
+    grid-template-columns: 280px minmax(0, 1fr);
+    gap: 3rem;
+    width: 95vw;
+    margin: 0 auto;
+    padding-top: 8rem;
+  }
+
+  .sticky-sidebar {
+    position: sticky;
+    top: 6rem;
+    max-height: calc(100vh - 8rem);
+    overflow-y: auto;
+  }
+
+  /* Custom Scrollbar for Sidebar */
+  .sticky-sidebar::-webkit-scrollbar {
+    width: 4px;
+  }
+  .sticky-sidebar::-webkit-scrollbar-thumb {
+    background: var(--color-surface-hover);
+    border-radius: 4px;
+  }
+
+  /* Sidebar Details (Foldable blocks) */
+  .sidebar-summary {
+    font-size: 1.2rem;
+    color: var(--color-text);
+    border-bottom: 1px solid var(--color-border);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-weight: 700;
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    outline: none;
+    transition: color 0.2s;
+  }
+  .sidebar-summary::-webkit-details-marker {
+    display: none;
+  }
+  .sidebar-summary:hover {
+    color: var(--color-primary);
+  }
+  .fold-icon {
+    transition: transform 0.3s ease;
+  }
+  .sidebar-details:not([open]) .fold-icon {
+    transform: rotate(-90deg);
+  }
+  .sidebar-details:not([open]) .sidebar-summary {
+    margin-bottom: 0;
+    border-bottom: none;
+  }
+
+  /* Mobile Responsive */
+  @media (max-width: 1200px) {
+    .post-layout {
+      grid-template-columns: 250px minmax(0, 1fr);
+      width: 95vw;
+    }
+  }
+
+  @media (max-width: 900px) {
+    .post-layout {
+      grid-template-columns: 1fr;
+      width: 100vw;
+      padding: 0 1rem;
+    }
+    .sidebar-left {
+      display: none; /* Hide sidebar on small mobile */
+    }
+    .prose.glass-panel {
+      padding: 1.5rem;
+    }
+  }
+</style>
