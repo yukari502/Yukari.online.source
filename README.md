@@ -1,106 +1,110 @@
-# Yukari's LEAF - 个人博客代码库
+# Yukari's LEAF - Personal Blog Source Code
 
-本仓库为 Yukari.online 的源代码，基于 **Astro** 构建。本 README 记录了项目的核心技术架构、目录结构及开发指南，供日常维护参考。
-本仓库可以自由fork修改，但是本仓库写的任何文章内容不可修改。
-网站基于AGPL v3协议
+Welcome to the source code repository for Yukari.online. This project is built using the **Astro** framework. This documentation outlines the core technical architecture, project structure, and daily maintenance guidelines to assist in ongoing development.
 
----
+## 📜 License
 
-## 🚀 技术栈 (Tech Stack)
-
-* **核心框架**: [Astro (v7+)](https://astro.build/) - 静态站点生成器 (SSG)
-* **样式系统**: 原生 CSS (CSS Variables)
-* **页面路由**: Astro `<ClientRouter />` 视图过渡 (View Transitions)
-* **动态交互**: 原生 JavaScript (IntersectionObserver、无限滚动、视差滚动)
-* **内容管理**: Astro Content Layer API (`astro/loaders`)
-* **Markdown 处理**: Markdown原生支持，`remark-math` 和 `rehype-katex` 处理 LaTeX 数学公式
-* **评论系统**: [Giscus](https://giscus.app/zh-CN) (基于 GitHub Discussions)
-* **部署平台**: [Cloudflare Pages](https://pages.cloudflare.com/) (CI/CD 自动构建)
+This project is open-sourced under the **GNU Affero General Public License v3.0 (AGPL-3.0)**. 
+You are free to fork, modify, and distribute this repository under the terms of the AGPLv3 license. However, please note that **the content of all personal articles, images, and blog posts within this repository may not be modified, repurposed, or republished without explicit permission**.
 
 ---
 
-## 📂 项目结构 (Project Structure)
+## 🚀 Tech Stack
+
+* **Core Framework**: [Astro (v7+)](https://astro.build/) - Static Site Generator (SSG)
+* **Styling**: Native CSS (CSS Variables)
+* **Routing**: Astro `<ClientRouter />` for seamless View Transitions
+* **Dynamic Interactions**: Native JavaScript (IntersectionObserver, infinite scrolling, procedural SVG filters)
+* **Content Management**: Astro Content Layer API (`astro/loaders`)
+* **Markdown Processing**: Native Markdown support, integrated with `remark-math` and `rehype-katex` for LaTeX equations
+* **Diagrams**: Native Markdown Mermaid block support parsed dynamically via client-side JavaScript
+* **Commenting System**: [Giscus](https://giscus.app/) (Powered by GitHub Discussions)
+* **Deployment**: [Cloudflare Pages](https://pages.cloudflare.com/) (Automated CI/CD)
+
+---
+
+## 📂 Project Structure
 
 ```text
 .
-├── content/              # 内容根目录 (Markdown)
-│   ├── category_order.json # 分类排序配置文件 (用于 INDEX 栏目)
-│   └── posts/            # 文章文件存放目录
-├── public/               # 静态资源目录 (图片、favicon)
-│   └── Pic/              # 本地文章配图目录 (/Pic/...)
-├── src/                  # 博客前端源代码
-│   ├── layouts/          # 布局骨架 (Layout.astro)
-│   ├── pages/            # 核心页面路由 (index.astro, [slug].astro)
-│   ├── styles/           # 全局 CSS 样式表 (global.css)
-│   └── content.config.ts # Astro Content Layer 配置文件
-├── astro.config.mjs      # Astro 全局配置 (集成插件、部署 URL 等)
-└── package.json          # Node.js 依赖清单
+├── content/              # Content root (Markdown)
+│   ├── category_order.json # Category sorting configuration (used in the INDEX)
+│   └── posts/            # Directory for markdown articles
+├── public/               # Static assets (images, favicon, etc.)
+│   └── Pic/              # Local image directory for articles (/Pic/...)
+├── src/                  # Frontend source code
+│   ├── components/       # Reusable UI components
+│   ├── layouts/          # Page layouts (e.g., Layout.astro)
+│   ├── pages/            # Core routing pages (index.astro, [slug].astro)
+│   ├── styles/           # Global CSS stylesheets (global.css)
+│   └── content.config.ts # Astro Content Layer configuration
+├── astro.config.mjs      # Global Astro configuration (plugins, deployment URL, etc.)
+└── package.json          # Node.js dependencies
 ```
 
 ---
 
-## ✍️ 日常维护指南
+## ✍️ Maintenance Guidelines
 
-### 1. 发布文章
-在 `content/posts/`（或其子目录）中新建 `.md` 文件即可自动解析。
-Frontmatter 格式规范：
-```markdown
+### 1. Publishing Articles
+Create a new `.md` file in `content/posts/` (or its subdirectories) for automatic parsing.
+Frontmatter specification:
+```yaml
 ---
-title: "文章标题"
+title: "Article Title"
 date: 2026-06-26T21:00:00+08:00
-categories: ["分类1", "分类2"]
-summary: "简短摘要"
+categories: ["Category 1", "Category 2"]
+summary: "Brief summary"
 ---
 ```
 
-### 2. 本地图片引用
-将图片存放至 `public/Pic/` 目录，在 Markdown 中使用绝对路径引用：
+### 2. Local Image References
+Store images in the `public/Pic/` directory and reference them in Markdown using absolute paths:
 ```markdown
-![说明](/Pic/image.png)
+![Description](/Pic/image.png)
 ```
 
-### 3. Giscus 评论配置
-如需更改 GitHub 仓库，请更新 `src/pages/posts/[...slug].astro` 底部 `<script src="https://giscus.app/client.js"...>` 中的 `data-repo` 与 `data-repo-id` 属性。
+### 3. Giscus Configuration
+To change the target GitHub repository for comments, update the `data-repo` and `data-repo-id` attributes in the `<script src="https://giscus.app/client.js"...>` tag located at the bottom of `src/pages/posts/[...slug].astro`.
 
 ---
 
-## ⚙️ 核心技术细节
+## ⚙️ Core Technical Details
 
-### 1. INDEX 分类自定义排序
-侧边栏分类树排序由 `content/category_order.json` 控制：
-- **指定排序**：在 JSON 中声明的分类将按定义的顺序前置显示。
-- **自动后补**：未在 JSON 中声明的分类将自动追加至列表末尾，按字母序 (A-Z) 排序。
+### 1. Custom Category Sorting (INDEX)
+The sidebar category tree sorting is controlled by `content/category_order.json`:
+- **Specified Sorting**: Categories declared in the JSON file will be prioritized according to the defined order.
+- **Automatic Fallback**: Categories not declared in the JSON file will be automatically appended to the end of the list and sorted alphabetically (A-Z).
 
-### 2. LaTeX 公式渲染
-数学公式渲染已在 `astro.config.mjs` 中通过 remark/rehype 插件注册：
-- **行内公式**：`$E=mc^2$`
-- **块级公式**：`$$...$$`
-渲染依赖 `src/layouts/Layout.astro` 头部加载的 `katex.min.css` 样式。
+### 2. Markdown Enhancements
+- **LaTeX Math Rendering**: Handled via remark/rehype plugins registered in `astro.config.mjs`. Inline math (`$E=mc^2$`) and block math (`$$...$$`) are supported and rendered using `katex.min.css` loaded in the document head.
+- **Mermaid Diagrams**: Diagram rendering is handled client-side via a dynamic ESM import in the main layout, ensuring compatibility with Astro's View Transitions and theme toggling.
 
-### 3. 动态加载与视图交互
-- **Infinite Scroll**：首页基于 `IntersectionObserver` 实现文章列表无极加载。
-- **Fluid Scroll Reveal**：采用 `IntersectionObserver` 和 CSS Transition 实现元素的按需加载浮现（DOM进入视口时附加样式类）。
-- **Sticky Layout**：文章目录 (TOC) 和分类索引基于原生 HTML `<details>` 与 `position: sticky` 实现无 JS 折叠与悬浮状态。
+### 3. Advanced UI Rendering & Animations
+- **Procedural Liquid Glass Filter**: The navigation bar utilizes a purely native, GPU-accelerated SVG procedural filter (`feTurbulence` + `feDisplacementMap`). This operates independently of WebGL and achieves a high-performance, crystal-clear refraction effect via a CSS pseudo-element injection.
+- **Fluid Scroll Reveal**: Employs `IntersectionObserver` and CSS Transitions to conditionally apply style classes as elements enter the viewport, achieving a staggered "Wabi-sabi" flow.
+- **Infinite Scroll**: The homepage leverages `IntersectionObserver` to seamlessly load article lists.
+- **Sticky Layouts**: The Table of Contents (TOC) and category index utilize native HTML `<details>` and `position: sticky` to implement collapsible, floating states without relying on JavaScript.
 
 ---
 
-## 🛠️ 本地开发
+## 🛠️ Local Development
 
-| 命令 | 说明 |
+| Command | Description |
 | :--- | :--- |
-| `npm install` | 安装项目依赖 |
-| `npm run dev` | 启动本地服务器 (`http://localhost:4321`) |
-| `npm run build` | 编译生产环境代码至 `dist/` |
+| `npm install` | Install project dependencies |
+| `npm run dev` | Start the local development server (`http://localhost:4321`) |
+| `npm run build` | Compile production code into the `dist/` directory |
 
 ---
 
-## ☁️ 自动部署 (Cloudflare Pages)
+## ☁️ Automated Deployment (Cloudflare Pages)
 
-本项目接入了 Cloudflare Pages CI/CD。通过 Git 推送代码或提交新文章至仓库主分支，将触发自动构建部署：
+This project is integrated with Cloudflare Pages CI/CD. Pushing code or committing new articles to the main branch will trigger an automated build and deployment process:
 
 ```bash
 git add .
 git commit -m "Update content"
 git push
 ```
-云端自动执行 `npm run build`，部署完毕后自动更新线上环境与 Sitemap。
+The cloud environment will automatically execute `npm run build` and update the live environment and Sitemap upon completion.
