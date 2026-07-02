@@ -152,8 +152,8 @@ const currentCategories = post.data.categories || [];
   </div>
 
   <!-- Mobile TOC Button -->
-  <button id="mobile-toc-btn" class="mobile-toc-btn glass-panel no-hover" aria-label="Toggle Index">
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+  <button id="mobile-toc-btn" class="mobile-toc-btn glass-panel" aria-label="Toggle Index">
+    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
   </button>
   
   <!-- Mobile Overlay -->
@@ -262,15 +262,17 @@ const currentCategories = post.data.categories || [];
     position: fixed;
     bottom: 2rem;
     right: 2rem;
-    width: 3.5rem;
-    height: 3.5rem;
+    width: 4rem;
+    height: 4rem;
     border-radius: 50%;
-    z-index: 99;
+    z-index: 999;
     padding: 0;
     align-items: center;
     justify-content: center;
     cursor: pointer;
     box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+    /* Prevent default active scaling that makes it slip */
+    transform: none !important;
   }
   
   .mobile-overlay {
