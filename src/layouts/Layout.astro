@@ -83,7 +83,7 @@ const { title, hideNavOnLoad = false } = Astro.props;
 	<style is:inline>
 		:root {
 			/* Define as inline variable to prevent Astro bundler from breaking the #liquid-glass local reference */
-			--liquid-filter: blur(12px) url(#liquid-glass) saturate(150%);
+			--liquid-filter: blur(0.75px) url(#liquid-glass) saturate(150%);
 		}
 	</style>
 
@@ -97,7 +97,7 @@ const { title, hideNavOnLoad = false } = Astro.props;
 		
 		/* Nav specific liquid glass */
 		.nav-glass {
-			background: linear-gradient(135deg, rgba(30, 38, 52, 0.25) 0%, rgba(11, 14, 20, 0.05) 100%);
+			background: linear-gradient(135deg, rgba(30, 38, 52, 0.15) 0%, rgba(11, 14, 20, 0.02) 100%);
 			backdrop-filter: var(--liquid-filter);
 			-webkit-backdrop-filter: var(--liquid-filter);
 			
@@ -112,7 +112,7 @@ const { title, hideNavOnLoad = false } = Astro.props;
 		}
 		
 		[data-theme='light'] .nav-glass {
-			background: linear-gradient(135deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0.05) 100%);
+			background: linear-gradient(135deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.02) 100%);
 			backdrop-filter: var(--liquid-filter);
 			-webkit-backdrop-filter: var(--liquid-filter);
 			
