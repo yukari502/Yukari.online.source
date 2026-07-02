@@ -90,6 +90,9 @@ const { title, hideNavOnLoad = false } = Astro.props;
 		
 		/* Nav specific liquid glass */
 		.nav-glass {
+			/* Crop the distorted ::before layer to the smooth rounded borders */
+			overflow: hidden;
+			
 			border: 1px solid rgba(255, 255, 255, 0.05);
 			border-top: 1px solid rgba(255, 255, 255, 0.15);
 			border-bottom: 1px solid rgba(0, 0, 0, 0.3);
@@ -100,24 +103,32 @@ const { title, hideNavOnLoad = false } = Astro.props;
 				0 8px 32px 0 rgba(0, 0, 0, 0.3);
 		}
 		
-		/* The distortion layer - isolates backdrop filtering and SVG displacement */
+		/* 1. The distortion layer - isolates backdrop filtering and SVG displacement */
 		.nav-glass::before {
+			content: "";
+			position: absolute;
+			/* Expand bounds so strong displacement doesn't pull in transparent edges */
+			inset: -30px;
+			z-index: -2;
+			/* Capture the backdrop and apply basic blur/saturation */
+			backdrop-filter: blur(6px) saturate(150%);
+			-webkit-backdrop-filter: blur(6px) saturate(150%);
+			/* Displace the captured backdrop using SVG filter */
+			filter: url(#liquid-glass);
+			isolation: isolate;
+		}
+
+		/* 2. The tint layer - smooth overlay that is NOT distorted */
+		.nav-glass::after {
 			content: "";
 			position: absolute;
 			inset: 0;
 			z-index: -1;
 			border-radius: inherit;
-			/* 1. Capture the backdrop and apply basic blur/saturation */
-			backdrop-filter: blur(4px) saturate(150%);
-			-webkit-backdrop-filter: blur(4px) saturate(150%);
-			/* 2. Displace the captured backdrop using SVG filter */
-			filter: url(#liquid-glass);
-			/* 3. Overlay the glass tint */
 			background: linear-gradient(135deg, rgba(30, 38, 52, 0.4) 0%, rgba(11, 14, 20, 0.1) 100%);
-			isolation: isolate;
 		}
 
-		[data-theme='light'] .nav-glass::before {
+		[data-theme='light'] .nav-glass::after {
 			background: linear-gradient(135deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.15) 100%);
 		}
 		
