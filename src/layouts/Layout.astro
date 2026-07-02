@@ -83,8 +83,8 @@ const { title, hideNavOnLoad = false, isArticle = false } = Astro.props;
 
 	<style is:inline>
 		:root {
-			/* Define as inline variable to prevent Astro bundler from breaking the #liquid-glass local reference */
-			--liquid-filter: blur(0.75px) url(#liquid-glass) saturate(150%);
+			/* Default to standard premium glass as a safe fallback for Cloudflare Pages / Safari */
+			--liquid-filter: blur(12px) saturate(180%);
 		}
 	</style>
 
@@ -129,6 +129,10 @@ const { title, hideNavOnLoad = false, isArticle = false } = Astro.props;
 
 	<script>
 		const setupInteractions = () => {
+			// Fix SVG filter URL resolution for Astro ViewTransitions and CF Pages
+			const path = window.location.pathname + window.location.search;
+			document.documentElement.style.setProperty('--liquid-filter', `blur(0.75px) url('${path}#liquid-glass') saturate(150%)`);
+
 			// Theme Toggle Logic
 			const themeToggle = document.getElementById('themeToggle');
 			const sunIcon = document.getElementById('sun-icon');
@@ -260,6 +264,8 @@ const { title, hideNavOnLoad = false, isArticle = false } = Astro.props;
 
 	<!-- Native SVG Procedural Liquid Glass Filter -->
 	<svg style="position: absolute; width: 0; height: 0; pointer-events: none;" aria-hidden="true">
+		<!-- Dummy rect prevents aggressive HTML minifiers (like Cloudflare Auto Minify) from stripping the SVG -->
+		<rect width="1" height="1" fill="transparent" />
 		<filter id="liquid-glass" x="0%" y="0%" width="100%" height="100%">
 			<!-- Large, smooth noise waves like thick glass -->
 			<feTurbulence type="fractalNoise" baseFrequency="0.008 0.008" numOctaves="2" seed="92" result="noise" />
