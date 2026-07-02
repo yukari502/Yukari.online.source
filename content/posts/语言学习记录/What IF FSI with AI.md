@@ -1,7 +1,7 @@
 +++
 title = "What IF FSI with AI?"
 date = 2026-03-04T01:49:00+08:00  #ISO 8601 标准时间格式
-draft = true
+draft = false
 categories = ['语言学习记录']
 description = "FSI虽然是一套陈旧的语言学习系统，再如今AI的加持下也许有不同。"
 +++
