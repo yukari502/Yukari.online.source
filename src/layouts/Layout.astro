@@ -5,9 +5,10 @@ import '../styles/global.css';
 export interface Props {
 	title: string;
 	hideNavOnLoad?: boolean;
+	isArticle?: boolean;
 }
 
-const { title, hideNavOnLoad = false } = Astro.props;
+const { title, hideNavOnLoad = false, isArticle = false } = Astro.props;
 ---
 
 <!DOCTYPE html>
@@ -56,7 +57,7 @@ const { title, hideNavOnLoad = false } = Astro.props;
 	</head>
 	<body>
     <!-- Premium Navigation Bar -->
-    <nav id="main-nav" class={`nav-glass no-hover ${hideNavOnLoad ? 'nav-hidden' : ''}`} style="position: fixed; top: 1rem; left: 50%; transform: translateX(-50%); width: calc(100% - 2rem); max-width: 1200px; padding: 1rem 2rem; z-index: 50; display: flex; justify-content: space-between; align-items: center; border-radius: 100px; transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.5s ease, background 0.4s, border-color 0.4s, box-shadow 0.4s;">
+    <nav id="main-nav" class={`nav-glass no-hover ${hideNavOnLoad ? 'nav-hidden' : ''}`} data-is-article={isArticle ? 'true' : 'false'} style={isArticle ? "position: fixed; top: 0; left: 50%; transform: translateX(-50%); width: 100%; padding: 1rem max(2rem, calc((100% - 1200px) / 2)); z-index: 50; display: flex; justify-content: space-between; align-items: center; border-radius: 0; transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.5s ease, background 0.4s, border-color 0.4s, box-shadow 0.4s; border-top: none; border-left: none; border-right: none;" : "position: fixed; top: 1rem; left: 50%; transform: translateX(-50%); width: calc(100% - 2rem); max-width: 1200px; padding: 1rem 2rem; z-index: 50; display: flex; justify-content: space-between; align-items: center; border-radius: 100px; transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.5s ease, background 0.4s, border-color 0.4s, box-shadow 0.4s;"}>
       <a href="/" style="font-weight: 900; font-size: 1.6rem; letter-spacing: -0.05em; color: var(--color-text); text-decoration: none; display: flex; align-items: baseline;">YUKARI<span style="color: var(--color-primary); font-size: 1.6rem;">.LEAF</span></a>
       <div style="display: flex; align-items: center; gap: 2rem; font-size: 0.95rem; font-weight: 500;">
         <a href="/">Home</a>
@@ -168,10 +169,14 @@ const { title, hideNavOnLoad = false } = Astro.props;
 				const onScroll = () => {
 					const currentScrollY = window.scrollY;
 					const hero = document.querySelector('.hero-section');
+					const isArticle = nav.getAttribute('data-is-article') === 'true';
 					// If hero exists, keep nav hidden until scrolled past 80vh
 					const heroHeight = hero ? window.innerHeight * 0.8 : 0;
 					
-					if (hero && currentScrollY < heroHeight) {
+					if (isArticle) {
+						// On article screen, always show nav
+						nav.classList.remove('nav-hidden');
+					} else if (hero && currentScrollY < heroHeight) {
 						// On hero screen, hide nav
 						nav.classList.add('nav-hidden');
 					} else if (!hero && currentScrollY <= 50) {

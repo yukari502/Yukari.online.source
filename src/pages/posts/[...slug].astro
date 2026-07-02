@@ -35,7 +35,7 @@ allPosts.forEach(p => {
 const currentCategories = post.data.categories || [];
 ---
 
-<Layout title={`${post.data.title || post.id} - Yukari's LEAF`}>
+<Layout title={`${post.data.title || post.id} - Yukari's LEAF`} isArticle={true}>
   <div class="post-layout">
     <!-- Left Column: Category Tree & TOC -->
     <aside class="sidebar-left reveal-on-scroll">
