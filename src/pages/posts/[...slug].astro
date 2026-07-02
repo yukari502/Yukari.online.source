@@ -36,9 +36,9 @@ const currentCategories = post.data.categories || [];
 ---
 
 <Layout title={`${post.data.title || post.id} - Yukari's LEAF`}>
-  <div class="post-layout animate-in">
+  <div class="post-layout">
     <!-- Left Column: Category Tree & TOC -->
-    <aside class="sidebar-left delay-3">
+    <aside class="sidebar-left reveal-on-scroll">
       <div class="glass-panel sticky-sidebar" style="padding: 1.5rem; display: flex; flex-direction: column; gap: 2rem;">
         {headings && headings.length > 0 && (
           <div>
@@ -102,11 +102,11 @@ const currentCategories = post.data.categories || [];
 
     <!-- Main Content -->
     <article class="post-main">
-      <header style="margin-bottom: 3rem; text-align: center;">
+      <header class="reveal-on-scroll" style="margin-bottom: 3rem; text-align: center;">
         {post.data.categories && post.data.categories.length > 0 && (
           <div style="display: flex; gap: 0.5rem; justify-content: center; margin-bottom: 1rem;">
             {post.data.categories.map((cat: string) => (
-              <span style="font-size: 0.85rem; color: var(--color-primary); background: rgba(16, 185, 129, 0.1); padding: 0.3rem 0.8rem; border-radius: 100px; font-weight: 600; border: 1px solid var(--color-primary-glow);">
+              <span style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--color-primary); background: var(--color-surface); padding: 0.25rem 0.8rem; border-radius: 6px; font-weight: 500; border: 1px solid var(--color-border); letter-spacing: 0.05em; box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.02);">
                 {cat}
               </span>
             ))}
@@ -124,12 +124,12 @@ const currentCategories = post.data.categories || [];
         )}
       </header>
 
-      <div class="prose glass-panel no-hover delay-1" style="padding: 3rem; overflow-wrap: break-word; word-break: break-word;">
+      <div class="prose glass-panel no-hover reveal-on-scroll" style="padding: 3rem; overflow-wrap: break-word; word-break: break-word;">
         <Content />
       </div>
 
       <!-- Comments Section -->
-      <section class="glass-panel delay-2" style="margin-top: 3rem; padding: 2rem;">
+      <section class="glass-panel reveal-on-scroll" style="margin-top: 3rem; padding: 2rem;">
         <h3 style="margin-bottom: 1.5rem; font-size: 1.5rem;">Comments</h3>
         <div id="giscus-container"></div>
         <script src="https://giscus.app/client.js"
