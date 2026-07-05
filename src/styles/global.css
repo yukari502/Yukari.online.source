@@ -27,7 +27,7 @@
   --color-surface-hover: rgba(255, 255, 255, 0.9);
   --color-border: rgba(0, 0, 0, 0.06);
   --color-text: #27272A;
-  --color-text-muted: #A1A1AA;
+  --color-text-muted: #52525B;
   --color-primary: #2C7A7B;
   --color-primary-glow: rgba(44, 122, 123, 0.15);
 }
@@ -155,7 +155,7 @@ a:hover {
 
 .prose p {
   margin-bottom: 1.5rem;
-  color: var(--color-text-muted);
+  color: var(--color-text);
 }
 
 .prose code {
