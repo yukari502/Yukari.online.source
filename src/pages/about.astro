@@ -1,14 +1,20 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import HoloCard from '../components/HoloCard.astro';
 ---
 
 <Layout title="About Me - Yukari's LEAF">
+  <!-- Background Image -->
+  <div class="about-bg"></div>
+
   <!-- Spacer to account for the fixed nav bar -->
   <div style="height: 120px;"></div>
 
   <div class="container" style="max-width: 800px; margin: 0 auto; padding: 2rem;">
-    <div class="glass-panel reveal-on-scroll" style="padding: 3rem; border-radius: 20px; text-align: center;">
-      <!-- Profile Image -->
+    <HoloCard className="reveal-on-scroll" style="z-index: 10;">
+      <!-- Inner padding container -->
+      <div style="padding: 3rem; text-align: center; position: relative; z-index: 2;">
+        <!-- Profile Image -->
       <img 
         id="avatar-img"
         src="https://avatars.githubusercontent.com/u/1234567?v=4" 
@@ -38,10 +44,33 @@ import Layout from '../layouts/Layout.astro';
         <a href="/" class="button">Back to Home</a>
         <a href="https://github.com/yukari502" target="_blank" class="button button-outline">GitHub</a>
       </div>
-    </div>
+      </div>
+    </HoloCard>
   </div>
 
   <style>
+    .about-bg {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background-image: url('/Pic/hero.jpg');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      z-index: -1;
+      pointer-events: none;
+    }
+
+    .about-bg::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to bottom, rgba(15,17,21,0.4) 0%, var(--color-bg) 100%);
+      z-index: 1;
+    }
+
     .button {
       display: inline-block;
       padding: 0.8rem 1.5rem;

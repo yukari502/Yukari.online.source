@@ -1,0 +1,159 @@
+---
+export interface Props {
+  className?: string;
+  style?: string;
+}
+
+const { className = "", style = "" } = Astro.props;
+---
+
+<div class={`holo-card-wrapper ${className}`} style={style}>
+  <div class="holo-card">
+    <slot />
+    <!-- Glare overlay for the foil reflection -->
+    <div class="holo-glare"></div>
+  </div>
+</div>
+
+<style>
+  /* 
+    Disable 3D/Hover effects entirely for mobile / touch devices.
+    Fallback to a very nice standard glass panel. 
+  */
+  @media (hover: none) and (pointer: coarse) {
+    .holo-card-wrapper {
+      position: relative;
+    }
+    .holo-card {
+      background: linear-gradient(135deg, rgba(30, 38, 52, 0.15) 0%, rgba(11, 14, 20, 0.02) 100%);
+      backdrop-filter: blur(0.75px) url(#liquid-glass) saturate(150%);
+      -webkit-backdrop-filter: blur(0.75px) url(#liquid-glass) saturate(150%);
+      border: 1px solid var(--color-border);
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 20px;
+      box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.02), 0 4px 20px 0 rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      position: relative;
+    }
+    .holo-glare {
+      display: none;
+    }
+    [data-theme='light'] .holo-card {
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.02) 100%);
+      backdrop-filter: blur(0.75px) url(#liquid-glass) saturate(150%);
+      -webkit-backdrop-filter: blur(0.75px) url(#liquid-glass) saturate(150%);
+      box-shadow: 
+        inset 0 1px 0 0 rgba(255, 255, 255, 0.4), 
+        0 4px 20px 0 rgba(0, 0, 0, 0.05);
+    }
+  }
+
+  /* Desktop 3D Hover Implementation */
+  @media (hover: hover) and (pointer: fine) {
+    .holo-card-wrapper {
+      perspective: 1500px; /* Depth of 3D field */
+      transform-style: preserve-3d;
+      position: relative;
+    }
+
+    .holo-card {
+      --rotate-x: 0deg;
+      --rotate-y: 0deg;
+      --pointer-x: 50%;
+      --pointer-y: 50%;
+      --card-opacity: 0; /* Base opacity of the glare */
+
+      position: relative;
+      background: linear-gradient(135deg, rgba(30, 38, 52, 0.15) 0%, rgba(11, 14, 20, 0.02) 100%);
+      backdrop-filter: blur(0.75px) url(#liquid-glass) saturate(150%);
+      -webkit-backdrop-filter: blur(0.75px) url(#liquid-glass) saturate(150%);
+      border: 1px solid var(--color-border);
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 20px;
+      box-shadow: 
+        inset 0 1px 0 0 rgba(255, 255, 255, 0.02), 
+        0 4px 20px 0 rgba(0, 0, 0, 0.1),
+        0 20px 40px rgba(0, 0, 0, 0.15); /* deeper shadow for 3D pop */
+      overflow: hidden;
+      
+      transform-style: preserve-3d;
+      transform: rotateX(var(--rotate-x)) rotateY(var(--rotate-y));
+      will-change: transform;
+      
+      /* Spring back when leaving */
+      transition: transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.4s ease;
+    }
+
+    [data-theme='light'] .holo-card {
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.02) 100%);
+      backdrop-filter: blur(0.75px) url(#liquid-glass) saturate(150%);
+      -webkit-backdrop-filter: blur(0.75px) url(#liquid-glass) saturate(150%);
+      box-shadow: 
+        inset 0 1px 0 0 rgba(255, 255, 255, 0.4), 
+        0 4px 20px 0 rgba(0, 0, 0, 0.05),
+        0 20px 40px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Remove transition while moving so it perfectly tracks the mouse without lag */
+    .holo-card.interacting {
+      transition: none;
+    }
+
+    /* Glare/Foil Layer (Disabled as per user request to remove light/halo effect) */
+    .holo-glare {
+      display: none;
+    }
+  }
+</style>
+
+<script>
+  // We use astro:page-load to ensure event listeners are bound on client-side navigation
+  document.addEventListener('astro:page-load', () => {
+    const cards = document.querySelectorAll('.holo-card-wrapper');
+    
+    cards.forEach((wrapper) => {
+      const card = wrapper.querySelector('.holo-card');
+      if (!card) return;
+
+      wrapper.addEventListener('mousemove', (e) => {
+        const rect = wrapper.getBoundingClientRect();
+        
+        // Calculate mouse position within the card (0.0 to 1.0)
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+        
+        const centerX = rect.width / 2;
+        const centerY = rect.height / 2;
+        
+        // Calculate percentages
+        const percentageX = (x / rect.width) * 100;
+        const percentageY = (y / rect.height) * 100;
+
+        // Calculate rotation angles (max tilt = 10 degrees for subtlety)
+        // Note: moving right (positive X) rotates around Y axis positively
+        // moving down (positive Y) rotates around X axis negatively
+        const rotateX = -((y - centerY) / centerY) * 10; 
+        const rotateY = ((x - centerX) / centerX) * 10;
+        
+        // Apply variables
+        card.style.setProperty('--rotate-x', `${rotateX}deg`);
+        card.style.setProperty('--rotate-y', `${rotateY}deg`);
+        card.style.setProperty('--pointer-x', `${percentageX}%`);
+        card.style.setProperty('--pointer-y', `${percentageY}%`);
+        card.style.setProperty('--card-opacity', '1');
+        
+        card.classList.add('interacting');
+      });
+
+      wrapper.addEventListener('mouseleave', () => {
+        card.classList.remove('interacting');
+        
+        // Reset transform variables to spring back
+        card.style.setProperty('--rotate-x', `0deg`);
+        card.style.setProperty('--rotate-y', `0deg`);
+        card.style.setProperty('--card-opacity', '0');
+        // Let it fade out gracefully
+      });
+    });
+  });
+</script>
