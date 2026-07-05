@@ -36,8 +36,10 @@ You are free to fork, modify, and distribute this repository under the terms of 
 ├── content/              # Content root (Markdown)
 │   ├── category_order.json # Category sorting configuration (used in the INDEX)
 │   └── posts/            # Directory for markdown articles
-├── public/               # Static assets (images, favicon, etc.)
-│   └── Pic/              # Local image directory for articles (/Pic/...)
+├── public/               # Static assets (images, audio, video, favicon, etc.)
+│   ├── Audio/            # Local audio directory for articles (/Audio/...)
+│   ├── Pic/              # Local image directory for articles (/Pic/...)
+│   └── Video/            # Local video directory for articles (/Video/...)
 ├── src/                  # Frontend source code
 │   ├── components/       # Reusable UI components
 │   ├── layouts/          # Page layouts (e.g., Layout.astro)
@@ -71,7 +73,18 @@ Store images in the `public/Pic/` directory and reference them in Markdown using
 ![Description](/Pic/image.png)
 ```
 
-### 3. Giscus Configuration
+### 3. Media References (Audio & Video)
+Store your media files (e.g., `.mp3`, `.mp4`) in the `public/Pic/` directory. Since Markdown natively supports HTML, you can directly embed them into your articles using standard `<audio>` and `<video>` tags:
+```html
+<!-- For Audio -->
+<audio controls src="/Pic/audio.mp3"></audio>
+
+<!-- For Video -->
+<video controls src="/Pic/video.mp4" width="100%"></video>
+```
+*Note: Global CSS styling has been added so these elements automatically adapt to the blog's aesthetic (rounded corners, soft shadows).*
+
+### 4. Giscus Configuration
 To change the target GitHub repository for comments, update the `data-repo` and `data-repo-id` attributes in the `<script src="https://giscus.app/client.js"...>` tag located at the bottom of `src/pages/posts/[...slug].astro`.
 
 ---

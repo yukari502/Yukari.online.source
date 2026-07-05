@@ -211,8 +211,9 @@ a:hover {
   border-radius: 0 12px 12px 0;
 }
 
-/* Responsive Images globally inside prose */
-.prose img {
+/* Responsive Images and Video globally inside prose */
+.prose img,
+.prose video {
   display: block;
   max-width: 100%;
   height: auto;
@@ -220,6 +221,14 @@ a:hover {
   margin: 2rem auto;
   border-radius: 12px;
   object-fit: contain;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.prose audio {
+  display: block;
+  width: 100%;
+  margin: 2rem 0;
+  border-radius: 50px; /* Fully rounded pill shape for audio controls */
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
 }
 
