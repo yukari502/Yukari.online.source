@@ -9,6 +9,8 @@
   --color-primary: #3B82F6; /* Muted Navy Blue */
   --color-primary-glow: rgba(59, 130, 246, 0.15);
   --color-accent: #6366F1; /* Indigo */
+  --color-code-bg: rgba(0, 0, 0, 0.3);
+  --color-pre-bg: rgba(0, 0, 0, 0.4);
 
   --font-sans: 'M PLUS 1 Code', 'Noto Sans SC', -apple-system, BlinkMacSystemFont, sans-serif;
   --font-mono: 'M PLUS 1 Code', 'Noto Sans SC', monospace;
@@ -30,6 +32,8 @@
   --color-text-muted: #52525B;
   --color-primary: #2C7A7B;
   --color-primary-glow: rgba(44, 122, 123, 0.15);
+  --color-code-bg: rgba(0, 0, 0, 0.06);
+  --color-pre-bg: #1A1B26;
 }
 
 * {
@@ -160,7 +164,7 @@ a:hover {
 
 .prose code {
   font-family: var(--font-mono);
-  background: rgba(0, 0, 0, 0.3);
+  background: var(--color-code-bg);
   padding: 0.2em 0.4em;
   border-radius: 6px;
   font-size: 0.9em;
@@ -169,7 +173,7 @@ a:hover {
 }
 
 .prose pre {
-  background: rgba(0, 0, 0, 0.4) !important;
+  background: var(--color-pre-bg) !important;
   padding: 1.5rem;
   border-radius: 12px;
   overflow-x: auto;

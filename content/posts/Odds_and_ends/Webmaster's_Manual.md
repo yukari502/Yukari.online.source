@@ -1,6 +1,6 @@
 +++
 title = "Webmaster's Manual"
-date = 2025-01-01T01:49:00+08:00
+date = 2025-02-01T01:49:00+08:00
 draft = false
 categories = ['Odds_and_ends']
 description = "Technical architecture, project structure, and daily maintenance guidelines for Yukari.online."
