@@ -55,13 +55,14 @@ You are free to fork, modify, and distribute this repository under the terms of 
 ### 1. Publishing Articles
 Create a new `.md` file in `content/posts/` (or its subdirectories) for automatic parsing.
 Frontmatter specification:
-```yaml
----
-title: "Article Title"
-date: 2026-06-26T21:00:00+08:00
-categories: ["Category 1", "Category 2"]
-summary: "Brief summary"
----
+```toml
++++
+title = "Article Title"
+date = 2026-06-26T21:00:00+08:00  #ISO 8601 标准时间格式
+draft = false
+categories = ['Category 1', 'Category 2']
+description = "Brief description"
++++
 ```
 
 ### 2. Local Image References
