@@ -2,7 +2,7 @@
 title = "树莓派PICO磁轴MIDI键盘"
 date = 2026-03-04T01:49:00+08:00  #ISO 8601 标准时间格式
 draft = false
-categories = ['奇怪的东西']
+categories = ['Odds_and_ends']
 description = "基于 Raspberry Pi Pico (RP2040) 与霍尔传感器的 13 键磁轴机械 MIDI 键盘，支持模拟力度感应、施密特触发防抖、八度切换与防卡音，即插即用 USB MIDI。"
 +++
 

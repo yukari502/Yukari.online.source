@@ -2,7 +2,7 @@
 title = "Daily-Bio-Arxiv"
 date = 2026-01-14T13:33:05+08:00
 draft = false
-categories = ['奇怪的东西']
+categories = ['Odds_and_ends']
 description = "Daily-Bio-Arxiv 项目是一个简单的的工具，旨在简化跟踪最新科学研究的过程。它每天自动抓取 arXiv 存储库，重点关注生物学和计算机科学等特定类别。该项目利用大型语言模型（LLM），以您选择的语言生成新论文的简洁摘要。这些摘要随后会自动发布到一个简洁、易于访问的 GitHub Pages 网站，使获得的资料便于访问。"
 +++
 
