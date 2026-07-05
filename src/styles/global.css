@@ -337,3 +337,52 @@ a:hover {
 .category-posts a:hover {
   color: var(--color-primary);
 }
+
+/* Copy Code Button */
+.code-block-wrapper {
+  position: relative;
+}
+
+.copy-code-btn {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  color: var(--color-text-muted);
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.2s, background 0.2s, color 0.2s;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  z-index: 10;
+}
+
+.code-block-wrapper:hover .copy-code-btn,
+.copy-code-btn:focus {
+  opacity: 1;
+}
+
+.copy-code-btn:hover {
+  background: var(--color-surface-hover);
+  color: var(--color-primary);
+}
+
+.copy-code-btn.copied {
+  color: #10B981; /* Success color */
+  background: rgba(16, 185, 129, 0.1);
+  border-color: rgba(16, 185, 129, 0.2);
+}
+
+/* Mobile: always show the button since hover doesn't work well */
+@media (max-width: 768px) {
+  .copy-code-btn {
+    opacity: 1;
+  }
+}
