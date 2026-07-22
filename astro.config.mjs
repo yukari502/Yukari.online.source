@@ -4,6 +4,8 @@ import sitemap from '@astrojs/sitemap';
 import remarkMath from 'remark-math';
 import rehypeKatex from 'rehype-katex';
 
+import cloudflare from '@astrojs/cloudflare';
+
 function rehypePublicPath() {
   return (tree) => {
     function visitNode(node) {
@@ -28,9 +30,11 @@ function rehypePublicPath() {
 export default defineConfig({
   site: 'https://yukari.online',
   integrations: [sitemap()],
+
   markdown: {
     remarkPlugins: [remarkMath],
     rehypePlugins: [rehypeKatex, rehypePublicPath],
-  }
-});
+  },
 
+  adapter: cloudflare()
+});
