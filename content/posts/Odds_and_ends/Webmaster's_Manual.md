@@ -68,19 +68,20 @@ description = "Brief description"
 ```
 
 ### 2. Local Image References
-Store images in the `public/Pic/` directory and reference them in Markdown using absolute paths:
+Store images in the `public/Pic/` directory and reference them in Markdown using absolute paths starting with `/Public`:
 ```markdown
-![Description](/Pic/image.png)
+![Description](/Public/Pic/image.png)
 ```
+*Note: Using `/Public/` as the path prefix ensures local Markdown editor previews (such as VS Code or Obsidian) resolve correctly relative to the project workspace root. Astro automatically maps `/Public/...` paths to static output assets during site generation via a built-in Rehype plugin (`rehypePublicPath`).*
 
 ### 3. Media References (Audio & Video)
-Store your media files (e.g., `.mp3`, `.mp4`) in the `public/Pic/` directory. Since Markdown natively supports HTML, you can directly embed them into your articles using standard `<audio>` and `<video>` tags:
+Store your media files (e.g., `.mp3`, `.mp4`) in the `public/Audio/`, `public/Video/`, or `public/Pic/` directory. Direct HTML embedding using standard `<audio>` and `<video>` tags should also use `/Public` prefixes:
 ```html
 <!-- For Audio -->
-<audio controls src="/Pic/audio.mp3"></audio>
+<audio controls src="/Public/Audio/audio.mp3"></audio>
 
 <!-- For Video -->
-<video controls src="/Pic/video.mp4" width="100%"></video>
+<video controls src="/Public/Video/video.mp4" width="100%"></video>
 ```
 *Note: Global CSS styling has been added so these elements automatically adapt to the blog's aesthetic (rounded corners, soft shadows).*
 

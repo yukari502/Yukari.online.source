@@ -16,7 +16,7 @@ description = "生长素的极性运输、化学渗透模型、PIN蛋白定位�
 
 <div align="center">
 
-![image](/Pic/植物生理学/后半/1.png)
+![image](/Public/Pic/植物生理学/后半/1.png)
 
 </div>
 
@@ -57,7 +57,7 @@ description = "生长素的极性运输、化学渗透模型、PIN蛋白定位�
 
 <div align="center">
 
-![alt text](/Pic/植物生理学/后半/2.png)
+![alt text](/Public/Pic/植物生理学/后半/2.png)
 
 </div>
 

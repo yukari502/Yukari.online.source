@@ -7,7 +7,7 @@ categories = ['About']
 
 <div align="center">
 
-![image](/Pic/Meta/About%20me/image.png)
+![image](/Public/Pic/Meta/About%20me/image.png)
 
 </div>
 

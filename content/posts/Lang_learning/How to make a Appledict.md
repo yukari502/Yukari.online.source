@@ -14,7 +14,7 @@ macOS 的原生词典系统因其深度集成而备受推崇，特别是配合�
 然而，macOS 自带的词典库虽然质量上乘，但数量和种类有限，难以满足专业或特定语言学习的需求。为了突破这一限制，我们可以通过工具将第三方词典（如 `.mdx` 格式）转换为 macOS 原生支持的格式，实现高度的个性化定制。
 
 本文已经发表在[Freemdict](http://forum.freemdict.com/t/topic/42295?u=asuka214)
-![convenient](/Pic/语言学习记录/1.png)
+![convenient](/Public/Pic/语言学习记录/1.png)
 
 ---
 
@@ -87,7 +87,7 @@ python3 ~/Downloads/pyglossary/main.py --write-format=AppleDict "牛津高階英
 ```
 
 执行成功后，会在当前目录下生成一个名为 `牛津高階英漢雙解詞典8th` 的文件夹，其结构如下：
-![tex](/Pic/语言学习记录/2.png)
+![tex](/Public/Pic/语言学习记录/2.png)
 
 ### 4.2 配置构建环境 (Makefile)
 进入生成的词典文件夹，找到 `Makefile` 文件并打开编辑。
@@ -95,7 +95,7 @@ python3 ~/Downloads/pyglossary/main.py --write-format=AppleDict "牛津高階英
 
 *例如，如果你使用的是 GitHub 克隆的工具包，路径可能是 `/Users/你的用户名/Downloads/Dictionary-Development-Kit`。*
 
-![DIR](/Pic/语言学习记录/3.png)
+![DIR](/Public/Pic/语言学习记录/3.png)
 
 ### 4.3 编译词典
 在终端中进入该词典文件夹，并执行 `make` 命令：
@@ -106,7 +106,7 @@ make
 ```
 
 编译完成后，你会在 `objects` 子文件夹中找到生成的 `.dictionary` 文件。
-![text](/Pic/语言学习记录/4.png)
+![text](/Public/Pic/语言学习记录/4.png)
 
 ### 4.4 安装与启用
 1.  **安装**：将生成的 `.dictionary` 文件移动到 macOS 的词典存放目录：
@@ -118,7 +118,7 @@ make
     *   点击菜单栏 `词典` -> `设置` (Preferences)。
     *   在列表中找到你刚才添加的词典，勾选它。
 
-![text](/Pic/语言学习记录/5.png)
+![text](/Public/Pic/语言学习记录/5.png)
 
 ---
 
@@ -126,4 +126,4 @@ make
 现在，你可以使用三指轻点或在词典应用中直接查询单词。
 
 下面是我制作的日文词典效果。
-![text](/Pic/语言学习记录/６.png)
+![text](/Public/Pic/语言学习记录/６.png)

@@ -11,8 +11,8 @@ description = "Daily-Bio-Arxiv 项目是一个简单的的工具，旨在简化�
 
 ### 这是网站界面预览
 
-![Alt text](/Pic/daily-bio-arxiv/page1.png)
-![Alt text](/Pic/daily-bio-arxiv/page2.png)
+![Alt text](/Public/Pic/daily-bio-arxiv/page1.png)
+![Alt text](/Public/Pic/daily-bio-arxiv/page2.png)
 
 ## 主要特点
 
