@@ -9,7 +9,7 @@ const sortedPosts = allPosts.sort((a, b) =>
 ---
 
 <Layout title="Archives - Yukari's LEAF">
-  <div class="container animate-in">
+  <div class="container animate-in archives-page">
     <header style="margin-bottom: 3rem;">
       <h1 style="font-size: 3rem; margin-bottom: 0.5rem;">Archives</h1>
       <p style="color: var(--color-text-muted);">Explore all my notes and thoughts.</p>
@@ -21,7 +21,7 @@ const sortedPosts = allPosts.sort((a, b) =>
           <div style="display: flex; justify-content: space-between; align-items: flex-start;">
             <div>
               <h3 style="font-size: 1.4rem; margin-bottom: 0.5rem; color: var(--color-text);">{post.data.title || post.id}</h3>
-              <p style="color: var(--color-text-muted); font-size: 0.95rem; line-height: 1.5;">
+              <p class="archive-summary" style="color: var(--color-text-muted); font-size: 0.95rem; line-height: 1.5;">
                 {post.data.summary || post.data.description || 'No summary provided.'}
               </p>
             </div>
@@ -46,3 +46,20 @@ const sortedPosts = allPosts.sort((a, b) =>
     </div>
   </div>
 </Layout>
+
+<style>
+  .archives-page {
+    max-width: 80ch;
+    padding-top: 8rem;
+  }
+
+  .archive-summary {
+    max-width: 80ch;
+  }
+
+  @media (max-width: 720px) {
+    .archives-page {
+      padding-top: 7rem;
+    }
+  }
+</style>
