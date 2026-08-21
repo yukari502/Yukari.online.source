@@ -101,7 +101,7 @@ const currentCategories = post.data.categories || [];
     </aside>
 
     <!-- Main Content -->
-    <article class="post-main" data-pagefind-body>
+    <article class="post-main">
       <header class="reveal-on-scroll" style="margin-bottom: 3rem; text-align: center;">
         {post.data.categories && post.data.categories.length > 0 && (
           <div style="display: flex; gap: 0.5rem; justify-content: center; margin-bottom: 1rem;">
@@ -113,7 +113,7 @@ const currentCategories = post.data.categories || [];
           </div>
         )}
         
-        <h1 data-pagefind-meta="title" style="font-size: clamp(2rem, 5vw, 3rem); margin-bottom: 1rem; color: var(--color-text); line-height: 1.3; font-weight: 800;">
+        <h1 style="font-size: clamp(2rem, 5vw, 3rem); margin-bottom: 1rem; color: var(--color-text); line-height: 1.3; font-weight: 800;">
           {post.data.title || post.id}
         </h1>
         
@@ -202,14 +202,15 @@ const currentCategories = post.data.categories || [];
     /* Two columns: Left Index (280px), Right Main Content (1fr) */
     grid-template-columns: 280px minmax(0, 1fr);
     gap: 3rem;
-    width: 95vw;
+    width: calc(100% - 3rem);
+    max-width: 1440px;
     margin: 0 auto;
     padding-top: 8rem;
   }
 
   .post-main {
     width: 100%;
-    max-width: 80ch;
+    min-width: 0;
     justify-self: center;
   }
 
@@ -303,7 +304,7 @@ const currentCategories = post.data.categories || [];
   @media (max-width: 1200px) {
     .post-layout {
       grid-template-columns: 250px minmax(0, 1fr);
-      width: 95vw;
+      width: calc(100% - 2rem);
     }
   }
 

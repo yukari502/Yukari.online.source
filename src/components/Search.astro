@@ -3,9 +3,9 @@
     <header class="site-search-header">
       <div class="site-search-heading">
         <span class="site-search-eyebrow">YUKARI.LEAF</span>
-        <h2 id="site-search-title">搜索文章</h2>
+        <h2 id="site-search-title">Search articles</h2>
       </div>
-      <button type="button" class="site-search-close" data-search-close aria-label="关闭搜索">
+      <button type="button" class="site-search-close" data-search-close aria-label="Close search">
         <svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
           <path d="M18 6 6 18M6 6l12 12"></path>
         </svg>
@@ -23,7 +23,7 @@
         inputmode="search"
         autocomplete="off"
         spellcheck="false"
-        placeholder="搜索标题、分类或正文…"
+        placeholder="Search titles, categories, or content…"
         aria-describedby="site-search-status"
       />
       <kbd>ESC</kbd>
@@ -31,15 +31,15 @@
 
     <div class="site-search-body">
       <p id="site-search-status" class="site-search-status" role="status" aria-live="polite">
-        输入关键词，开始探索全部文章。
+        Type a keyword to search all articles.
       </p>
-      <ol id="site-search-results" class="site-search-results" aria-label="搜索结果"></ol>
+      <ol id="site-search-results" class="site-search-results" aria-label="Search results"></ol>
     </div>
 
     <footer class="site-search-footer">
-      <span><kbd>↑</kbd><kbd>↓</kbd> 浏览</span>
-      <span><kbd>Enter</kbd> 打开</span>
-      <span>全文搜索 · 本地索引</span>
+      <span><kbd>↑</kbd><kbd>↓</kbd> Navigate</span>
+      <span><kbd>Enter</kbd> Open</span>
+      <span>Full-text search · Local index</span>
     </footer>
   </div>
 </dialog>
@@ -296,23 +296,19 @@
 </style>
 
 <script>
-  type PagefindResultData = {
+  type SearchRecord = {
     url: string;
-    excerpt: string;
-    meta?: { title?: string };
-  };
-
-  type PagefindApi = {
-    init: () => Promise<void>;
-    debouncedSearch: (query: string, options?: object, debounceMs?: number) => Promise<null | {
-      results: Array<{ data: () => Promise<PagefindResultData> }>;
-    }>;
+    title: string;
+    summary: string;
+    categories: string[];
+    tags: string[];
+    content: string;
   };
 
   declare global {
     interface Window {
       __siteSearchCleanup?: () => void;
-      __pagefindApi?: PagefindApi;
+      __siteSearchIndex?: SearchRecord[];
     }
   }
 
@@ -331,20 +327,29 @@
     let activeIndex = -1;
     let latestQuery = '';
     let restoreOverflow = '';
-    let pagefindPromise: Promise<PagefindApi> | null = null;
+    let searchTimer = 0;
+    let indexPromise: Promise<SearchRecord[]> | null = null;
 
-    const loadPagefind = async () => {
-      if (window.__pagefindApi) return window.__pagefindApi;
-      if (!pagefindPromise) {
-        pagefindPromise = (async () => {
-          const bundlePath = '/pagefind/pagefind.js';
-          const pagefind = await import(/* @vite-ignore */ bundlePath) as PagefindApi;
-          await pagefind.init();
-          window.__pagefindApi = pagefind;
-          return pagefind;
-        })();
+    const loadSearchIndex = async () => {
+      if (window.__siteSearchIndex) return window.__siteSearchIndex;
+      if (!indexPromise) {
+        indexPromise = (async () => {
+          const response = await fetch('/search-index.json', {
+            headers: { Accept: 'application/json' },
+          });
+          if (!response.ok) throw new Error(`Search index request failed: ${response.status}`);
+
+          const records = await response.json();
+          if (!Array.isArray(records)) throw new Error('Search index response is invalid');
+
+          window.__siteSearchIndex = records as SearchRecord[];
+          return window.__siteSearchIndex;
+        })().catch((error) => {
+          indexPromise = null;
+          throw error;
+        });
       }
-      return pagefindPromise;
+      return indexPromise;
     };
 
     const setStatus = (message: string, visible = true) => {
@@ -352,20 +357,79 @@
       status.hidden = !visible;
     };
 
-    const appendExcerpt = (target: HTMLElement, excerpt: string) => {
-      const parsed = new DOMParser().parseFromString(`<div>${excerpt}</div>`, 'text/html');
-      const source = parsed.body.firstElementChild;
-      if (!source) return;
+    const normalize = (value: string) => value.normalize('NFKC').toLocaleLowerCase();
 
-      source.childNodes.forEach((node) => {
-        if (node.nodeType === Node.ELEMENT_NODE && (node as Element).tagName === 'MARK') {
-          const mark = document.createElement('mark');
-          mark.textContent = node.textContent;
-          target.appendChild(mark);
-        } else {
-          target.appendChild(document.createTextNode(node.textContent || ''));
+    const appendHighlightedText = (target: HTMLElement, text: string, terms: string[]) => {
+      const escapedTerms = terms
+        .filter(Boolean)
+        .sort((a, b) => b.length - a.length)
+        .map((term) => term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'));
+
+      if (escapedTerms.length === 0) {
+        target.textContent = text;
+        return;
+      }
+
+      const pattern = new RegExp(escapedTerms.join('|'), 'giu');
+      let cursor = 0;
+      let match: RegExpExecArray | null;
+
+      while ((match = pattern.exec(text)) !== null) {
+        if (match.index > cursor) {
+          target.appendChild(document.createTextNode(text.slice(cursor, match.index)));
         }
+
+        const mark = document.createElement('mark');
+        mark.textContent = match[0];
+        target.appendChild(mark);
+        cursor = match.index + match[0].length;
+      }
+
+      if (cursor < text.length) {
+        target.appendChild(document.createTextNode(text.slice(cursor)));
+      }
+    };
+
+    const makeExcerpt = (record: SearchRecord, terms: string[]) => {
+      const summaryContainsTerm = terms.some((term) => normalize(record.summary).includes(term));
+      const source = summaryContainsTerm ? record.summary : record.content || record.summary;
+      const normalizedSource = normalize(source);
+      const firstMatch = terms.reduce((best, term) => {
+        const index = normalizedSource.indexOf(term);
+        return index >= 0 && (best < 0 || index < best) ? index : best;
+      }, -1);
+      const start = Math.max(0, firstMatch < 0 ? 0 : firstMatch - 55);
+      const end = Math.min(source.length, start + 170);
+
+      return `${start > 0 ? '…' : ''}${source.slice(start, end)}${end < source.length ? '…' : ''}`;
+    };
+
+    const findMatches = (records: SearchRecord[], query: string) => {
+      const normalizedQuery = normalize(query);
+      const terms = normalizedQuery.split(/\s+/).filter(Boolean);
+
+      const matches = records.flatMap((record) => {
+        const title = normalize(record.title);
+        const summary = normalize(record.summary);
+        const categories = normalize(record.categories.join(' '));
+        const tags = normalize(record.tags.join(' '));
+        const content = normalize(record.content);
+        const combined = `${title} ${summary} ${categories} ${tags} ${content}`;
+
+        if (!terms.every((term) => combined.includes(term))) return [];
+
+        let score = title.includes(normalizedQuery) ? 120 : 0;
+        terms.forEach((term) => {
+          if (title.includes(term)) score += 35;
+          if (categories.includes(term) || tags.includes(term)) score += 20;
+          if (summary.includes(term)) score += 12;
+          if (content.includes(term)) score += 3;
+        });
+
+        return [{ record, score, excerpt: makeExcerpt(record, terms), terms }];
       });
+
+      return matches.sort((a, b) => b.score - a.score);
     };
 
     const resultLinks = () => Array.from(results.querySelectorAll<HTMLAnchorElement>('a'));
@@ -389,42 +453,39 @@
       results.replaceChildren();
 
       if (!latestQuery) {
-        setStatus('输入关键词，开始探索全部文章。');
+        setStatus('Type a keyword to search all articles.');
         return;
       }
 
-      setStatus('正在搜索…');
+      setStatus('Searching…');
 
       try {
-        const pagefind = await loadPagefind();
-        const search = await pagefind.debouncedSearch(latestQuery, {}, 180);
-        if (!search || input.value.trim() !== latestQuery) return;
-
-        const matches = await Promise.all(search.results.slice(0, 8).map((result) => result.data()));
+        const records = await loadSearchIndex();
         if (input.value.trim() !== latestQuery) return;
+        const matches = findMatches(records, latestQuery);
 
         if (matches.length === 0) {
-          setStatus(`没有找到与“${latestQuery}”相关的文章。`);
+          setStatus(`No articles found for “${latestQuery}”.`);
           return;
         }
 
-        setStatus(`找到 ${search.results.length} 篇相关文章`, false);
+        setStatus(`${matches.length} matching article${matches.length === 1 ? '' : 's'}`, false);
 
-        matches.forEach((match) => {
+        matches.slice(0, 8).forEach(({ record, excerpt: excerptText, terms }) => {
           const item = document.createElement('li');
           const link = document.createElement('a');
           const title = document.createElement('span');
           const arrow = document.createElement('span');
           const excerpt = document.createElement('p');
 
-          link.href = match.url;
+          link.href = record.url;
           title.className = 'site-search-result-title';
-          title.textContent = match.meta?.title || '未命名文章';
+          title.textContent = record.title || 'Untitled article';
           arrow.className = 'site-search-result-arrow';
           arrow.setAttribute('aria-hidden', 'true');
           arrow.textContent = '→';
           excerpt.className = 'site-search-result-excerpt';
-          appendExcerpt(excerpt, match.excerpt);
+          appendHighlightedText(excerpt, excerptText, terms);
 
           link.append(title, arrow, excerpt);
           item.appendChild(link);
@@ -432,7 +493,7 @@
         });
       } catch (error) {
         console.error('Search initialization failed', error);
-        setStatus('搜索索引暂时不可用，请刷新页面后重试。');
+        setStatus('Search is temporarily unavailable. Please try again later.');
       }
     };
 
@@ -442,7 +503,7 @@
       dialog.showModal();
       document.body.style.overflow = 'hidden';
       window.setTimeout(() => input.focus(), 30);
-      void loadPagefind().catch(() => undefined);
+      void loadSearchIndex().catch(() => undefined);
     };
 
     const closeSearch = () => {
@@ -493,12 +554,15 @@
       return { button, handler };
     });
     const closeHandler = () => closeSearch();
-    const inputHandler = () => void renderSearch(input.value);
+    const inputHandler = () => {
+      window.clearTimeout(searchTimer);
+      searchTimer = window.setTimeout(() => void renderSearch(input.value), 120);
+    };
 
     closeButton?.addEventListener('click', closeHandler);
     input.addEventListener('input', inputHandler);
     input.addEventListener('keydown', onInputKeydown);
-    input.addEventListener('focus', () => void loadPagefind().catch(() => undefined), { once: true });
+    input.addEventListener('focus', () => void loadSearchIndex().catch(() => undefined), { once: true });
     dialog.addEventListener('click', onBackdropClick);
     dialog.addEventListener('close', onDialogClose);
     document.addEventListener('keydown', onGlobalKeydown);
@@ -508,6 +572,7 @@
       closeButton?.removeEventListener('click', closeHandler);
       input.removeEventListener('input', inputHandler);
       input.removeEventListener('keydown', onInputKeydown);
+      window.clearTimeout(searchTimer);
       dialog.removeEventListener('click', onBackdropClick);
       dialog.removeEventListener('close', onDialogClose);
       document.removeEventListener('keydown', onGlobalKeydown);

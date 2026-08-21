@@ -58,7 +58,7 @@ const serializedPosts = sortedPosts.map(post => ({
       <p class="hero-subtitle">A leaf from the internet</p>
     </div>
 
-    <a href="#latest" class="hero-scroll-cue" aria-label="浏览最新文章">
+    <a href="#latest" class="hero-scroll-cue" aria-label="Browse latest articles">
       <span>Scroll to explore</span>
       <svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
         <path d="m6 9 6 6 6-6"></path>
@@ -88,12 +88,12 @@ const serializedPosts = sortedPosts.map(post => ({
     <main class="feed-center">
       <div class="feed-heading reveal-on-scroll">
         <h2>Recent Thoughts</h2>
-        <button type="button" class="feed-search-button" data-search-open aria-label="搜索全部文章">
+        <button type="button" class="feed-search-button" data-search-open aria-label="Search all articles">
           <svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
             <circle cx="11" cy="11" r="7"></circle>
             <path d="m20 20-3.5-3.5"></path>
           </svg>
-          <span>搜索文章</span>
+          <span>Search articles</span>
         </button>
       </div>
       
@@ -129,8 +129,8 @@ const serializedPosts = sortedPosts.map(post => ({
       
       <!-- Infinite Scroll Trigger/Loader -->
       <div id="load-more-trigger" style="text-align: center; padding: 3rem 0; color: var(--color-text-muted);">
-        <div class="loader" id="loader-spinner">加载中...</div>
-        <div id="no-more-text" style="display: none; font-size: 0.9rem;">没有更多文章了</div>
+        <div class="loader" id="loader-spinner">Loading...</div>
+        <div id="no-more-text" style="display: none; font-size: 0.9rem;">No more articles</div>
       </div>
     </main>
 
@@ -262,11 +262,12 @@ const serializedPosts = sortedPosts.map(post => ({
     grid-template-columns: 280px minmax(0, 1fr) 280px;
     gap: 3rem;
     width: 100%;
+    max-width: 1600px;
   }
 
   .feed-center {
     width: 100%;
-    max-width: 80ch;
+    min-width: 0;
     justify-self: center;
   }
 
