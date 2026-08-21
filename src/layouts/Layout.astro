@@ -1,6 +1,7 @@
 ---
 import { ClientRouter } from 'astro:transitions';
 import '../styles/global.css';
+import Search from '../components/Search.astro';
 
 export interface Props {
 	title: string;
@@ -84,10 +85,26 @@ const { title, hideNavOnLoad = false, isArticle = false } = Astro.props;
 	</svg>
     <!-- Premium Navigation Bar -->
     <nav id="main-nav" class={`nav-glass no-hover ${hideNavOnLoad ? 'nav-hidden' : ''}`} data-is-article={isArticle ? 'true' : 'false'} style={`position: ${isArticle ? 'absolute' : 'fixed'}; top: 1rem; left: 50%; transform: translateX(-50%); width: calc(100% - 2rem); max-width: 1200px; padding: 1rem 2rem; z-index: 50; display: flex; justify-content: space-between; align-items: center; border-radius: 100px; transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.5s ease, background 0.4s, border-color 0.4s, box-shadow 0.4s;`}>
-      <a href="/" style="font-weight: 900; font-size: 1.6rem; letter-spacing: -0.05em; color: var(--color-text); text-decoration: none; display: flex; align-items: baseline;">YUKARI<span style="color: var(--color-primary); font-size: 1.6rem;">.LEAF</span></a>
-      <div style="display: flex; align-items: center; gap: 2rem; font-size: 0.95rem; font-weight: 500;">
-        <a href="/">Home</a>
+      <a href="/" class="nav-brand" style="font-weight: 900; font-size: 1.6rem; letter-spacing: -0.05em; color: var(--color-text); text-decoration: none; display: flex; align-items: baseline;">YUKARI<span style="color: var(--color-primary); font-size: 1.6rem;">.LEAF</span></a>
+      <div class="nav-links" style="display: flex; align-items: center; gap: 2rem; font-size: 0.95rem; font-weight: 500;">
+        <a href="/" class="nav-home-link">Home</a>
         <a href="/posts">Archives</a>
+
+		<button
+			type="button"
+			class="site-search-trigger"
+			data-search-open
+			aria-haspopup="dialog"
+			aria-controls="site-search-dialog"
+			aria-label="搜索文章"
+		>
+			<svg aria-hidden="true" viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+				<circle cx="11" cy="11" r="7"></circle>
+				<path d="m20 20-3.5-3.5"></path>
+			</svg>
+			<span class="site-search-label">Search</span>
+			<kbd>⌘ K</kbd>
+		</button>
 		
 		<!-- Theme Toggle Button -->
 		<button id="themeToggle" aria-label="Toggle Theme" style="background: transparent; border: none; cursor: pointer; color: var(--color-text); display: flex; align-items: center; justify-content: center; padding: 0.5rem; border-radius: 50%; transition: background 0.3s ease;">
@@ -96,6 +113,8 @@ const { title, hideNavOnLoad = false, isArticle = false } = Astro.props;
 		</button>
       </div>
     </nav>
+
+	<Search />
 
     <!-- Main Content Area -->
 	<main style="min-height: 100vh;">
@@ -149,6 +168,23 @@ const { title, hideNavOnLoad = false, isArticle = false } = Astro.props;
 				inset 0 1px 1px rgba(255, 255, 255, 0.4),
 				inset 0 -1px 1px rgba(0, 0, 0, 0.05),
 				0 8px 32px 0 rgba(0, 0, 0, 0.1);
+		}
+
+		@media (max-width: 720px) {
+			#main-nav {
+				padding: 0.7rem 1rem !important;
+			}
+			.nav-links {
+				gap: 0.75rem !important;
+			}
+			.nav-brand,
+			.nav-brand span {
+				font-size: 1.2rem !important;
+			}
+		}
+
+		@media (max-width: 480px) {
+			.nav-home-link { display: none; }
 		}
 	</style>
 

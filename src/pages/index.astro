@@ -79,7 +79,16 @@ const serializedPosts = sortedPosts.map(post => ({
 
     <!-- Center Column: Infinite Scroll Posts -->
     <main class="feed-center">
-      <h2 style="font-size: 2rem; margin-bottom: 2rem; padding-bottom: 1rem; border-bottom: 1px solid var(--color-border); opacity: 0.8;" class="reveal-on-scroll">Recent Thoughts</h2>
+      <div class="feed-heading reveal-on-scroll">
+        <h2>Recent Thoughts</h2>
+        <button type="button" class="feed-search-button" data-search-open aria-label="搜索全部文章">
+          <svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+            <circle cx="11" cy="11" r="7"></circle>
+            <path d="m20 20-3.5-3.5"></path>
+          </svg>
+          <span>搜索文章</span>
+        </button>
+      </div>
       
       <div id="posts-container" style="display: flex; flex-direction: column; gap: 2rem;">
         {/* Initial Rendered Posts for SEO and fast loading */}
@@ -288,6 +297,47 @@ const serializedPosts = sortedPosts.map(post => ({
     padding: 2rem;
   }
 
+  .feed-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .feed-heading h2 {
+    margin: 0;
+    font-size: 2rem;
+    opacity: 0.8;
+  }
+
+  .feed-search-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.55rem;
+    flex: 0 0 auto;
+    padding: 0.55rem 0.85rem;
+    color: var(--color-text-muted);
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: 999px;
+    font: 600 0.85rem/1 var(--font-sans);
+    cursor: pointer;
+    transition: color 0.2s, background 0.2s, border-color 0.2s, transform 0.2s;
+  }
+
+  .feed-search-button:hover,
+  .feed-search-button:focus-visible {
+    color: var(--color-text);
+    background: var(--color-surface-hover);
+    border-color: color-mix(in srgb, var(--color-primary) 35%, transparent);
+    outline: none;
+  }
+
+  .feed-search-button:active { transform: scale(0.97); }
+
   /* Mobile Responsive */
   @media (max-width: 1024px) {
     .main-layout {
@@ -299,6 +349,12 @@ const serializedPosts = sortedPosts.map(post => ({
     .hero-section {
       height: 50vh;
     }
+  }
+
+  @media (max-width: 520px) {
+    .feed-heading h2 { font-size: 1.6rem; }
+    .feed-search-button span { display: none; }
+    .feed-search-button { width: 38px; height: 38px; padding: 0; justify-content: center; }
   }
 </style>
 

@@ -5,7 +5,7 @@ import categoryOrder from '../../../content/category_order.json';
 
 export async function getStaticPaths() {
   const posts = await getCollection('posts');
-  return posts.map(post => ({
+  return posts.filter(post => !post.data.draft).map(post => ({
     params: { slug: post.id },
     props: { post },
   }));
@@ -101,7 +101,7 @@ const currentCategories = post.data.categories || [];
     </aside>
 
     <!-- Main Content -->
-    <article class="post-main">
+    <article class="post-main" data-pagefind-body>
       <header class="reveal-on-scroll" style="margin-bottom: 3rem; text-align: center;">
         {post.data.categories && post.data.categories.length > 0 && (
           <div style="display: flex; gap: 0.5rem; justify-content: center; margin-bottom: 1rem;">
@@ -113,7 +113,7 @@ const currentCategories = post.data.categories || [];
           </div>
         )}
         
-        <h1 style="font-size: clamp(2rem, 5vw, 3rem); margin-bottom: 1rem; color: var(--color-text); line-height: 1.3; font-weight: 800;">
+        <h1 data-pagefind-meta="title" style="font-size: clamp(2rem, 5vw, 3rem); margin-bottom: 1rem; color: var(--color-text); line-height: 1.3; font-weight: 800;">
           {post.data.title || post.id}
         </h1>
         

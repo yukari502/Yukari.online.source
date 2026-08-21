@@ -1,0 +1,518 @@
+<dialog id="site-search-dialog" class="site-search-dialog" aria-labelledby="site-search-title">
+  <div class="site-search-panel">
+    <header class="site-search-header">
+      <div class="site-search-heading">
+        <span class="site-search-eyebrow">YUKARI.LEAF</span>
+        <h2 id="site-search-title">搜索文章</h2>
+      </div>
+      <button type="button" class="site-search-close" data-search-close aria-label="关闭搜索">
+        <svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <path d="M18 6 6 18M6 6l12 12"></path>
+        </svg>
+      </button>
+    </header>
+
+    <div class="site-search-input-wrap">
+      <svg aria-hidden="true" viewBox="0 0 24 24" width="21" height="21" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+        <circle cx="11" cy="11" r="7"></circle>
+        <path d="m20 20-3.5-3.5"></path>
+      </svg>
+      <input
+        id="site-search-input"
+        type="search"
+        inputmode="search"
+        autocomplete="off"
+        spellcheck="false"
+        placeholder="搜索标题、分类或正文…"
+        aria-describedby="site-search-status"
+      />
+      <kbd>ESC</kbd>
+    </div>
+
+    <div class="site-search-body">
+      <p id="site-search-status" class="site-search-status" role="status" aria-live="polite">
+        输入关键词，开始探索全部文章。
+      </p>
+      <ol id="site-search-results" class="site-search-results" aria-label="搜索结果"></ol>
+    </div>
+
+    <footer class="site-search-footer">
+      <span><kbd>↑</kbd><kbd>↓</kbd> 浏览</span>
+      <span><kbd>Enter</kbd> 打开</span>
+      <span>全文搜索 · 本地索引</span>
+    </footer>
+  </div>
+</dialog>
+
+<style is:global>
+  .site-search-trigger {
+    min-height: 38px;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.55rem;
+    padding: 0.45rem 0.65rem;
+    color: var(--color-text-muted);
+    background: rgba(255, 255, 255, 0.035);
+    border: 1px solid var(--color-border);
+    border-radius: 999px;
+    cursor: pointer;
+    font: inherit;
+    transition: color 0.2s ease, background 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+  }
+
+  .site-search-trigger:hover,
+  .site-search-trigger:focus-visible {
+    color: var(--color-text);
+    background: var(--color-surface-hover);
+    border-color: color-mix(in srgb, var(--color-primary) 35%, transparent);
+    outline: none;
+  }
+
+  .site-search-trigger:active { transform: scale(0.96); }
+
+  .site-search-trigger kbd,
+  .site-search-input-wrap kbd,
+  .site-search-footer kbd {
+    font-family: var(--font-mono);
+    font-size: 0.68rem;
+    line-height: 1;
+    color: var(--color-text-muted);
+    background: var(--color-surface-hover);
+    border: 1px solid var(--color-border);
+    border-radius: 5px;
+    padding: 0.28rem 0.38rem;
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.18);
+  }
+
+  .site-search-dialog {
+    width: min(720px, calc(100vw - 2rem));
+    max-width: none;
+    max-height: min(760px, calc(100dvh - 2rem));
+    margin: auto;
+    padding: 0;
+    color: var(--color-text);
+    background: transparent;
+    border: 0;
+    overflow: visible;
+  }
+
+  .site-search-dialog::backdrop {
+    background: rgba(2, 6, 15, 0.72);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  }
+
+  .site-search-dialog[open] { animation: search-dialog-in 0.25s ease-out; }
+
+  .site-search-panel {
+    display: grid;
+    grid-template-rows: auto auto minmax(180px, 1fr) auto;
+    max-height: min(760px, calc(100dvh - 2rem));
+    overflow: hidden;
+    background: color-mix(in srgb, var(--color-bg) 88%, transparent);
+    border: 1px solid rgba(255, 255, 255, 0.11);
+    border-radius: 18px;
+    box-shadow: 0 30px 90px rgba(0, 0, 0, 0.48), inset 0 1px 0 rgba(255, 255, 255, 0.06);
+    backdrop-filter: blur(28px) saturate(145%);
+    -webkit-backdrop-filter: blur(28px) saturate(145%);
+  }
+
+  [data-theme='light'] .site-search-panel {
+    border-color: rgba(0, 0, 0, 0.09);
+    box-shadow: 0 30px 90px rgba(38, 45, 58, 0.24), inset 0 1px 0 rgba(255, 255, 255, 0.8);
+  }
+
+  .site-search-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1.35rem 1.5rem 1rem;
+  }
+
+  .site-search-heading h2 { margin: 0.15rem 0 0; font-size: 1.35rem; }
+
+  .site-search-eyebrow {
+    color: var(--color-primary);
+    font: 600 0.7rem/1 var(--font-mono);
+    letter-spacing: 0.14em;
+  }
+
+  .site-search-close {
+    width: 36px;
+    height: 36px;
+    display: grid;
+    place-items: center;
+    flex: 0 0 auto;
+    color: var(--color-text-muted);
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  .site-search-close:hover { color: var(--color-text); background: var(--color-surface-hover); }
+
+  .site-search-input-wrap {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    margin: 0 1.5rem;
+    padding: 0.15rem 1rem;
+    color: var(--color-text-muted);
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: 12px;
+    transition: border-color 0.2s, box-shadow 0.2s;
+  }
+
+  .site-search-input-wrap:focus-within {
+    border-color: color-mix(in srgb, var(--color-primary) 65%, transparent);
+    box-shadow: 0 0 0 4px var(--color-primary-glow);
+  }
+
+  .site-search-input-wrap input {
+    width: 100%;
+    min-width: 0;
+    padding: 0.9rem 0;
+    color: var(--color-text);
+    background: transparent;
+    border: 0;
+    outline: 0;
+    font: 500 1rem/1.4 var(--font-sans);
+  }
+
+  .site-search-input-wrap input::placeholder { color: var(--color-text-muted); opacity: 0.78; }
+  .site-search-input-wrap input::-webkit-search-cancel-button { display: none; }
+
+  .site-search-body {
+    min-height: 0;
+    overflow-y: auto;
+    padding: 1rem 1.5rem 1.25rem;
+  }
+
+  .site-search-status {
+    margin: 0;
+    padding: 1.6rem 0.5rem;
+    color: var(--color-text-muted);
+    font-size: 0.9rem;
+    text-align: center;
+  }
+
+  .site-search-results {
+    display: flex;
+    flex-direction: column;
+    gap: 0.45rem;
+    list-style: none;
+  }
+
+  .site-search-results:empty { display: none; }
+
+  .site-search-results a {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 0.35rem 1rem;
+    padding: 1rem;
+    color: var(--color-text);
+    background: transparent;
+    border: 1px solid transparent;
+    border-radius: 11px;
+    text-decoration: none;
+  }
+
+  .site-search-results a:hover,
+  .site-search-results a:focus,
+  .site-search-results a[data-active='true'] {
+    color: var(--color-text);
+    background: var(--color-surface-hover);
+    border-color: var(--color-border);
+    outline: none;
+  }
+
+  .site-search-result-title { font-weight: 700; line-height: 1.35; }
+
+  .site-search-result-arrow {
+    color: var(--color-primary);
+    opacity: 0;
+    transition: opacity 0.2s, transform 0.2s;
+  }
+
+  .site-search-results a:hover .site-search-result-arrow,
+  .site-search-results a:focus .site-search-result-arrow,
+  .site-search-results a[data-active='true'] .site-search-result-arrow {
+    opacity: 1;
+    transform: translateX(2px);
+  }
+
+  .site-search-result-excerpt {
+    grid-column: 1 / -1;
+    color: var(--color-text-muted);
+    font-size: 0.86rem;
+    line-height: 1.6;
+  }
+
+  .site-search-result-excerpt mark {
+    color: var(--color-text);
+    background: color-mix(in srgb, var(--color-primary) 24%, transparent);
+    border-radius: 3px;
+    padding: 0 0.12em;
+  }
+
+  .site-search-footer {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.8rem 1.5rem;
+    color: var(--color-text-muted);
+    border-top: 1px solid var(--color-border);
+    font-size: 0.72rem;
+  }
+
+  .site-search-footer span { display: inline-flex; align-items: center; gap: 0.3rem; }
+  .site-search-footer span:last-child { margin-left: auto; }
+
+  @keyframes search-dialog-in {
+    from { opacity: 0; transform: translateY(12px) scale(0.985); }
+    to { opacity: 1; transform: none; }
+  }
+
+  @media (max-width: 720px) {
+    .site-search-trigger { width: 38px; padding: 0; justify-content: center; }
+    .site-search-trigger .site-search-label,
+    .site-search-trigger kbd { display: none; }
+    .site-search-dialog { width: calc(100vw - 1rem); max-height: calc(100dvh - 1rem); }
+    .site-search-panel { max-height: calc(100dvh - 1rem); border-radius: 15px; }
+    .site-search-header { padding: 1.1rem 1rem 0.85rem; }
+    .site-search-input-wrap { margin: 0 1rem; }
+    .site-search-body { padding: 0.75rem 1rem 1rem; }
+    .site-search-footer { padding: 0.75rem 1rem; }
+    .site-search-footer span:not(:last-child) { display: none; }
+    .site-search-footer span:last-child { margin-left: 0; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .site-search-dialog[open] { animation: none; }
+  }
+</style>
+
+<script>
+  type PagefindResultData = {
+    url: string;
+    excerpt: string;
+    meta?: { title?: string };
+  };
+
+  type PagefindApi = {
+    init: () => Promise<void>;
+    debouncedSearch: (query: string, options?: object, debounceMs?: number) => Promise<null | {
+      results: Array<{ data: () => Promise<PagefindResultData> }>;
+    }>;
+  };
+
+  declare global {
+    interface Window {
+      __siteSearchCleanup?: () => void;
+      __pagefindApi?: PagefindApi;
+    }
+  }
+
+  const setupSiteSearch = () => {
+    window.__siteSearchCleanup?.();
+
+    const dialog = document.getElementById('site-search-dialog') as HTMLDialogElement | null;
+    const input = document.getElementById('site-search-input') as HTMLInputElement | null;
+    const results = document.getElementById('site-search-results') as HTMLOListElement | null;
+    const status = document.getElementById('site-search-status');
+    const openButtons = Array.from(document.querySelectorAll<HTMLElement>('[data-search-open]'));
+    const closeButton = document.querySelector<HTMLElement>('[data-search-close]');
+
+    if (!dialog || !input || !results || !status || openButtons.length === 0) return;
+
+    let activeIndex = -1;
+    let latestQuery = '';
+    let restoreOverflow = '';
+    let pagefindPromise: Promise<PagefindApi> | null = null;
+
+    const loadPagefind = async () => {
+      if (window.__pagefindApi) return window.__pagefindApi;
+      if (!pagefindPromise) {
+        pagefindPromise = (async () => {
+          const bundlePath = '/pagefind/pagefind.js';
+          const pagefind = await import(/* @vite-ignore */ bundlePath) as PagefindApi;
+          await pagefind.init();
+          window.__pagefindApi = pagefind;
+          return pagefind;
+        })();
+      }
+      return pagefindPromise;
+    };
+
+    const setStatus = (message: string, visible = true) => {
+      status.textContent = message;
+      status.hidden = !visible;
+    };
+
+    const appendExcerpt = (target: HTMLElement, excerpt: string) => {
+      const parsed = new DOMParser().parseFromString(`<div>${excerpt}</div>`, 'text/html');
+      const source = parsed.body.firstElementChild;
+      if (!source) return;
+
+      source.childNodes.forEach((node) => {
+        if (node.nodeType === Node.ELEMENT_NODE && (node as Element).tagName === 'MARK') {
+          const mark = document.createElement('mark');
+          mark.textContent = node.textContent;
+          target.appendChild(mark);
+        } else {
+          target.appendChild(document.createTextNode(node.textContent || ''));
+        }
+      });
+    };
+
+    const resultLinks = () => Array.from(results.querySelectorAll<HTMLAnchorElement>('a'));
+
+    const setActiveResult = (index: number) => {
+      const links = resultLinks();
+      if (links.length === 0) {
+        activeIndex = -1;
+        return;
+      }
+      activeIndex = (index + links.length) % links.length;
+      links.forEach((link, itemIndex) => {
+        link.dataset.active = itemIndex === activeIndex ? 'true' : 'false';
+      });
+      links[activeIndex].scrollIntoView({ block: 'nearest' });
+    };
+
+    const renderSearch = async (query: string) => {
+      latestQuery = query.trim();
+      activeIndex = -1;
+      results.replaceChildren();
+
+      if (!latestQuery) {
+        setStatus('输入关键词，开始探索全部文章。');
+        return;
+      }
+
+      setStatus('正在搜索…');
+
+      try {
+        const pagefind = await loadPagefind();
+        const search = await pagefind.debouncedSearch(latestQuery, {}, 180);
+        if (!search || input.value.trim() !== latestQuery) return;
+
+        const matches = await Promise.all(search.results.slice(0, 8).map((result) => result.data()));
+        if (input.value.trim() !== latestQuery) return;
+
+        if (matches.length === 0) {
+          setStatus(`没有找到与“${latestQuery}”相关的文章。`);
+          return;
+        }
+
+        setStatus(`找到 ${search.results.length} 篇相关文章`, false);
+
+        matches.forEach((match) => {
+          const item = document.createElement('li');
+          const link = document.createElement('a');
+          const title = document.createElement('span');
+          const arrow = document.createElement('span');
+          const excerpt = document.createElement('p');
+
+          link.href = match.url;
+          title.className = 'site-search-result-title';
+          title.textContent = match.meta?.title || '未命名文章';
+          arrow.className = 'site-search-result-arrow';
+          arrow.setAttribute('aria-hidden', 'true');
+          arrow.textContent = '→';
+          excerpt.className = 'site-search-result-excerpt';
+          appendExcerpt(excerpt, match.excerpt);
+
+          link.append(title, arrow, excerpt);
+          item.appendChild(link);
+          results.appendChild(item);
+        });
+      } catch (error) {
+        console.error('Search initialization failed', error);
+        setStatus('搜索索引暂时不可用，请刷新页面后重试。');
+      }
+    };
+
+    const openSearch = () => {
+      if (dialog.open) return;
+      restoreOverflow = document.body.style.overflow;
+      dialog.showModal();
+      document.body.style.overflow = 'hidden';
+      window.setTimeout(() => input.focus(), 30);
+      void loadPagefind().catch(() => undefined);
+    };
+
+    const closeSearch = () => {
+      if (dialog.open) dialog.close();
+    };
+
+    const onGlobalKeydown = (event: KeyboardEvent) => {
+      const target = event.target as HTMLElement | null;
+      const isTyping = target?.matches('input, textarea, select, [contenteditable="true"]');
+
+      if ((event.metaKey || event.ctrlKey) && event.key.toLowerCase() === 'k') {
+        event.preventDefault();
+        dialog.open ? closeSearch() : openSearch();
+        return;
+      }
+
+      if (event.key === '/' && !isTyping && !dialog.open) {
+        event.preventDefault();
+        openSearch();
+      }
+    };
+
+    const onInputKeydown = (event: KeyboardEvent) => {
+      if (event.key === 'ArrowDown') {
+        event.preventDefault();
+        setActiveResult(activeIndex + 1);
+      } else if (event.key === 'ArrowUp') {
+        event.preventDefault();
+        setActiveResult(activeIndex - 1);
+      } else if (event.key === 'Enter' && activeIndex >= 0) {
+        event.preventDefault();
+        resultLinks()[activeIndex]?.click();
+      }
+    };
+
+    const onBackdropClick = (event: MouseEvent) => {
+      if (event.target === dialog) closeSearch();
+    };
+
+    const onDialogClose = () => {
+      document.body.style.overflow = restoreOverflow;
+      activeIndex = -1;
+    };
+
+    const openHandlers = openButtons.map((button) => {
+      const handler = () => openSearch();
+      button.addEventListener('click', handler);
+      return { button, handler };
+    });
+    const closeHandler = () => closeSearch();
+    const inputHandler = () => void renderSearch(input.value);
+
+    closeButton?.addEventListener('click', closeHandler);
+    input.addEventListener('input', inputHandler);
+    input.addEventListener('keydown', onInputKeydown);
+    input.addEventListener('focus', () => void loadPagefind().catch(() => undefined), { once: true });
+    dialog.addEventListener('click', onBackdropClick);
+    dialog.addEventListener('close', onDialogClose);
+    document.addEventListener('keydown', onGlobalKeydown);
+
+    window.__siteSearchCleanup = () => {
+      openHandlers.forEach(({ button, handler }) => button.removeEventListener('click', handler));
+      closeButton?.removeEventListener('click', closeHandler);
+      input.removeEventListener('input', inputHandler);
+      input.removeEventListener('keydown', onInputKeydown);
+      dialog.removeEventListener('click', onBackdropClick);
+      dialog.removeEventListener('close', onDialogClose);
+      document.removeEventListener('keydown', onGlobalKeydown);
+    };
+  };
+
+  document.addEventListener('astro:page-load', setupSiteSearch);
+</script>
